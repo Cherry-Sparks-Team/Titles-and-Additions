@@ -1,0 +1,313 @@
+﻿unite_the_eastern_slavs_decision_effects = {
+	#Prestige
+	add_prestige = massive_prestige_gain
+
+	#Innovations
+	culture = {
+		add_random_innovation = culture_group_military
+		add_random_innovation = culture_group_civic
+	}
+
+	#Handle de jure drift & destructions of other kingdom titles
+	title:k_ruthenia = { add_to_list = east_slavic_kingdoms }
+	title:k_novgorod = { add_to_list = east_slavic_kingdoms }
+	title:k_white_rus = { add_to_list = east_slavic_kingdoms }
+	title:k_opolye = { add_to_list = east_slavic_kingdoms }
+	title:k_galicia-volhynia = { add_to_list = east_slavic_kingdoms }
+
+	if = {
+		limit = { has_primary_title = title:e_russia }
+		custom_tooltip = unite_the_eastern_slavs_decision_titles_empire_tt
+	}
+	else = { custom_tooltip = unite_the_eastern_slavs_decision_titles_tt }
+	hidden_effect = {
+		scope:eastern_slav_uniter = {
+			if = {
+				limit = { 
+					has_primary_title = title:e_russia
+					has_title = title:k_ruthenia
+				}
+				every_in_list = {
+					list = east_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_ruthenia }
+						scope:eastern_slav_uniter = { completely_controls = prev }
+					}
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_duchy }
+						set_de_jure_liege_title = title:k_ruthenia
+					}
+				}
+				every_in_list = {
+					list = east_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_ruthenia }
+					}
+					scope:eastern_slav_uniter = { destroy_title = prev }
+				}
+			}
+			else_if = {
+				limit = { 
+					has_primary_title = title:e_russia
+					has_title = title:k_novgorod
+				}
+				every_in_list = {
+					list = east_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_novgorod }
+						scope:eastern_slav_uniter = { completely_controls = prev }
+					}
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_duchy }
+						set_de_jure_liege_title = title:k_novgorod
+					}
+				}
+				every_in_list = {
+					list = east_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_novgorod }
+					}
+					scope:eastern_slav_uniter = { destroy_title = prev }
+				}
+			}
+			else_if = {
+				limit = { 
+					has_primary_title = title:e_russia
+					has_title = title:k_opolye
+				}
+				every_in_list = {
+					list = east_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_opolye }
+						scope:eastern_slav_uniter = { completely_controls = prev }
+					}
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_duchy }
+						set_de_jure_liege_title = title:k_opolye
+					}
+				}
+				every_in_list = {
+					list = east_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_opolye }
+					}
+					scope:eastern_slav_uniter = { destroy_title = prev }
+				}
+			}
+			else_if = {
+				limit = { 
+					has_primary_title = title:e_russia
+					has_title = title:k_white_rus
+				}
+				every_in_list = {
+					list = east_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_white_rus }
+						scope:eastern_slav_uniter = { completely_controls = prev }
+					}
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_duchy }
+						set_de_jure_liege_title = title:k_white_rus
+					}
+				}
+				every_in_list = {
+					list = east_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_white_rus }
+					}
+					scope:eastern_slav_uniter = { destroy_title = prev }
+				}
+			}
+			else_if = {
+				limit = { 
+					has_primary_title = title:e_russia
+					has_title = title:k_galicia-volhynia
+				}
+				every_in_list = {
+					list = east_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_galicia-volhynia }
+						scope:eastern_slav_uniter = { completely_controls = prev }
+					}
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_duchy }
+						set_de_jure_liege_title = title:k_galicia-volhynia
+					}
+				}
+				every_in_list = {
+					list = east_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_galicia-volhynia }
+					}
+					scope:eastern_slav_uniter = { destroy_title = prev }
+				}
+			}
+			else = {
+				every_in_list = {
+					list = east_slavic_kingdoms
+					limit = {
+						NOT = { this = scope:eastern_slav_uniter.primary_title }
+						scope:eastern_slav_uniter = { completely_controls = prev }
+					}
+
+					#De jure shift all held west slavic titles into your primary title
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_duchy }
+						set_de_jure_liege_title = scope:eastern_slav_uniter.primary_title
+					}
+
+					#Destroys them all!
+					scope:eastern_slav_uniter = { destroy_title = prev }
+				}
+			}
+		}	
+	}
+}
+
+reclaim_polabia_region_decision_effects = {
+	#Prestige
+	add_prestige = massive_prestige_gain
+
+	custom_tooltip = reclaim_polabia_region_decision_titles_tt
+	hidden_effect = {
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_primary_title = title:e_wendish_empire
+						has_title = title:k_pomerania
+					}
+					has_primary_title = title:k_pomerania
+				}
+			}
+			title:d_lausitz = {
+				set_de_jure_liege_title = title:k_pomerania
+			}
+			title:d_meissen = {
+				set_de_jure_liege_title = title:k_pomerania
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						has_primary_title = title:e_wendish_empire
+						has_title = title:k_poland
+					}
+					has_primary_title = title:k_poland
+				}
+			}
+			title:d_lausitz = {
+				set_de_jure_liege_title = title:k_poland
+			}
+			title:d_meissen = {
+				set_de_jure_liege_title = title:k_poland
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						has_primary_title = title:e_wendish_empire
+						has_title = title:k_bohemia
+					}
+					has_primary_title = title:k_bohemia
+				}
+			}
+			title:d_lausitz = {
+				set_de_jure_liege_title = title:k_bohemia
+			}
+			title:d_meissen = {
+				set_de_jure_liege_title = title:k_bohemia
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						has_primary_title = title:e_wendish_empire
+						has_title = title:k_moravia
+					}
+					has_primary_title = title:k_moravia
+				}
+			}
+			title:d_lausitz = {
+				set_de_jure_liege_title = title:k_moravia
+			}
+			title:d_meissen = {
+				set_de_jure_liege_title = title:k_moravia
+			}
+		}
+	}
+}
+
+unite_crowns_bohemia_moravia_decision_effects = {
+	#Prestige
+	add_prestige = massive_prestige_gain
+
+	custom_tooltip = unite_crowns_bohemia_moravia_decision_titles_tt
+	hidden_effect = {
+		if = {
+			limit = {
+				has_primary_title = title:k_bohemia
+			}
+			title:k_moravia = {
+				every_in_de_jure_hierarchy = {
+					limit = { tier = tier_duchy }
+					set_de_jure_liege_title = title:k_bohemia
+				}
+			}
+			destroy_title = title:k_moravia
+		}
+		else_if = {
+			limit = {
+				has_primary_title = title:k_moravia
+			}
+			title:k_bohemia = {
+				every_in_de_jure_hierarchy = {
+					limit = { tier = tier_duchy }
+					set_de_jure_liege_title = title:k_moravia
+				}
+			}
+			destroy_title = title:k_bohemia
+		}
+	}
+}
+
+claim_baltia_region_decision_effects = {
+	#Prestige
+	add_prestige = massive_prestige_gain
+
+	custom_tooltip = claim_baltia_region_decision_titles_tt
+	hidden_effect = {
+		title:k_esthonia = { set_de_jure_liege_title = title:e_russia}
+		title:k_lithuania = { set_de_jure_liege_title = title:e_russia}
+	}
+}
+
+claim_steppes_region_decision_effects = {
+	#Prestige
+	add_prestige = massive_prestige_gain
+
+	custom_tooltip = claim_steppes_region_decision_titles_tt
+	hidden_effect = {
+		title:k_mordvinia = { set_de_jure_liege_title = title:e_russia}
+		title:k_pontic_steppe = { set_de_jure_liege_title = title:e_russia}
+	}
+}
+
+claim_baltia_region_lithuanian_decision_effects = {
+	#Prestige
+	add_prestige = massive_prestige_gain
+
+	custom_tooltip = claim_baltia_region_lithuanian_decision_titles_tt
+	hidden_effect = {
+		title:k_esthonia = {
+			every_in_de_jure_hierarchy = {
+				limit = { tier = tier_duchy }
+				set_de_jure_liege_title = title:k_lithuania
+			}
+		}
+		destroy_title = title:k_esthonia
+	}
+}

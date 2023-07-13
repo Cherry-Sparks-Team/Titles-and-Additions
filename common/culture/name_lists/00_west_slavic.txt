@@ -1,0 +1,1069 @@
+﻿name_list_pommeranian = {
+
+	cadet_dynasty_names = {
+		"dynn_Obroditen"
+		"dynn_Gryfita"
+		{ "dynnp_z" "dynn_Liubic" }
+		"dynn_S_wiE_ca"
+		"dynn_GrzymaL_a"
+		"dynn_JastrzE_biec"
+		"dynn_L_odzia"
+		"dynn_Lubicz"
+		"dynn_NaL_E_cz"
+		"dynn_Gniewosz"
+		{ "dynnp_z" "dynn_Roztoki" }
+		{ "dynnp_ze" "dynn_SL_upska" }
+		# new
+		"dynn_Vagr"
+		"dynn_Varn"
+		"dynn_Polab"
+		"dynn_Glinyan"
+		"dynn_Drevan"
+		"dynn_Butinz"
+		"dynn_Smolinz"
+		"dynn_Vilz"
+		"dynn_Ruyan"
+		"dynn_Rereg"
+		"dynn_Zitic"
+		"dynn_Arkon"
+		"dynn_Branir"
+		"dynn_Lab"
+		"dynn_Odra"
+		"dynn_Myslin"
+		"dynn_Gavol"
+		"dynn_Radag"
+		"dynn_Slawin"
+	}
+
+	dynasty_names = {
+		"dynn_Obroditen"
+		"dynn_Gryfita"
+		{ "dynnp_z" "dynn_Liubic" }
+		"dynn_S_wiE_ca"
+		"dynn_GrzymaL_a"
+		"dynn_JastrzE_biec"
+		"dynn_L_odzia"
+		"dynn_Lubicz"
+		"dynn_NaL_E_cz"
+		"dynn_Gniewosz"
+		{ "dynnp_z" "dynn_Roztoki" }
+		{ "dynnp_ze" "dynn_SL_upska" }
+		# new
+		"dynn_Vagr"
+		"dynn_Varn"
+		"dynn_Polab"
+		"dynn_Glinyan"
+		"dynn_Drevan"
+		"dynn_Butinz"
+		"dynn_Smolinz"
+		"dynn_Vilz"
+		"dynn_Ruyan"
+		"dynn_Rereg"
+		"dynn_Zitic"
+		"dynn_Arkon"
+		"dynn_Branir"
+		"dynn_Lab"
+		"dynn_Odra"
+		"dynn_Myslin"
+		"dynn_Gavol"
+		"dynn_Radag"
+		"dynn_Slawin"
+	}
+
+	male_names = {      
+		50 = { # most common slavic
+			Bezprzym BogisL_aw Bohdan BohumI_r BolesL_aw Borzywoj BoZ_ydar Branimir Branislav BR_etislav
+			Casimir Ctibor DobiesL_aw Dobromil Jaromar Jaromil JaromI_r Jaroslav Kazimierz KreS_imir
+			KrzesL_aw Lubomir MilosL_aw MirosL_aw MS_cisL_aw MS_ciwO_j PrzybysL_aw Radomil Radomir
+			Radoslav Rostislav Sambor Sobiesalv StanisL_aw S_wiE_topeL_k S_wiE_tosL_aw VojtE_ch
+			WacL_aw WratysL_aw VA_clav WisL_aw WL_adysL_aw WL_odek WL_odzimierz WL_odzisL_aw
+			Zbigniew Zdislav Gostomysl
+		}
+		35 = { # most common german christian
+			Aleksander Bartosz BedR_ich Dytryk Jacenty Jakub Jakusz Janusz JE_drzej JindR_ich Jozef
+			Juliusz Karel Kasper Krzysztof LudvI_k Marek Mateusz Szczepan Tadeusz Zygmunt
+		}
+		15 = { # other
+			Antoni Aron Barnim BL_aZ_ej Drosuk FrantiS_ek GaweL_ Grzegorz Havel Andrzej JiR_I_ Kajetan
+			Kamil Kliment Kolman Kornel Lech Leszek Lucjan Marian Martin Mieszko MikolA_S_ MiL_osz
+			OldR_ich OndR_ej Otokar Patryk PaweL_ Piotr Prendota PrzemysL_ Ryszard Strasz SzczE_sny
+			Szymon Tomasz Udalrich Urjasz Walenty Wawrzyniec Wincenty ZdenE_k Gostevid Gostomil
+		} 
+	}
+	female_names = {
+		50 = { # most common slavic
+			Bohuslava BoZ_ena Branislava Dagmar Dobrava Dobroniega Dragomira Jarmila Ludmila Miroslava
+			Radomila Radomira Radoslava Stanislava VA_clava Vladislava WojsL_awa ZwinisL_awa
+		}
+		35 = { # most common german christian
+			Agnieszka AlZ_bE_ta Anna Halina Irena Jadwiga Jolanta Katarina Krystyna Ksenia
+			Lidia Maria Matylda Stefana Zofia
+		}
+		15 = { # other
+			AndE_la Berta Danuta Dorota Edyta Ewa Geira Gertruda Gracja Hanna Izabela Jarka Judyta
+			Kamila Kenna Kornelia Magda Magdalena MaL_gorzata Marcelina MarkE_ta Martyna Mateja
+			Milena Pechna RO_za Raina Regelinda Rycheza Salomea S_miechna SvE_tlana Urszula
+			Wera ZdeN_ka
+		}              
+	}
+	
+	dynasty_of_location_prefix = "dynnp_z"
+
+	
+
+	mercenary_names = {
+		{ name = "mercenary_company_oder_band" }
+		{ name = "mercenary_company_company_of_the_dog" }
+	}
+}
+
+name_list_czech = {
+
+	cadet_dynasty_names = {
+		"dynn_HrabiS_id"
+		#"dynn_Markvartid"
+		"dynn_VI_tkid"
+		"dynn_VrS_ovid"
+		#"dynn_Vratislavid"
+		"dynn_Bavorid"
+		"dynn_Harrach"
+		#"dynn_Drslavid"
+		"dynn_Hroznatid"
+		"dynn_Z_erotI_nid"
+		"dynn_Czernin"
+		#"dynn_BeneS_id"
+		#"dynn_OpavskY__PR_emyslid"
+		{ "dynnp_z" "dynn_Ronova" }
+		{ "dynnp_ze" "dynn_Z_erotI_na" }
+		{ "dynnp_z" "dynn_Kouic" }
+		{ "dynnp_ze" "dynn_PS_ova" }
+		{ "dynnp_z" "dynn_Buzic" }
+		{ "dynnp_z" "dynn_LipE_" }
+		{ "dynnp_z" "dynn_Lichtenburka" }
+		{ "dynnp_z" "dynn_Michalovic" }
+		{ "dynnp_z" "dynn_Lemberka" }
+		{ "dynnp_ze" "dynn_ZvI_R_etic" }
+		{ "dynnp_z" "dynn_Vartmberka" }
+		{ "dynnp_z" "dynn_ValdS_tejna" }
+		{ "dynnp_z" "dynn_BR_ezna" }
+		{ "dynnp_z" "dynn_RoZ_mberka" }
+		{ "dynnp_z" "dynn_Hradce" }
+		{ "dynnp_z" "dynn_Krumlova" }
+		{ "dynnp_z" "dynn_U_stI_" }
+		{ "dynnp_z" "dynn_DubE_" }
+		{ "dynnp_z" "dynn_FalknS_tejna" }
+		{ "dynnp_z" "dynn_LandS_tejna" }
+		{ "dynnp_ze" "dynn_StrA_Z_e" }
+		{ "dynnp_z" "dynn_Lomnice" }
+		{ "dynnp_z" "dynn_Tasova" }
+		{ "dynnp_z" "dynn_KR_iZ_anova" }
+		{ "dynnp_z" "dynn_BeneS_ova" }
+		{ "dynnp_z" "dynn_CvilI_na" }
+		{ "dynnp_z" "dynn_BechyN_e" }
+		{ "dynnp_z" "dynn_Tvorkova" }
+		{ "dynnp_z" "dynn_DE_dic" }
+		{ "dynnp_z" "dynn_KravaR_" }
+		{ "dynnp_z" "dynn_DiviS_ova" }
+		{ "dynnp_z" "dynn_KunS_tA_tu" }
+		{ "dynnp_ze" "dynn_Zbraslavi" }
+		{ "dynnp_z" "dynn_ObR_an" }
+		{ "dynnp_z" "dynn_PernS_tejna" }
+		"dynn_Benedid"
+		"dynn_LichovskY_"
+		{ "dynnp_z" "dynn_Boskovic" }
+		{ "dynnp_ze" "dynn_Sovince" }
+		{ "dynnp_ze" "dynn_SS_vA_benic" }
+		{ "dynnp_z" "dynn_Ojnic" }
+		{ "dynnp_z" "dynn_Hodic" }
+		{ "dynnp_z" "dynn_Drnovic" }
+		{ "dynnp_z" "dynn_VI_ckova" }
+		{ "dynnp_z" "dynn_NeC_tin" }
+		{ "dynnp_z" "dynn_Cimburka" }
+		{ "dynnp_z" "dynn_Homberka" }
+		{ "dynnp_z" "dynn_DonI_na" }
+		{ "dynnp_von" "dynn_Sternberg" }
+		#"dynn_Bavor_ze_Strakonic"
+		{ "dynnp_von" "dynn_Harrach" }
+		# new
+		"dynn_Hranitz"
+		"dynn_Buzitz"
+		"dynn_Kaunitz"
+		"dynn_Kinsti"
+		"dynn_Lobkovitz"
+		"dynn_Nostitz"
+		"dynn_Sadowsky"
+		"dynn_Zayic"
+		"dynn_Opawski"
+		"dynn_Krnowsky"
+		"dynn_Ratsiborksy"
+		"dynn_Rokitnic"
+		"dynn_Rinek"
+		"dynn_Moravsky"
+		{ "dynnp_z" "dynn_Kolowrat" }
+		{ "dynnp_z" "dynn_Podebrad" }
+		{ "dynnp_z" "dynn_Strakonic" }
+		{ "dynnp_z" "dynn_Mitrovic" }
+		{ "dynnp_z" "dynn_Hudenic" }
+		{ "dynnp_z" "dynn_Rozmitalu" }
+		{ "dynnp_z" "dynn_Onshow" }
+		{ "dynnp_z" "dynn_Vchynic" }
+		{ "dynnp_z" "dynn_Tetova" }
+	}
+
+	dynasty_names = {
+		"dynn_HrabiS_id"
+		#"dynn_Markvartid"
+		"dynn_VI_tkid"
+		"dynn_VrS_ovid"
+		#"dynn_Vratislavid"
+		"dynn_Bavorid"
+		"dynn_Harrach"
+		#"dynn_Drslavid"
+		"dynn_Hroznatid"
+		"dynn_Z_erotI_nid"
+		"dynn_Czernin"
+		#"dynn_BeneS_id"
+		#"dynn_OpavskY__PR_emyslid"
+		{ "dynnp_z" "dynn_Ronova" }
+		{ "dynnp_ze" "dynn_Z_erotI_na" }
+		{ "dynnp_z" "dynn_Kouic" }
+		{ "dynnp_ze" "dynn_PS_ova" }
+		{ "dynnp_z" "dynn_Buzic" }
+		{ "dynnp_z" "dynn_LipE_" }
+		{ "dynnp_z" "dynn_Lichtenburka" }
+		{ "dynnp_z" "dynn_Michalovic" }
+		{ "dynnp_z" "dynn_Lemberka" }
+		{ "dynnp_ze" "dynn_ZvI_R_etic" }
+		{ "dynnp_z" "dynn_Vartmberka" }
+		{ "dynnp_z" "dynn_ValdS_tejna" }
+		{ "dynnp_z" "dynn_BR_ezna" }
+		{ "dynnp_z" "dynn_RoZ_mberka" }
+		{ "dynnp_z" "dynn_Hradce" }
+		{ "dynnp_z" "dynn_Krumlova" }
+		{ "dynnp_z" "dynn_U_stI_" }
+		{ "dynnp_z" "dynn_DubE_" }
+		{ "dynnp_z" "dynn_FalknS_tejna" }
+		{ "dynnp_z" "dynn_LandS_tejna" }
+		{ "dynnp_ze" "dynn_StrA_Z_e" }
+		{ "dynnp_z" "dynn_Lomnice" }
+		{ "dynnp_z" "dynn_Tasova" }
+		{ "dynnp_z" "dynn_KR_iZ_anova" }
+		{ "dynnp_z" "dynn_BeneS_ova" }
+		{ "dynnp_z" "dynn_CvilI_na" }
+		{ "dynnp_z" "dynn_BechyN_e" }
+		{ "dynnp_z" "dynn_Tvorkova" }
+		{ "dynnp_z" "dynn_DE_dic" }
+		{ "dynnp_z" "dynn_KravaR_" }
+		{ "dynnp_z" "dynn_DiviS_ova" }
+		{ "dynnp_z" "dynn_KunS_tA_tu" }
+		{ "dynnp_ze" "dynn_Zbraslavi" }
+		{ "dynnp_z" "dynn_ObR_an" }
+		{ "dynnp_z" "dynn_PernS_tejna" }
+		"dynn_Benedid"
+		"dynn_LichovskY_"
+		{ "dynnp_z" "dynn_Boskovic" }
+		{ "dynnp_ze" "dynn_Sovince" }
+		{ "dynnp_ze" "dynn_SS_vA_benic" }
+		{ "dynnp_z" "dynn_Ojnic" }
+		{ "dynnp_z" "dynn_Hodic" }
+		{ "dynnp_z" "dynn_Drnovic" }
+		{ "dynnp_z" "dynn_VI_ckova" }
+		{ "dynnp_z" "dynn_NeC_tin" }
+		{ "dynnp_z" "dynn_Cimburka" }
+		{ "dynnp_z" "dynn_Homberka" }
+		{ "dynnp_z" "dynn_DonI_na" }
+		{ "dynnp_von" "dynn_Sternberg" }
+		#"dynn_Bavor_ze_Strakonic"
+		{ "dynnp_von" "dynn_Harrach" }
+		# new
+		"dynn_Hranitz"
+		"dynn_Buzitz"
+		"dynn_Kaunitz"
+		"dynn_Kinsti"
+		"dynn_Lobkovitz"
+		"dynn_Nostitz"
+		"dynn_Sadowsky"
+		"dynn_Zayic"
+		"dynn_Opawski"
+		"dynn_Krnowsky"
+		"dynn_Ratsiborksy"
+		"dynn_Rokitnic"
+		"dynn_Rinek"
+		"dynn_Moravsky"
+		{ "dynnp_z" "dynn_Kolowrat" }
+		{ "dynnp_z" "dynn_Podebrad" }
+		{ "dynnp_z" "dynn_Strakonic" }
+		{ "dynnp_z" "dynn_Mitrovic" }
+		{ "dynnp_z" "dynn_Hudenic" }
+		{ "dynnp_z" "dynn_Rozmitalu" }
+		{ "dynnp_z" "dynn_Onshow" }
+		{ "dynnp_z" "dynn_Vchynic" }
+		{ "dynnp_z" "dynn_Tetova" }
+	}
+	
+	male_names = {
+		50 = { # most common slavic
+			Bohuslav Boleslav BoR_ivoj BR_etislav Budislav CC_aslav CC_astolov Dalibor Dalimil
+			Dobromil Domaslav Drslav DrZ_islav JarohnEE_v JaromI_r Jaroslav Letoslav Mstidruh PR_ibyslav
+			Slavibor SobEE_slav SpytihnEE_v Svatobor Svatopluk VA_clav VladimI_r Vladislav Vnislav
+			VojtEE_ch Vratislav VS_ebor Zbyslav Zdislav
+		}
+		35 = { # most common german christian
+			Albrecht ArnoS_t BeneS_ BedR_ich DEE_polt DEE_tR_ich Jakub Jan JindR_ich Karel
+			KonrA_d Markvart MatouS_ Ota Otakar Prokop Zikmund VI_tek TobiA_S_
+		}
+		15 = { # other
+			Beneda BoC_ek BohuS_e BoreS_ BoR_ek Borut BoZ_ej BoZ_epor DiviS_ CzernI_n CC_enEE_k
+			CC_esta Chval DamaS_a DobeS_ HaS_ek HenI_k HrabiS_e Hroznata Hruta JaroS_ Jenec JeS_ek
+			JetR_ich Jimram JoS_t Kochan Kojata Kuna MEE_S_ek Mikul MikulA_S_ Milota Mutina NaC_erat
+			Nadej Nemoj NeuS_a Odolen OjI_R_ Prech PR_emysl Radosta Sezema SlA_vek Smil Strachkvas
+			SvEE_tlI_k Tas Tista Velen VeliS_ VlachnI_k Vok Vznata ZA_viS_ ZA_S_tita ZbynEE_k ZdI_k
+			Bernard Fridrich Havel Heralt Heriman Hynek JiR_I_ JiR_I_k KunrA_t Litolt Lupold
+			Martin OldR_ich OndR_ej PelhR_im Petr Rajmund Robert VilE_m
+		}    
+	}
+	female_names = {
+		50 = { # most common slavic
+			BlahomI_ra BlaZ_ena Bohumila Bohuslava BoZ_ena BoZ_islava BR_etislava CC_astava Dobromila
+			Dobroslava Domaslava DrahomI_ra Drahoslava Jaroslava PR_ibyslava Stanislava Vladislava
+			Vojslava Zdislava
+		}
+		35 = { # most common german christian
+			AlZ_bEE_ta AneZ_ka Anna Barbora Dorota EliS_ka Hedvika Helena Jana Johanka Judita KateR_ina
+			Marie VilemI_na Viola ZZ_ofie
+		}
+		15 = { # other
+			Bohdana Bohunka Ctislava Dobrava Doubravka Hodka Jitka LibuS_e Ludmila Mlada Olga Perchta
+			Radka Skonka Svatava Vlasta Zdenka
+			AdlE_ta BedR_iS_ka Berta CecI_lie Eufemie Gertruda Guta Justina KlA_ra Konstancie KristY_na
+			Kunhuta MarkE_ta Rejna Richeza Richsa SS_A_rka
+		}      
+	}
+	
+	dynasty_of_location_prefix = "dynnp_z"
+
+	
+
+	mercenary_names = {
+		{ name = "mercenary_company_freelances_of_brandys" }
+		{ name = "mercenary_company_army_of_the_ore" }
+		{ name = "mercenary_company_company_of_the_cruel_hand" }
+	}
+}
+
+name_list_polish = {
+
+	cadet_dynasty_names = {
+		"dynn_S_widnicki"
+		"dynn_Branicki"
+		"dynn_Borkowic"
+		"dynn_GL_ogowski"
+		"dynn_Bogorski"
+		"dynn_Lisy"
+		"dynn_Lewicki"
+		"dynn_Wielkopolski"
+		"dynn_Opolski"
+		"dynn_Czartoryski"
+		"dynn_Opawski"
+		"dynn_Halicki"
+		"dynn_Zahumski"
+		"dynn_Kujawski"
+		#"dynn_SubisL_awowic"
+		"dynn_Wolin"
+		"dynn_Koter"
+		"dynn_Woewodskij"
+		"dynn_Maciejewski"
+		"dynn_Urban"
+		"dynn_Starosz"
+		"dynn_SzczepaN_czyk"
+		"dynn_Jankowski"
+		"dynn_Nowak"
+		"dynn_Rudolf"
+		"dynn_Majek"
+		"dynn_PowaL_a"
+		#"dynn_Kujawski"
+		#"dynn_Chodkiewicz"
+		"dynn_JabL_onowski"
+		"dynn_Korecki"
+		"dynn_Lubomirski"
+		"dynn_MaL_achowski"
+		#"dynn_Olelkowicz"
+		"dynn_Ostrogski"
+		"dynn_Poniatowski"
+		"dynn_Potocki"
+		"dynn_RadziwiL_L_"
+		"dynn_Rzewuski"
+		"dynn_Sanguszko"
+		"dynn_Sapieha"
+		"dynn_Sobieski"
+		"dynn_WiS_niowiecki"
+		"dynn_Zamojski"
+		"dynn_Zbaraski"
+		"dynn_Awdaniec"
+		"dynn_CzetwertyN_ski"
+		"dynn_Skarbek"
+		"dynn_Brochwicz"
+		"dynn_DA_browa"
+		"dynn_DoL_E_ga"
+		"dynn_Doliwa"
+		"dynn_Godziemba"
+		"dynn_Gryf"
+		"dynn_Leliwa"
+		"dynn_Nowina"
+		"dynn_OdrowA_Z_"
+		"dynn_OgoN_czyk"
+		"dynn_PO_L_kozic"
+		"dynn_Pomian"
+		"dynn_Radwan"
+		"dynn_Rawicz"
+		"dynn_Rogala"
+		"dynn_Sulima"
+		"dynn_Szeliga"
+		"dynn_TrA_ba"
+		"dynn_DL_ugosz"
+		"dynn_Kmita"
+		"dynn_S_winka"
+		{ "dynnp_z" "dynn_WiS_licy" }
+		{ "dynnp_z" "dynn_Garbowa" }
+		{ "dynnp_z" "dynn_OleS_nicy" }
+		{ "dynnp_z" "dynn_Melsztyna" }
+		{ "dynnp_z" "dynn_TE_czyna" }
+		"dynn_Sypniewski"
+		#"dynn_OdrowA_Z_"
+		"dynn_LanckoroN_ski"
+		"dynn_Taczanowski"
+		"dynn_LubraN_ski"
+		"dynn_Tarnowski"
+		"dynn_Giese"
+		"dynn_Kolanka"
+		"dynn_Gamrat"
+		"dynn_MielZ_yN_ski"
+		"dynn_OgiN_ski"
+		"dynn_Dmowski"
+		#new
+		"dynn_Jakubowski"
+		"dynn_Szranki"
+		"dynn_Szyraj"
+		"dynn_Czarnoluski"
+		"dynn_Ciolek"
+		"dynn_Chelm"
+		"dynn_Tocki"
+		"dynn_Przerowa"
+		"dynn_Prozor"
+		"dynn_Strzelec"
+		"dynn_Sulkowski"
+		"dynn_Rogowicz"
+		"dynn_Paciorkowski"
+		"dynn_Pawolocki"
+		"dynn_Osoria"
+		"dynn_Msciszewski"
+		"dynn_Marcinczyk"
+		"dynn_Korbutowski"
+		"dynn_Deszpot"
+		"dynn_Zenowicz"
+		"dynn_Ilgowski"
+		"dynn_Dublanski"
+		"dynn_Duszek"
+		"dynn_Brodzic"
+		"dynn_Gawlowski"
+		"dynn_Gizycki"
+		"dynn_Holynski"
+		"dynn_Holnicki"
+		"dynn_Wronski"
+	}
+
+	dynasty_names = {
+		"dynn_S_widnicki"
+		"dynn_Branicki"
+		"dynn_Borkowic"
+		"dynn_GL_ogowski"
+		"dynn_Bogorski"
+		"dynn_Lisy"
+		"dynn_Lewicki"
+		"dynn_Wielkopolski"
+		"dynn_Opolski"
+		"dynn_Czartoryski"
+		"dynn_Opawski"
+		"dynn_Halicki"
+		"dynn_Zahumski"
+		"dynn_Kujawski"
+		#"dynn_SubisL_awowic"
+		"dynn_Wolin"
+		"dynn_Koter"
+		"dynn_Woewodskij"
+		"dynn_Maciejewski"
+		"dynn_Urban"
+		"dynn_Starosz"
+		"dynn_SzczepaN_czyk"
+		"dynn_Jankowski"
+		"dynn_Nowak"
+		"dynn_Rudolf"
+		"dynn_Majek"
+		"dynn_PowaL_a"
+		#"dynn_Kujawski"
+		#"dynn_Chodkiewicz"
+		"dynn_JabL_onowski"
+		"dynn_Korecki"
+		"dynn_Lubomirski"
+		"dynn_MaL_achowski"
+		#"dynn_Olelkowicz"
+		"dynn_Ostrogski"
+		"dynn_Poniatowski"
+		"dynn_Potocki"
+		"dynn_RadziwiL_L_"
+		"dynn_Rzewuski"
+		"dynn_Sanguszko"
+		"dynn_Sapieha"
+		"dynn_Sobieski"
+		"dynn_WiS_niowiecki"
+		"dynn_Zamojski"
+		"dynn_Zbaraski"
+		"dynn_Awdaniec"
+		"dynn_CzetwertyN_ski"
+		"dynn_Skarbek"
+		"dynn_Brochwicz"
+		"dynn_DA_browa"
+		"dynn_DoL_E_ga"
+		"dynn_Doliwa"
+		"dynn_Godziemba"
+		"dynn_Gryf"
+		"dynn_Leliwa"
+		"dynn_Nowina"
+		"dynn_OdrowA_Z_"
+		"dynn_OgoN_czyk"
+		"dynn_PO_L_kozic"
+		"dynn_Pomian"
+		"dynn_Radwan"
+		"dynn_Rawicz"
+		"dynn_Rogala"
+		"dynn_Sulima"
+		"dynn_Szeliga"
+		"dynn_TrA_ba"
+		"dynn_DL_ugosz"
+		"dynn_Kmita"
+		"dynn_S_winka"
+		{ "dynnp_z" "dynn_WiS_licy" }
+		{ "dynnp_z" "dynn_Garbowa" }
+		{ "dynnp_z" "dynn_OleS_nicy" }
+		{ "dynnp_z" "dynn_Melsztyna" }
+		{ "dynnp_z" "dynn_TE_czyna" }
+		"dynn_Sypniewski"
+		#"dynn_OdrowA_Z_"
+		"dynn_LanckoroN_ski"
+		"dynn_Taczanowski"
+		"dynn_LubraN_ski"
+		"dynn_Tarnowski"
+		"dynn_Giese"
+		"dynn_Kolanka"
+		"dynn_Gamrat"
+		"dynn_MielZ_yN_ski"
+		"dynn_OgiN_ski"
+		"dynn_Dmowski"
+		#new
+		"dynn_Jakubowski"
+		"dynn_Szranki"
+		"dynn_Szyraj"
+		"dynn_Czarnoluski"
+		"dynn_Ciolek"
+		"dynn_Chelm"
+		"dynn_Tocki"
+		"dynn_Przerowa"
+		"dynn_Prozor"
+		"dynn_Strzelec"
+		"dynn_Sulkowski"
+		"dynn_Rogowicz"
+		"dynn_Paciorkowski"
+		"dynn_Pawolocki"
+		"dynn_Osoria"
+		"dynn_Msciszewski"
+		"dynn_Marcinczyk"
+		"dynn_Korbutowski"
+		"dynn_Deszpot"
+		"dynn_Zenowicz"
+		"dynn_Ilgowski"
+		"dynn_Dublanski"
+		"dynn_Duszek"
+		"dynn_Brodzic"
+		"dynn_Gawlowski"
+		"dynn_Gizycki"
+		"dynn_Holynski"
+		"dynn_Holnicki"
+		"dynn_Wronski"
+	}
+
+	male_names = {
+		50 = { # most common slavic
+			Bezprym BoguchwaL_ BogumiL_ BolesL_aw BorzysL_aw BoZ_ydar Borzywoj Budziwuj CzcibO_r
+			Dalimir DobiesL_aw Dobrogost Dobromir Domawuj Gniewomir GoS_ciwuj Izbor JanisL_aw
+			JarosL_aw Kazimierz KrzesL_aw MiL_obrat MirosL_aw MS_ciwO_j NiezamysL_ SiemomysL_
+			StanisL_aw SulisL_aw S_wiE_topeL_k S_wiE_tosL_aw Twardomir WacL_aw WielisL_aw WiesL_aw
+			WL_adysL_aw Wojciech WszebO_r Zbigniew
+		}
+		35 = { # most common german christian
+			Aleksander Andrzej Bartosz Daniel Dytryk Gierolt Henryk JO_zef Jacek Jakub Jakusz Jan
+			Janko Janusz Jerzy Karol Konrad Stefan Tomasz Witosz
+		}
+		15 = { # other
+			Czyrzniech Doman Gniewosz MaL_owuj MasL_aw Mieszko MiL_osz Mszczuj Nadbor PeL_ka Piskla
+			Prendota PrzemysL_aw PrzybO_r Sambor SE_dzimir Sieciech Siemowit Skarbimir Snowid Spytko
+			Stoigniew Strasz Sulistryj SzczE_sny Trojden US_ciech WaN_ko Wawrzyniec Wojuta Zbyszko
+			Z_egota Z_elibrat
+			BoN_cza Eustachy Gaudenty Goszczon Imran Jaksa Krystyn Lambert Leszek Maciej MaC_ko
+			Marcin Mateusz MikoL_aj Odon PaweL_ Piotr SE_dziej Wincenty Wit Zygmunt
+		}
+	}
+	female_names = {
+		50 = { # most common slavic
+			BoZZena Dobrawa Dobroniega GrzymisL_awa Kazimiera LudmiL_a StanisL_awa S_wiE_tosL_awa
+			WisL_awa WojsL_awa WolisL_awa Wszebora WszemiL_a ZwinisL_awa
+		}
+		35 = { # most common german christian
+			Agnieszka Anastazja Anna Barbara Beata ElZ_bieta Helena Jadwiga Jolanta Krystyna Maria
+			Zofia
+		}
+		15 = { # other
+			Adelajda Adleta Aldona Alicja Diana Eufemia Eufrozyna Eugenia Gabriela Gertruda Judyta
+			Katarzyna Kenna Kinga Konstancja Kunegunda L_ucja Magdalena MaL_gorzata Matylda Rycheza
+			Ryksa Salomea Scholastyka Danuta Milena Nadzieja Nawoja Pechna Samboja S_miechna
+		}    
+	}
+	
+	dynasty_of_location_prefix = "dynnp_z"
+	
+	#patronym_suffix_male = "dynnpat_suf_owski"
+	#patronym_suffix_female = "dynnpat_suf_owska"
+
+
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 40
+	mat_grf_name_chance = 10
+	father_name_chance = 10
+	
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 40
+	mother_name_chance = 5
+	
+	
+
+	mercenary_names = {
+		{ name = "mercenary_company_druzynan_host" }
+		{ name = "mercenary_company_free_company_of_the_pospolite" }
+	}
+}
+
+name_list_polabian = {
+
+	cadet_dynasty_names = {
+		# Currently shared with Pommeranian
+		"dynn_Obroditen"
+		"dynn_Gryfita"
+		{ "dynnp_z" "dynn_Liubic" }
+		"dynn_S_wiE_ca"
+		"dynn_GrzymaL_a"
+		"dynn_JastrzE_biec"
+		"dynn_L_odzia"
+		"dynn_Lubicz"
+		"dynn_NaL_E_cz"
+		"dynn_Gniewosz"
+		{ "dynnp_z" "dynn_Roztoki" }
+		{ "dynnp_ze" "dynn_SL_upska" }
+		# new
+		"dynn_Vagr"
+		"dynn_Varn"
+		"dynn_Polab"
+		"dynn_Glinyan"
+		"dynn_Drevan"
+		"dynn_Butinz"
+		"dynn_Smolinz"
+		"dynn_Vilz"
+		"dynn_Ruyan"
+		"dynn_Rereg"
+		"dynn_Zitic"
+		"dynn_Arkon"
+		"dynn_Branir"
+		"dynn_Lab"
+		"dynn_Odra"
+		"dynn_Myslin"
+		"dynn_Gavol"
+		"dynn_Radag"
+		"dynn_Slawin"
+	}
+
+	dynasty_names = {
+		# Currently shared with Pommeranian
+		"dynn_Obroditen"
+		"dynn_Gryfita"
+		{ "dynnp_z" "dynn_Liubic" }
+		"dynn_S_wiE_ca"
+		"dynn_GrzymaL_a"
+		"dynn_JastrzE_biec"
+		"dynn_L_odzia"
+		"dynn_Lubicz"
+		"dynn_NaL_E_cz"
+		"dynn_Gniewosz"
+		{ "dynnp_z" "dynn_Roztoki" }
+		{ "dynnp_ze" "dynn_SL_upska" }
+		# new
+		"dynn_Vagr"
+		"dynn_Varn"
+		"dynn_Polab"
+		"dynn_Glinyan"
+		"dynn_Drevan"
+		"dynn_Butinz"
+		"dynn_Smolinz"
+		"dynn_Vilz"
+		"dynn_Ruyan"
+		"dynn_Rereg"
+		"dynn_Zitic"
+		"dynn_Arkon"
+		"dynn_Branir"
+		"dynn_Lab"
+		"dynn_Odra"
+		"dynn_Myslin"
+		"dynn_Gavol"
+		"dynn_Radag"
+		"dynn_Slawin"
+	}
+
+	male_names = {
+		50 = { # most common slavic
+			Bogislav Bohdan BohumI_r BolesL_aw BoR_ivoj BoZ_ydar BranimI_r Branislav BR_etislav
+			Budivoj BuR_islav CzcibO_r Czimislav Dobieslav Dobromil Jaromar Jaromil Jaromir Jaroslav
+			Kasimir KreS_imir KrzesL_aw Lubomir Miloslav Miroslav ML_cisL_aw Mstivoj Pribignev Pribislav
+			Przybyslaw Radomil Radomir Radoslav RatiboR_ Rostislav Sobieslav S_wiE_topeL_k Svietoslav
+			VojtE_ch VA_clav Vratislav Vitslav Wertislav VE_nceslav Wizlaw WL_adysL_aw WL_odzimierz
+			WL_odzisL_aw Zdislav Gostomysl
+		}
+		35 = { # most common german christian
+			Aleksander Andrzej BedR_ich Dytryk Jakub Jakusz Janusz JE_drzej JindR_ich Jozef Juliusz
+			Karel Kasper Krzysztof Mateusz Szczepan Szymon Tadeusz Tomasz Zygmunt Leszek PaweL_ Piotr
+		}
+		15 = { # other
+			Barnim BL_aZ_ej Blus Dervan Drosuk Kruto Lech Mieszko Miliduch MiL_osz Niklot Prendota
+			PrzemysL_ Sambor Stanislav Strasz SzczE_sny Tetzlav Urjasz Wawrzyniec WL_odek Zbigniew
+			ZdenE_k
+			Antoni Aron FrantiS_ek GaweL_ Grzegorz Havel Henry Jacenty Kajetan Kamil Kliment Kolman
+			Kornel Lucjan LudvI_k Marek Marian Martin Nikolaus OldR_ich OndR_ej Otokar Patryk
+			Ryszard Udalrich Walenty Wincenty Gostevid Gostomil
+		}        
+	}
+	female_names = {
+		50 = { # most common slavic
+			Bohuslava BoZ_ena Branislava Dagmar Danuta Dobrava Dobroniega Dobroslava Dragomira
+			Jarka Jarmila Ludmila Miroslava Radomila Radomira Radoslava Stanislava VA_clava
+			Vladislava Woislava Zvinislava
+		}
+		35 = { # most common german christian
+			Agnieszka AlZ_bE_ta Anna Irena Jadwiga Jolanta Katarina Krystyna Ksenia Lidia Maria
+			Milena Stefana Zofia UrS_ula
+		}
+		15 = { # other
+			AndE_la Berta Dorota Edyta Eva Geira Gertruda Gracja Halina Hanna Izabela Judyta
+			Kamila Kenna Kornelia Magda Magdalena Marcelina Martyna Mateja Matylda Pechna RO_za
+			Raina Regelinda Rycheza Salomea S_miechna SvE_tlana VE_ra ZdeN_ka
+		}              
+	}
+	
+	dynasty_of_location_prefix = "dynnp_z"
+
+	
+
+	mercenary_names = {
+		{ name = "mercenary_company_band_of_the_fallen_knez" }
+		{ name = "mercenary_company_company_of_the_stout_horse" }
+	}
+}
+
+name_list_slovien = {
+
+	cadet_dynasty_names = {
+		"dynn_KopC_iansky"
+		"dynn_Jasenovsky"
+		"dynn_Detvansky"
+		"dynn_Majcichovsky"
+		"dynn_Tekovsky"
+		"dynn_KubInsky"
+		"dynn_MikulC_icky"
+		"dynn_Pohansky"
+		"dynn_Ducovsky"
+		"dynn_DevI_nsky"
+		"dynn_Ostrihomsky"
+		"dynn_Kocelid"
+		{ "dynnp_z" "dynn_ModrE_" }
+		{ "dynnp_z" "dynn_HradiS_tEE_" }
+		"dynn_Velehradsky"
+		"dynn_Veligradsky"
+		"dynn_Vidensky"
+		#"dynn_Rastislavid"
+		#"dynn_Braslavid"
+		"dynn_Blatnohradsky"
+		"dynn_Beckovsky"
+		"dynn_ZemplI_nsky"
+		"dynn_TematI_nsky"
+		"dynn_Kostolansky"
+		"dynn_Bratislavsky"
+		"dynn_Tunavsky"
+		"dynn_BudI_nsky"
+		# new
+		"dynn_Rastislavsky"
+		"dynn_Braslavsky"
+	}
+
+	dynasty_names = {
+		"dynn_KopC_iansky"
+		"dynn_Jasenovsky"
+		"dynn_Detvansky"
+		"dynn_Majcichovsky"
+		"dynn_Tekovsky"
+		"dynn_KubInsky"
+		"dynn_MikulC_icky"
+		"dynn_Pohansky"
+		"dynn_Ducovsky"
+		"dynn_DevI_nsky"
+		"dynn_Ostrihomsky"
+		"dynn_Kocelid"
+		{ "dynnp_z" "dynn_ModrE_" }
+		{ "dynnp_z" "dynn_HradiS_tEE_" }
+		"dynn_Velehradsky"
+		"dynn_Veligradsky"
+		"dynn_Vidensky"
+		#"dynn_Rastislavid"
+		#"dynn_Braslavid"
+		"dynn_Blatnohradsky"
+		"dynn_Beckovsky"
+		"dynn_ZemplI_nsky"
+		"dynn_TematI_nsky"
+		"dynn_Kostolansky"
+		"dynn_Bratislavsky"
+		"dynn_Tunavsky"
+		"dynn_BudI_nsky"
+		# new
+		"dynn_Rastislavsky"
+		"dynn_Braslavsky"
+	}
+	
+	male_names = {
+		60 = { # most common
+			Boleslav BlahomI_r Bohumil BoromI_r Bohuslav BudimI_r Bratislav Budivoj C_estmI_r
+			Dobroslav DrahomI_r Horislav Jaromil JaromI_r Jaropluk Jaroslav KazimI_r Ladislav
+			LudovI_t Miroslav MojmI_r Mstislav Nitrabor Radislav RadomI_r Radoslav Radovan
+			Spitihnev Svatopluk Svatoslav VelemI_r Viacslav Vladimil VladimI_r Vojtech
+			Vratislav
+		}
+		30 = { # common
+			Bohodar Blahoslav BoZ_idar
+			Ctiboh Ctibor Dalibor Dobromil Drahoslav
+			Hrdoslav Hromislav Hviezdoslav ChvalimI_r
+			Krasomil LadomI_r Levoslav LubomI_r Ludomil Krasislav
+			Miloslav Miloboj MU_droslav OstromI_r Ostrivoj
+			Pravoslav Predslav PrelimI_r Raslav Rastislav
+			Ruslav SlavomI_r Stanislav Svatoboj SvetozA_r
+			Tichomil TichomI_r Tvrdomil Vieroslav Vitemir
+			Vlastibor Vlastislav Vojmil VyS_ebor
+			Zdravoslav Zdravomil Zemislav Zubrivoj ZvonimI_r ZelimI_r
+		}
+		10 = { # rare
+			BohuS_ BystrI_k DuS_an Gorazd ChrabroS_ Kocel LuboS_ Milan MiloS_ Polan Pribina Prisnec
+			Prokop SiloS_ Slavoj Sokol Svorad Stastko Vavrinec Vladan Vratko Zobor Igor Ivan Oleg
+		}      
+	}
+	female_names = {
+		60 = { # most common
+			BlahomI_ra Bohdana Bohumila Dobrohneva Dobromila Horislava Jarmila JaromI_ra Jaroslava
+			MilomI_ra Miloslava Miroslava Svatoslava Vlastimila VolimI_ra Vratislava
+		}
+		30 = { # common
+			BlaZ_ena Bratromila Ctislava Kostislava Kvetoslava KrA_snoroda Mislava Pravomila
+			Pravdomila SlavomI_ra VyS_emI_ra Zbislava Z_ivoslava
+		}
+		10 = { # rare
+			BoZZena Drzislava DuS_ana Kveta Lada Ladina Lesana Lubica Rodana SlA_vka Slavena
+			SvetluS_a Svietlana Viera Vlasta Zlata Zivana
+		}        
+	}
+	
+	dynasty_of_location_prefix = "dynnp_z"
+
+	
+
+	mercenary_names = {
+		{ name = "mercenary_company_freelances_of_velehrad" }
+		{ name = "mercenary_company_army_of_morava_bend" }
+		{ name = "mercenary_company_company_of_the_faithbearers" }
+	}
+}
+
+name_list_carantanian = {
+
+	cadet_dynasty_names = {
+		"dynn_Furlan"
+		"dynn_Golob"
+		"dynn_Korosec"
+		"dynn_Kos"
+		"dynn_Krajnc"
+		"dynn_Kirzman"
+		"dynn_Medved"
+		"dynn_Mlakar"
+		"dynn_Potocnik"
+		"dynn_Jelen"
+		"dynn_Kragel"
+		"dynn_Orel"
+		"dynn_Vran"
+		"dynn_Senica"
+		"dynn_Grabec"
+		"dynn_Cuk"
+		"dynn_Sova"
+		"dynn_Volk"
+		"dynn_Volcic"
+		"dynn_Lisjak"
+		"dynn_Jazbec"
+		"dynn_Zajc"
+		"dynn_Kosuta"
+		"dynn_Petelin"
+		"dynn_Macek"
+		"dynn_Phorjec"
+		"dynn_Bohorec"
+		"dynn_Karavankec"
+		"dynn_Gorjancic"
+		"dynn_Rogic"
+		"dynn_Prekmurjec"
+		"dynn_Goricko"
+		"dynn_Halozec"
+		"dynn_Kozjakec"
+		"dynn_Kozjansko"
+		"dynn_Dravec"
+		"dynn_Mura"
+		"dynn_Raba"
+		"dynn_Dravinja"
+		"dynn_Krka"
+		"dynn_Sava"
+		"dynn_Idrija"
+		"dynn_Bohinjec"
+		"dynn_Soca"
+		"dynn_Vipavec"
+		"dynn_Planinec"
+		"dynn_Hribovec"
+		"dynn_Panterec"
+		"dynn_Creniv"
+		"dynn_Rdeciv"
+		"dynn_Modriv"
+		"dynn_Beliv"
+		"dynn_Rumeniv"
+		"dynn_Zeleniv"
+	}
+
+	dynasty_names = {
+		"dynn_Furlan"
+		"dynn_Golob"
+		"dynn_Korosec"
+		"dynn_Kos"
+		"dynn_Krajnc"
+		"dynn_Kirzman"
+		"dynn_Medved"
+		"dynn_Mlakar"
+		"dynn_Potocnik"
+		"dynn_Jelen"
+		"dynn_Kragel"
+		"dynn_Orel"
+		"dynn_Vran"
+		"dynn_Senica"
+		"dynn_Grabec"
+		"dynn_Cuk"
+		"dynn_Sova"
+		"dynn_Volk"
+		"dynn_Volcic"
+		"dynn_Lisjak"
+		"dynn_Jazbec"
+		"dynn_Zajc"
+		"dynn_Kosuta"
+		"dynn_Petelin"
+		"dynn_Macek"
+		"dynn_Phorjec"
+		"dynn_Bohorec"
+		"dynn_Karavankec"
+		"dynn_Gorjancic"
+		"dynn_Rogic"
+		"dynn_Prekmurjec"
+		"dynn_Goricko"
+		"dynn_Halozec"
+		"dynn_Kozjakec"
+		"dynn_Kozjansko"
+		"dynn_Dravec"
+		"dynn_Mura"
+		"dynn_Raba"
+		"dynn_Dravinja"
+		"dynn_Krka"
+		"dynn_Sava"
+		"dynn_Idrija"
+		"dynn_Bohinjec"
+		"dynn_Soca"
+		"dynn_Vipavec"
+		"dynn_Planinec"
+		"dynn_Hribovec"
+		"dynn_Panterec"
+		"dynn_Creniv"
+		"dynn_Rdeciv"
+		"dynn_Modriv"
+		"dynn_Beliv"
+		"dynn_Rumeniv"
+		"dynn_Zeleniv"
+	}
+	
+	male_names = {
+		60 = { # most common
+			Bogomir Borislav Branimir Budislav Drago Dragomir Dragoslav Gojmir Jaroslav
+			Milislav Milivoj Milobrat Miroslav Mojmir Mistislav Pribimir Pribislav Radan
+			Radomir Radovan Sebimir Semislav Stanislav Svetoslav Tihomir Tomislav
+			Venceslav Vitomir Vladimir Vladislav Vratislav Zdeslav
+		}
+		30 = { # common
+			Bedoslav Bogdan Cestimir Dalibor Dobroslav Domicjan Domislav Gojimir Hotimir
+			Golomir Izeslav Izbor Kajtimar Kazimir Lastigoj Ljuban Ljudevit Macek Mesko
+			Milan Miran Nadovid Negomir Predoslav Radigoj Samo Sobodin Stojmir Svetomir
+			Svobodin Trebimir Unislav Vladan Vitan Vojnomir Zdebor Zlatoslav Ztoimar
+		}
+		10 = { # rare
+			Borut Ceh Cerno Cheitmar Chezil Cholo Cuk Etgar Golob Gorazd Grabec Hoten
+			Hraber Hrvat Inko Ivko Jans Jazbec Jelen Jurk Kadalhoh Kos Kosuta Kragel Kuono
+			Lenart Lisjak Liuzo Ljubotin Lupa Majoran Malej Maligoj Medved Nezko Nikola
+			Obren Omisl Orel Petanko Petelin Plas Plasl Pribic Prodan Ratzo Ruodo Semil
+			Senica Sigo Sizo Slavko Sova Srecan Stanko Stojan Stojko Svetko Trebin Uncat
+			Vecerin Venko Vetko Valhun Valtunk Valuk Vidojko Vladko Volcic Vran Walto
+			Wezil Zajc Zlatko Zverko
+		}   
+	}
+	female_names = {
+		60 = { # most common
+			Alena Barbora Danica Darja Dobrava Dobromila Dobroslava Domaslava Dragoslava
+			Godeslava Gradislava Granislava Jaroslava Kazimira Ljuboslava Ludmila Mila
+			Petra Pribislava Rada Slava Stana Svetoslava Viola Vladislava
+		}
+		30 = { # common
+			Anna Bogdana Bogumila Boguslava Bojana Dominika Irena Ivana Jelena Johanka Kalina
+			Ladana Lilijana Ljubica Ljubonega Ljutica Maja Manidraga Maria Milena Mira Olga
+			Pacemira Pribina Radana Romana Sava Sobemisla Stanislava Stislava Vilana Vlasta
+			Vojslava Zleslava Zorana
+		}
+		10 = { # rare
+			Antonia Belica Berta Blagica Brajna Bratrica Bratina Ctislava Deva Dejana Dorota
+			Doubravka Draga Dragica Eva Gertruda Gostinja Govica Guta Hana Hedvika Helena
+			Hodka Iva Jagoda Jana Janja Jasna Jelenka Jitka Judita Justina Kosana Lazica
+			Lepa Ljubota Ljuta Magdalena Malina Malinka Mica Miljana Mirjana Mislena
+			Neda Nedeljka Negota Novica Odola Pavica Pavla Perchta Petrissa Predobra
+			Pribislavka Prodana Radka Radojka Rajka Radonja Rejna Richeza Richsa
+			Semika Skonka Smiljana Stanila Stanka Stojana Stojna Svatava Tunca
+			Tunza Zdenka Zlatkoka Zorka Zverinja Zverica Zverka Zvezdana
+		}               
+	}
+	
+	dynasty_of_location_prefix = "dynnp_z"
+
+	
+
+	mercenary_names = {
+		{ name = "mercenary_company_band_of_the_panther" }
+		{ name = "mercenary_company_hammerbearers" }
+		{ name = "mercenary_company_carantanian_white_cloaks" }
+	}
+}

@@ -1,0 +1,330 @@
+﻿IlkhanMaleChange = {
+	type = character
+
+	text = {
+		trigger = {
+			OR = {
+				any_held_title = {
+					count >= 2
+					tier = tier_empire
+				}
+				any_held_title = {
+					count >= 3
+					tier = tier_kingdom
+				}
+				any_vassal = {
+					highest_held_title_tier >= tier_kingdom
+					count >= 3
+				}
+				any_spouse = {
+					OR = {
+						any_held_title = {
+							count >= 2
+							tier = tier_empire
+						}
+						any_held_title = {
+							count >= 3
+							tier = tier_kingdom
+						}
+						any_vassal = {
+							highest_held_title_tier >= tier_kingdom
+							count >= 3
+						}
+					}
+				}
+			}
+		}
+		localization_key = ilkhan
+	}
+	text = {
+		fallback = yes
+		localization_key = emperor_feudal_male_mongolic_default
+	}
+}
+
+IlkhanFemaleChange = {
+	type = character
+
+	text = {
+		trigger = {
+			OR = {
+				any_held_title = {
+					count >= 2
+					tier = tier_empire
+				}
+				any_held_title = {
+					count >= 3
+					tier = tier_kingdom
+				}
+				any_vassal = {
+					highest_held_title_tier >= tier_kingdom
+					count >= 3
+				}
+				any_spouse = {
+					OR = {
+						any_held_title = {
+							count >= 2
+							tier = tier_empire
+						}
+						any_held_title = {
+							count >= 3
+							tier = tier_kingdom
+						}
+						any_vassal = {
+							highest_held_title_tier >= tier_kingdom
+							count >= 3
+						}
+					}
+				}
+			}
+		}
+		localization_key = ilkhanum
+	}
+	text = {
+		fallback = yes
+		localization_key = emperor_feudal_female_mongolic_default
+	}
+}
+
+StrategMaleChange = {
+	type = character
+
+	text = {
+		trigger = {
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_held_title = {
+					count >= 2
+					tier = tier_duchy
+				}
+				any_spouse = {
+					OR = {
+						highest_held_title_tier >= tier_kingdom
+						any_held_title = {
+							count >= 2
+							tier = tier_duchy
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_feudal_male_byzantine_default
+	}
+	text = {
+		fallback = yes
+		localization_key = strateg_feudal_male_byzantine
+	}
+}
+
+StrategFemaleChange = {
+	type = character
+
+	text = {
+		trigger = {
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_held_title = {
+					count >= 2
+					tier = tier_duchy
+				}
+				any_spouse = {
+					OR = {
+						highest_held_title_tier >= tier_kingdom
+						any_held_title = {
+							count >= 2
+							tier = tier_duchy
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_feudal_female_byzantine_default
+	}
+	text = {
+		fallback = yes
+		localization_key = strateg_feudal_female_byzantine
+	}
+}
+
+StrategDuchyChange = {
+	type = character
+
+	text = {
+		trigger = {
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_held_title = {
+					count >= 2
+					tier = tier_duchy
+				}
+			}
+		}
+		localization_key = duchy_feudal_byzantine_default
+	}
+	text = {
+		fallback = yes
+		localization_key = strateg_duchy_feudal_byzantine
+	}
+}
+
+KatepanMaleChange = {
+	type = character
+
+	text = {
+		trigger = {
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_held_title = {
+					count >= 2
+					tier = tier_duchy
+				}
+				any_spouse = {
+					OR = {
+						highest_held_title_tier >= tier_kingdom
+						any_held_title = {
+							count >= 2
+							tier = tier_duchy
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_feudal_male_byzantine_default
+	}
+	text = {
+		fallback = yes
+		localization_key = katepan_male_default
+	}
+}
+
+KatepanFemaleChange = {
+	type = character
+
+	text = {
+		trigger = {
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_held_title = {
+					count >= 2
+					tier = tier_duchy
+				}
+				any_spouse = {
+					OR = {
+						highest_held_title_tier >= tier_kingdom
+						any_held_title = {
+							count >= 2
+							tier = tier_duchy
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_feudal_female_byzantine_default
+	}
+	text = {
+		fallback = yes
+		localization_key = katepan_female_default
+	}
+}
+
+KatepanDuchyChange = {
+	type = character
+
+	text = {
+		trigger = {
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_held_title = {
+					count >= 2
+					tier = tier_duchy
+				}
+			}
+		}
+		localization_key = duchy_feudal_byzantine_default
+	}
+	text = {
+		fallback = yes
+		localization_key = katepan_duchy_default
+	}
+}
+
+ArchonMaleChange = {
+	type = character
+
+	text = {
+		trigger = {
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_held_title = {
+					count >= 2
+					tier = tier_duchy
+				}
+				any_spouse = {
+					OR = {
+						highest_held_title_tier >= tier_kingdom
+						any_held_title = {
+							count >= 2
+							tier = tier_duchy
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_feudal_male_byzantine_default
+	}
+	text = {
+		fallback = yes
+		localization_key = archon_male_default
+	}
+}
+
+ArchonFemaleChange = {
+	type = character
+
+	text = {
+		trigger = {
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_held_title = {
+					count >= 2
+					tier = tier_duchy
+				}
+				any_spouse = {
+					OR = {
+						highest_held_title_tier >= tier_kingdom
+						any_held_title = {
+							count >= 2
+							tier = tier_duchy
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_feudal_female_byzantine_default
+	}
+	text = {
+		fallback = yes
+		localization_key = archon_female_default
+	}
+}
+
+ArchonDuchyChange = {
+	type = character
+
+	text = {
+		trigger = {
+			OR = {
+				highest_held_title_tier >= tier_kingdom
+				any_held_title = {
+					count >= 2
+					tier = tier_duchy
+				}
+			}
+		}
+		localization_key = duchy_feudal_byzantine_default
+	}
+	text = {
+		fallback = yes
+		localization_key = archon_duchy_default
+	}
+}

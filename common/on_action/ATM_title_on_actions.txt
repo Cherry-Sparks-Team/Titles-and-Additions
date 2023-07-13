@@ -1,0 +1,337 @@
+﻿#On actions about titles
+
+# All on-actions in this file provide scope:transfer_type unless otherwise noted
+# scope:transfer_type has the following permutations:
+# flag:conquest
+# flag:conquest_holy_war
+# flag:conquest_claim
+# flag:conquest_populist
+# flag:inheritance
+# flag:abdication
+# flag:destroyed
+# flag:created
+# flag:usurped
+# flag:granted
+# flag:revoked
+# flag:election
+# flag:independency
+# flag:returned
+# flag:leased_out
+# flag:lease_revoked
+# flag:faction_demand
+# flag:swear_fealty
+
+# A title is lost by a character
+# root = the old holder
+# scope:title = the title that changes hands
+# scope:new_holder = new holder.
+on_action_ATM_title_lost = {
+	trigger = {
+		scope:title = {
+			OR = {
+				this = title:d_sunni
+				this = title:d_shiite
+				this = title:d_masmudi
+				this = title:d_muwalladi
+				this = title:d_imami
+			}
+		}
+	}
+	on_actions = {
+		on_action_ATM_title_lost_caliphate_imamate_e_italy
+		on_action_ATM_title_lost_caliphate_imamate_e_persia
+		on_action_ATM_title_lost_caliphate_imamate_e_turan
+		on_action_ATM_title_lost_caliphate_imamate_e_arabia
+		on_action_ATM_title_lost_caliphate_imamate_e_maghreb
+		on_action_ATM_title_lost_caliphate_imamate_e_mali
+		on_action_ATM_title_lost_caliphate_imamate_e_guinea
+		on_action_ATM_title_lost_caliphate_imamate_e_kanem_bornu
+		on_action_ATM_title_lost_caliphate_imamate_e_ajuraan
+		on_action_ATM_title_lost_caliphate_imamate_e_abyssinia
+		on_action_ATM_title_lost_caliphate_imamate_e_india
+		on_action_ATM_title_lost_caliphate_imamate_e_tibet
+		on_action_ATM_title_lost_caliphate_imamate_e_rajastan
+		on_action_ATM_title_lost_caliphate_imamate_e_bengal
+		on_action_ATM_title_lost_caliphate_imamate_e_deccan
+		on_action_ATM_title_lost_caliphate_imamate_e_mongolia
+		on_action_ATM_title_lost_caliphate_imamate_e_tartaria
+		on_action_ATM_title_lost_caliphate_imamate_e_siberia
+		on_action_ATM_title_lost_caliphate_imamate_e_volga-ural
+		on_action_ATM_title_lost_caliphate_imamate_e_caspian-pontic_steppe
+		on_action_ATM_title_lost_caliphate_imamate_e_russia
+		on_action_ATM_title_lost_caliphate_imamate_e_scandinavia
+		on_action_ATM_title_lost_caliphate_imamate_e_wendish_empire
+		on_action_ATM_title_lost_caliphate_imamate_e_west_slavia
+		on_action_ATM_title_lost_caliphate_imamate_e_carpathia
+		on_action_ATM_title_lost_caliphate_imamate_e_britannia
+		on_action_ATM_title_lost_caliphate_imamate_e_france
+		on_action_ATM_title_lost_caliphate_imamate_e_spain
+		on_action_ATM_title_lost_caliphate_imamate_e_hre
+		on_action_ATM_title_lost_caliphate_imamate_e_byzantium
+		on_action_ATM_title_lost_caliphate_imamate_e_roman_empire
+		on_action_ATM_title_lost_caliphate_imamate_e_north_sea
+		on_action_ATM_title_lost_caliphate_imamate_e_latin_empire
+		on_action_ATM_title_lost_caliphate_imamate_e_bactria
+		on_action_ATM_title_lost_caliphate_imamate_e_germany
+		on_action_ATM_title_lost_caliphate_imamate_e_armenia
+		on_action_ATM_title_lost_caliphate_imamate_e_slavia
+		on_action_ATM_title_lost_caliphate_imamate_e_outremer
+		on_action_ATM_title_lost_caliphate_imamate_e_mongol_empire
+		on_action_ATM_title_lost_caliphate_imamate_e_golden_horde
+		on_action_ATM_title_lost_caliphate_imamate_e_ilkhanate
+		on_action_ATM_title_lost_caliphate_imamate_e_chagatai
+		on_action_ATM_title_lost_caliphate_imamate_e_black_horde
+		on_action_ATM_title_lost_caliphate_imamate_e_white_horde
+		on_action_ATM_title_lost_caliphate_imamate_e_aarlud_khanate
+		on_action_ATM_title_lost_caliphate_imamate_e_togskol_khanate
+		on_action_ATM_title_lost_caliphate_imamate_e_baruun_khanate
+		on_action_ATM_title_lost_caliphate_imamate_e_timurids
+		on_action_ATM_title_lost_caliphate_imamate_e_uyghur_khanate
+		on_action_ATM_title_lost_caliphate_imamate_e_kirghiz_khanate
+	}
+}
+
+# A title is transferred to a new character
+# root = the new holder
+# scope:title = the title that changes hands
+# scope:previous_holder = previous holder. Might be dead
+on_action_ATM_title_gain = {
+	on_actions = {
+		on_action_ATM_title_gain_caliphate
+		on_action_ATM_title_gain_imamate
+		on_action_ATM_title_gain_e_italy
+		on_action_ATM_title_gain_e_persia
+		on_action_ATM_title_gain_e_turan
+		on_action_ATM_title_gain_e_arabia
+		on_action_ATM_title_gain_e_maghreb
+		on_action_ATM_title_gain_e_mali
+		on_action_ATM_title_gain_e_guinea
+		on_action_ATM_title_gain_e_kanem_bornu
+		on_action_ATM_title_gain_e_ajuraan
+		on_action_ATM_title_gain_e_abyssinia
+		on_action_ATM_title_gain_e_india
+		on_action_ATM_title_gain_e_tibet
+		on_action_ATM_title_gain_e_rajastan
+		on_action_ATM_title_gain_e_bengal
+		on_action_ATM_title_gain_e_deccan
+		on_action_ATM_title_gain_e_mongolia
+		on_action_ATM_title_gain_e_tartaria
+		on_action_ATM_title_gain_e_siberia
+		on_action_ATM_title_gain_e_volga-ural
+		on_action_ATM_title_gain_e_caspian-pontic_steppe
+		on_action_ATM_title_gain_e_russia
+		on_action_ATM_title_gain_e_scandinavia
+		on_action_ATM_title_gain_e_wendish_empire
+		on_action_ATM_title_gain_e_west_slavia
+		on_action_ATM_title_gain_e_carpathia
+		on_action_ATM_title_gain_e_britannia
+		on_action_ATM_title_gain_e_france
+		on_action_ATM_title_gain_e_spain
+		on_action_ATM_title_gain_e_hre
+		on_action_ATM_title_gain_e_byzantium
+		on_action_ATM_title_gain_e_roman_empire
+		on_action_ATM_title_gain_e_north_sea
+		on_action_ATM_title_gain_e_latin_empire
+		on_action_ATM_title_gain_e_bactria
+		on_action_ATM_title_gain_e_germany
+		on_action_ATM_title_gain_e_armenia
+		on_action_ATM_title_gain_e_slavia
+		on_action_ATM_title_gain_e_outremer
+		on_action_ATM_title_gain_e_mongol_empire
+		on_action_ATM_title_gain_e_golden_horde
+		on_action_ATM_title_gain_e_ilkhanate
+		on_action_ATM_title_gain_e_chagatai
+		on_action_ATM_title_gain_e_black_horde
+		on_action_ATM_title_gain_e_white_horde
+		on_action_ATM_title_gain_e_aarlud_khanate
+		on_action_ATM_title_gain_e_togskol_khanate
+		on_action_ATM_title_gain_e_baruun_khanate
+		on_action_ATM_title_gain_e_timurids
+		on_action_ATM_title_gain_e_uyghur_khanate
+		on_action_ATM_title_gain_e_kirghiz_khanate
+	}
+}
+
+on_action_ATM_title_gain_caliphate = {
+	trigger = {
+		scope:title = {
+			OR = {
+				this = title:d_sunni
+				this = title:d_shiite
+				this = title:d_masmudi
+				this = title:d_muwalladi
+			}
+		}
+	}
+	on_actions = {
+		on_action_ATM_title_gain_caliphate_e_italy
+		on_action_ATM_title_gain_caliphate_e_persia
+		on_action_ATM_title_gain_caliphate_e_turan
+		on_action_ATM_title_gain_caliphate_e_arabia
+		on_action_ATM_title_gain_caliphate_e_maghreb
+		on_action_ATM_title_gain_caliphate_e_mali
+		on_action_ATM_title_gain_caliphate_e_guinea
+		on_action_ATM_title_gain_caliphate_e_kanem_bornu
+		on_action_ATM_title_gain_caliphate_e_ajuraan
+		on_action_ATM_title_gain_caliphate_e_abyssinia
+		on_action_ATM_title_gain_caliphate_e_india
+		on_action_ATM_title_gain_caliphate_e_tibet
+		on_action_ATM_title_gain_caliphate_e_rajastan
+		on_action_ATM_title_gain_caliphate_e_bengal
+		on_action_ATM_title_gain_caliphate_e_deccan
+		on_action_ATM_title_gain_caliphate_e_mongolia
+		on_action_ATM_title_gain_caliphate_e_tartaria
+		on_action_ATM_title_gain_caliphate_e_siberia
+		on_action_ATM_title_gain_caliphate_e_volga-ural
+		on_action_ATM_title_gain_caliphate_e_caspian-pontic_steppe
+		on_action_ATM_title_gain_caliphate_e_russia
+		on_action_ATM_title_gain_caliphate_e_scandinavia
+		on_action_ATM_title_gain_caliphate_e_wendish_empire
+		on_action_ATM_title_gain_caliphate_e_west_slavia
+		on_action_ATM_title_gain_caliphate_e_carpathia
+		on_action_ATM_title_gain_caliphate_e_britannia
+		on_action_ATM_title_gain_caliphate_e_france
+		on_action_ATM_title_gain_caliphate_e_spain
+		on_action_ATM_title_gain_caliphate_e_hre
+		on_action_ATM_title_gain_caliphate_e_byzantium
+		on_action_ATM_title_gain_caliphate_e_roman_empire
+		on_action_ATM_title_gain_caliphate_e_north_sea
+		on_action_ATM_title_gain_caliphate_e_latin_empire
+		on_action_ATM_title_gain_caliphate_e_bactria
+		on_action_ATM_title_gain_caliphate_e_germany
+		on_action_ATM_title_gain_caliphate_e_armenia
+		on_action_ATM_title_gain_caliphate_e_slavia
+		on_action_ATM_title_gain_caliphate_e_outremer
+		on_action_ATM_title_gain_caliphate_e_mongol_empire
+		on_action_ATM_title_gain_caliphate_e_golden_horde
+		on_action_ATM_title_gain_caliphate_e_ilkhanate
+		on_action_ATM_title_gain_caliphate_e_chagatai
+		on_action_ATM_title_gain_caliphate_e_black_horde
+		on_action_ATM_title_gain_caliphate_e_white_horde
+		on_action_ATM_title_gain_caliphate_e_aarlud_khanate
+		on_action_ATM_title_gain_caliphate_e_togskol_khanate
+		on_action_ATM_title_gain_caliphate_e_baruun_khanate
+		on_action_ATM_title_gain_caliphate_e_timurids
+		on_action_ATM_title_gain_caliphate_e_uyghur_khanate
+		on_action_ATM_title_gain_caliphate_e_kirghiz_khanate
+	}
+}
+
+on_action_ATM_title_gain_imamate = {
+	trigger = {
+		scope:title = {
+			this = title:d_imami
+		}
+	}
+	on_actions = {
+		on_action_ATM_title_gain_imamate_e_italy
+		on_action_ATM_title_gain_imamate_e_persia
+		on_action_ATM_title_gain_imamate_e_turan
+		on_action_ATM_title_gain_imamate_e_arabia
+		on_action_ATM_title_gain_imamate_e_maghreb
+		on_action_ATM_title_gain_imamate_e_mali
+		on_action_ATM_title_gain_imamate_e_guinea
+		on_action_ATM_title_gain_imamate_e_kanem_bornu
+		on_action_ATM_title_gain_imamate_e_ajuraan
+		on_action_ATM_title_gain_imamate_e_abyssinia
+		on_action_ATM_title_gain_imamate_e_india
+		on_action_ATM_title_gain_imamate_e_tibet
+		on_action_ATM_title_gain_imamate_e_rajastan
+		on_action_ATM_title_gain_imamate_e_bengal
+		on_action_ATM_title_gain_imamate_e_deccan
+		on_action_ATM_title_gain_imamate_e_mongolia
+		on_action_ATM_title_gain_imamate_e_tartaria
+		on_action_ATM_title_gain_imamate_e_siberia
+		on_action_ATM_title_gain_imamate_e_volga-ural
+		on_action_ATM_title_gain_imamate_e_caspian-pontic_steppe
+		on_action_ATM_title_gain_imamate_e_russia
+		on_action_ATM_title_gain_imamate_e_scandinavia
+		on_action_ATM_title_gain_imamate_e_wendish_empire
+		on_action_ATM_title_gain_imamate_e_west_slavia
+		on_action_ATM_title_gain_imamate_e_carpathia
+		on_action_ATM_title_gain_imamate_e_britannia
+		on_action_ATM_title_gain_imamate_e_france
+		on_action_ATM_title_gain_imamate_e_spain
+		on_action_ATM_title_gain_imamate_e_hre
+		on_action_ATM_title_gain_imamate_e_byzantium
+		on_action_ATM_title_gain_imamate_e_roman_empire
+		on_action_ATM_title_gain_imamate_e_north_sea
+		on_action_ATM_title_gain_imamate_e_latin_empire
+		on_action_ATM_title_gain_imamate_e_bactria
+		on_action_ATM_title_gain_imamate_e_germany
+		on_action_ATM_title_gain_imamate_e_armenia
+		on_action_ATM_title_gain_imamate_e_slavia
+		on_action_ATM_title_gain_imamate_e_outremer
+		on_action_ATM_title_gain_imamate_e_mongol_empire
+		on_action_ATM_title_gain_imamate_e_golden_horde
+		on_action_ATM_title_gain_imamate_e_ilkhanate
+		on_action_ATM_title_gain_imamate_e_chagatai
+		on_action_ATM_title_gain_imamate_e_black_horde
+		on_action_ATM_title_gain_imamate_e_white_horde
+		on_action_ATM_title_gain_imamate_e_aarlud_khanate
+		on_action_ATM_title_gain_imamate_e_togskol_khanate
+		on_action_ATM_title_gain_imamate_e_baruun_khanate
+		on_action_ATM_title_gain_imamate_e_timurids
+		on_action_ATM_title_gain_imamate_e_uyghur_khanate
+		on_action_ATM_title_gain_imamate_e_kirghiz_khanate
+	}
+}
+
+# A title is destroyed
+# root = the holder before destruction
+# scope:landed_title = the title that is being destroyed
+# Does *not* provide scope:transfer_type
+on_action_ATM_title_destroyed = {
+	on_actions = {
+		on_action_ATM_title_destroyed_e_italy
+		on_action_ATM_title_destroyed_e_persia
+		on_action_ATM_title_destroyed_e_turan
+		on_action_ATM_title_destroyed_e_arabia
+		on_action_ATM_title_destroyed_e_maghreb
+		on_action_ATM_title_destroyed_e_mali
+		on_action_ATM_title_destroyed_e_guinea
+		on_action_ATM_title_destroyed_e_kanem_bornu
+		on_action_ATM_title_destroyed_e_ajuraan
+		on_action_ATM_title_destroyed_e_abyssinia
+		on_action_ATM_title_destroyed_e_india
+		on_action_ATM_title_destroyed_e_tibet
+		on_action_ATM_title_destroyed_e_rajastan
+		on_action_ATM_title_destroyed_e_bengal
+		on_action_ATM_title_destroyed_e_deccan
+		on_action_ATM_title_destroyed_e_mongolia
+		on_action_ATM_title_destroyed_e_tartaria
+		on_action_ATM_title_destroyed_e_siberia
+		on_action_ATM_title_destroyed_e_volga-ural
+		on_action_ATM_title_destroyed_e_caspian-pontic_steppe
+		on_action_ATM_title_destroyed_e_russia
+		on_action_ATM_title_destroyed_e_scandinavia
+		on_action_ATM_title_destroyed_e_wendish_empire
+		on_action_ATM_title_destroyed_e_west_slavia
+		on_action_ATM_title_destroyed_e_carpathia
+		on_action_ATM_title_destroyed_e_britannia
+		on_action_ATM_title_destroyed_e_france
+		on_action_ATM_title_destroyed_e_spain
+		on_action_ATM_title_destroyed_e_hre
+		on_action_ATM_title_destroyed_e_byzantium
+		on_action_ATM_title_destroyed_e_roman_empire
+		on_action_ATM_title_destroyed_e_north_sea
+		on_action_ATM_title_destroyed_e_latin_empire
+		on_action_ATM_title_destroyed_e_bactria
+		on_action_ATM_title_destroyed_e_germany
+		on_action_ATM_title_destroyed_e_armenia
+		on_action_ATM_title_destroyed_e_slavia
+		on_action_ATM_title_destroyed_e_outremer
+		on_action_ATM_title_destroyed_e_mongol_empire
+		on_action_ATM_title_destroyed_e_golden_horde
+		on_action_ATM_title_destroyed_e_ilkhanate
+		on_action_ATM_title_destroyed_e_chagatai
+		on_action_ATM_title_destroyed_e_black_horde
+		on_action_ATM_title_destroyed_e_white_horde
+		on_action_ATM_title_destroyed_e_aarlud_khanate
+		on_action_ATM_title_destroyed_e_togskol_khanate
+		on_action_ATM_title_destroyed_e_baruun_khanate
+		on_action_ATM_title_destroyed_e_timurids
+		on_action_ATM_title_destroyed_e_uyghur_khanate
+		on_action_ATM_title_destroyed_e_kirghiz_khanate
+	}
+}

@@ -1,0 +1,154 @@
+﻿namespace = atm_event
+
+#decision_unite_the_eastern_slavs
+# 0001 - I united the eastern slavs
+# 0002 - Someone else united the eastern slavs
+# 0003 - I reclaim Polabia region
+# 0004 - I unite Moravia and Bohemia
+# 0005 - I claime Baltia
+# 0006 - I claime Steppes
+# 0007 - I claime Baltia Lithuanian
+
+#I united the eastern slavs
+atm_event.0001 = {
+	type = character_event
+	title = atm_event.0001.t
+	desc = atm_event.0001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:eastern_slav_uniter
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		unite_the_eastern_slavs_decision_effects = yes
+	}
+	
+	option = {
+		name = atm_event.0001.a
+		
+		give_nickname = nick_the_rus_unifier
+	}
+}
+
+#Someone united the eastern slavs
+atm_event.0002 = {
+	type = character_event
+	title = atm_event.0001.t
+	desc = atm_event.0002.desc
+	theme = realm
+	left_portrait = {
+		character = scope:eastern_slav_uniter
+		animation = personality_honorable
+	}
+	
+	option = {
+		name = name_i_see
+	}
+}
+
+#I reclaim Polabia region
+atm_event.0003 = {
+	type = character_event
+	title = atm_event.0003.t
+	desc = atm_event.0003.desc
+	theme = realm
+	left_portrait = {
+		character = scope:polabia_region_reclaimer
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		reclaim_polabia_region_decision_effects = yes
+	}
+	
+	option = {
+		name = atm_event.0003.a
+	}
+}
+
+#I unite Moravia and Bohemia
+atm_event.0004 = {
+	type = character_event
+	title = atm_event.0004.t
+	desc = atm_event.0004.desc
+	theme = realm
+	left_portrait = {
+		character = scope:crowns_bohemia_moravia_uniter
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		unite_crowns_bohemia_moravia_decision_effects = yes
+	}
+	
+	option = {
+		name = atm_event.0004.a
+	}
+}
+
+#I claime Baltia 
+atm_event.0005 = {
+	type = character_event
+	title = atm_event.0005.t
+	desc = atm_event.0005.desc
+	theme = realm
+	left_portrait = {
+		character = scope:baltia_region_claimer
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		claim_baltia_region_decision_effects = yes
+	}
+	
+	option = {
+		name = atm_event.0005.a
+	}
+}
+
+#I claime Steppes 
+atm_event.0006 = {
+	type = character_event
+	title = atm_event.0006.t
+	desc = atm_event.0006.desc
+	theme = realm
+	left_portrait = {
+		character = scope:steppes_region_claimer
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		claim_steppes_region_decision_effects = yes
+	}
+	
+	option = {
+		name = atm_event.0006.a
+	}
+}
+
+#I claime Baltia Lithuanian 
+atm_event.0007 = {
+	type = character_event
+	title = atm_event.0007.t
+	desc = atm_event.0007.desc
+	theme = realm
+	left_portrait = {
+		character = scope:baltia_region_lithuanian_claimer
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		claim_baltia_region_lithuanian_decision_effects = yes
+	}
+	
+	option = {
+		name = atm_event.0007.a
+	}
+}

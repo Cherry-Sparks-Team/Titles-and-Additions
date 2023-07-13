@@ -1,0 +1,378 @@
+﻿###DECISIONS LIST###
+
+#unite_the_eastern_slavs_decision
+#reclaim_polabia_region_decision
+#unite_crowns_bohemia_moravia_decision
+#claim_baltia_region_decision
+#claim_steppes_region_decision
+#claim_baltia_region_lithuanian_decision
+
+unite_the_eastern_slavs_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 120
+	desc = unite_the_eastern_slavs_decision_desc
+
+	is_shown = {
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:unite_the_eastern_slavs_decision
+			}
+		}
+	}
+
+	is_valid = {
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		completely_controls_region = custom_east_slavia #Has de jure Lands
+		OR = {
+			has_primary_title = title:k_ruthenia
+			has_primary_title = title:k_novgorod
+			has_primary_title = title:k_white_rus
+			has_primary_title = title:k_opolye
+			has_primary_title = title:k_galicia-volhynia
+			AND = {
+				has_primary_title = title:e_russia
+				OR = {
+					has_title = title:k_ruthenia
+					has_title = title:k_novgorod
+					has_title = title:k_white_rus
+					has_title = title:k_opolye
+					has_title = title:k_galicia-volhynia
+				}
+			}
+		}
+	}
+
+	effect = {
+		save_scope_as = eastern_slav_uniter
+
+		show_as_tooltip = { unite_the_eastern_slavs_decision_effects = yes }
+
+		#Events
+		trigger_event = atm_event.0001
+		every_player = {
+			limit = {
+				NOT = { this = scope:eastern_slav_uniter }
+				is_within_diplo_range = { CHARACTER = scope:eastern_slav_uniter }
+			}
+			trigger_event = atm_event.0002
+		}
+
+		#Can only be done once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:unite_the_eastern_slavs_decision
+		}
+		set_global_variable = {
+			name = unite_the_eastern_slavs_decision
+			value = scope:eastern_slav_uniter
+		}
+		#set_global_variable = {
+		#	name = unite_the_eastern_slavs_decision_title
+		#	value = scope:eastern_slav_uniter.primary_title
+		#}
+	}
+	
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+reclaim_polabia_region_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 120
+	desc = reclaim_polabia_region_decision_desc
+
+	is_shown = {
+		culture = { has_cultural_pillar = heritage_west_slavic }
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:reclaim_polabia_region_decision
+			}
+		}
+		# in 867 scenario already in Pomerania kingdom
+		game_start_date >= 1066.09.15
+	}
+
+	is_valid = {
+		culture = { has_cultural_pillar = heritage_west_slavic }
+		completely_controls = title:d_lausitz
+		completely_controls = title:d_meissen
+		OR = {
+			has_primary_title = title:k_pomerania
+			has_primary_title = title:k_poland
+			has_primary_title = title:k_bohemia
+			has_primary_title = title:k_moravia
+			AND = {
+				has_primary_title = title:e_wendish_empire
+				OR = {
+					has_title = title:k_pomerania
+					has_title = title:k_poland
+					has_title = title:k_bohemia
+					has_title = title:k_moravia
+				}
+			}
+		}
+	}
+
+	effect = {
+		save_scope_as = polabia_region_reclaimer
+
+		show_as_tooltip = { reclaim_polabia_region_decision_effects = yes }
+
+		#Events
+		trigger_event = atm_event.0003
+
+		#Can only be done once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:reclaim_polabia_region_decision
+		}
+		#set_global_variable = {
+		#	name = reclaim_polabia_region_decision
+		#	value = scope:polabia_region_reclaimer
+		#}
+	}
+	
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+unite_crowns_bohemia_moravia_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 120
+	desc = unite_crowns_bohemia_moravia_decision_desc
+
+	is_shown = {
+		culture = { has_cultural_pillar = heritage_west_slavic }
+		OR = {
+			has_primary_title = title:k_bohemia
+			has_primary_title = title:k_moravia
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:unite_crowns_bohemia_moravia_decision
+			}
+		}
+		# in 1066 scenario Moravia kingdom has not exists
+		NOT = { game_start_date >= 1066.09.15 }
+	}
+
+	is_valid = {
+		culture = { has_cultural_pillar = heritage_west_slavic }
+		completely_controls = title:k_bohemia
+		completely_controls = title:k_moravia
+		OR = {
+			has_primary_title = title:k_bohemia
+			has_primary_title = title:k_moravia
+		}
+	}
+
+	effect = {
+		save_scope_as = crowns_bohemia_moravia_uniter
+
+		show_as_tooltip = { unite_crowns_bohemia_moravia_decision_effects = yes }
+
+		#Events
+		trigger_event = atm_event.0004
+
+		#Can only be done once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:unite_crowns_bohemia_moravia_decision
+		}
+		#set_global_variable = {
+		#	name = unite_crowns_bohemia_moravia_decision
+		#	value = scope:crowns_bohemia_moravia_uniter
+		#}
+	}
+	
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+claim_baltia_region_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 120
+	desc = claim_baltia_region_decision_desc
+
+	is_shown = {
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		has_primary_title = title:e_russia
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:claim_baltia_region_decision
+			}
+		}
+	}
+
+	is_valid = {
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		completely_controls = title:k_esthonia
+		completely_controls = title:k_lithuania
+		has_primary_title = title:e_russia
+	}
+
+	effect = {
+		save_scope_as = baltia_region_claimer
+
+		show_as_tooltip = { claim_baltia_region_decision_effects = yes }
+
+		#Events
+		trigger_event = atm_event.0005
+
+		#Can only be done once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:claim_baltia_region_decision
+		}
+		#set_global_variable = {
+		#	name = claim_baltia_region_decision
+		#	value = scope:baltia_region_claimer
+		#}
+	}
+	
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+claim_steppes_region_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 120
+	desc = claim_steppes_region_decision_desc
+
+	is_shown = {
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		has_primary_title = title:e_russia
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:claim_steppes_region_decision
+			}
+		}
+	}
+
+	is_valid = {
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		completely_controls = title:k_mordvinia
+		completely_controls = title:k_pontic_steppe
+		has_primary_title = title:e_russia
+	}
+
+	effect = {
+		save_scope_as = steppes_region_claimer
+
+		show_as_tooltip = { claim_steppes_region_decision_effects = yes }
+
+		#Events
+		trigger_event = atm_event.0006
+
+		#Can only be done once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:claim_steppes_region_decision
+		}
+		#set_global_variable = {
+		#	name = claim_steppes_region_decision
+		#	value = scope:steppes_region_claimer
+		#}
+	}
+	
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+claim_baltia_region_lithuanian_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 120
+	desc = claim_baltia_region_decision_desc
+
+	is_shown = {
+		culture = { has_cultural_pillar = heritage_baltic }
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:claim_baltia_region_lithuanian_decision
+			}
+		}
+	}
+
+	is_valid = {
+		culture = { has_cultural_pillar = heritage_baltic }
+		OR = {
+			has_primary_title = title:k_lithuania
+			AND = {
+				has_primary_title = title:e_wendish_empire
+				has_title = title:k_lithuania
+			}
+		}
+		completely_controls = title:k_esthonia
+	}
+
+	effect = {
+		save_scope_as = baltia_region_lithuanian_claimer
+
+		show_as_tooltip = { claim_baltia_region_lithuanian_decision_effects = yes }
+
+		#Events
+		trigger_event = atm_event.0007
+
+		#Can only be done once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:claim_baltia_region_lithuanian_decision
+		}
+		#set_global_variable = {
+		#	name = claim_baltia_region_lithuanian_decision
+		#	value = scope:baltia_region_lithuanian_claimer
+		#}
+	}
+	
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

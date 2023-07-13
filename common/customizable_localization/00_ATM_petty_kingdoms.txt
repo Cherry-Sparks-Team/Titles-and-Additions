@@ -1,0 +1,314 @@
+﻿DuchyFeudalIndependentKingdom = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_feudal_western
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_default
+	}
+}
+
+DuchyFeudalIndependentKingdomBrythonic = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_feudal_brythonic
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_default
+	}
+}
+
+DuchyFeudalIndependentKingdomNorthGermanic = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_feudal_western
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_north_germanic_default
+	}
+}
+
+DuchyTribalIndependentKingdomNorthGermanic = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_tribal_north_germanic
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_north_germanic_default
+	}
+}
+
+DuchyFeudalIndependentKingdomEastAfrican = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_feudal_east_african
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_east_african_default
+	}
+}
+
+DuchyFeudalIndependentKingdomTibetan = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_feudal_tibetan
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_tibetan_default
+	}
+}
+
+DuchyFeudalIndependentKingdomTurkic = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_feudal_turkic
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_turkic_default
+	}
+}
+
+DuchyFeudalIndependentKingdomMongolic = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_feudal_mongolic
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_turkic_default
+	}
+}
+
+DuchyFeudalIndependentKingdomUyghuric = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_feudal_turkic
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_uyghuric_default
+	}
+}
+
+DuchyFeudalIndependentKingdomKirghizic = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_feudal_turkic
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_kirghizic_default
+	}
+}
+
+DuchyFeudalIndependentKingdomKarlukic = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_feudal_turkic
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_karlukic_default
+	}
+}
+
+DuchyFeudalIndependentKingdomTurkishic = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_feudal_turkishic
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_turkishic_default
+	}
+}
+
+DuchyFeudalIndependentKingdomIranian = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_feudal_iranian
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_iranian_default
+	}
+}
+
+DuchyFeudalIndependentKingdomSogdianic = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_feudal_sogdianic
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_sogdianic_default
+	}
+}
+
+DuchyTribalIndependentKingdomAlan = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_tribal_alan
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_tribal_independent_kingdom_alan_default
+	}
+}
+
+DuchyFeudalIndependentKingdomByzantine = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_feudal_byzantine_default
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_byzantine_default
+	}
+}
+
+DuchyFeudalIndependentKingdomBulgarian = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_feudal_south_slavic_default
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_byzantine_default
+	}
+}
+
+DuchyFeudalIndependentKingdomByzantineAltGeorgian = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_feudal_georgian_default
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_byzantine_alt_default
+	}
+}
+
+DuchyFeudalIndependentKingdomByzantineAltArmenian = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_feudal_armenian_default
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_byzantine_alt_default
+	}
+}
+
+DuchyClanIndependentKingdomSlavic = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_clan_slavic
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_clan_independent_kingdom_slavic_default
+	}
+}
+
+DuchyFeudalIndependentKingdomRomanic = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_feudal_byzantine_default
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_feudal_independent_kingdom_romanic_default
+	}
+}

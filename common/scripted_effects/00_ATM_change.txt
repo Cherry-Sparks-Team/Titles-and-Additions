@@ -1,0 +1,300 @@
+﻿unite_the_western_slavs_decision_effects = {
+	#Prestige
+	add_prestige = massive_prestige_gain
+
+	#Innovations
+	culture = {
+		add_random_innovation = culture_group_military
+		add_random_innovation = culture_group_civic
+	}
+
+	#Laws
+	if = {
+		limit = { has_realm_law = crown_authority_0 }
+		add_realm_law_skip_effects = crown_authority_2
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_realm_law = crown_authority_1
+				has_realm_law = crown_authority_2
+			}
+		}
+		add_realm_law_skip_effects = crown_authority_3
+	}
+
+	#Handle de jure drift & destructions of other kingdom titles
+	title:k_poland = { add_to_list = west_slavic_kingdoms }
+	title:k_pomerania = { add_to_list = west_slavic_kingdoms }
+	title:k_bohemia = { add_to_list = west_slavic_kingdoms }
+	title:k_sorbia = { add_to_list = west_slavic_kingdoms }
+	title:k_moravia = { add_to_list = west_slavic_kingdoms }
+
+	if = {
+		limit = { highest_held_title_tier = tier_kingdom }
+		custom_tooltip = unite_the_western_slavs_decision_titles_tt
+	}
+	else = { custom_tooltip = unite_the_western_slavs_decision_titles_empire_tt }
+	hidden_effect = {
+		scope:western_slav_uniter = {
+			if = {
+				limit = { 
+					has_primary_title = title:e_wendish_empire
+					has_title = title:k_pomerania
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_pomerania }
+						scope:western_slav_uniter = { completely_controls = prev }
+					}
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_duchy }
+						set_de_jure_liege_title = title:k_pomerania
+					}
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_pomerania }
+					}
+					scope:western_slav_uniter = { destroy_title = prev }
+				}
+			}
+			else_if = {
+				limit = { 
+					has_primary_title = title:e_wendish_empire
+					has_title = title:k_poland
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_poland }
+						scope:western_slav_uniter = { completely_controls = prev }
+					}
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_duchy }
+						set_de_jure_liege_title = title:k_poland
+					}
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_poland }
+					}
+					scope:western_slav_uniter = { destroy_title = prev }
+				}
+			}
+			else_if = {
+				limit = { 
+					has_primary_title = title:e_wendish_empire
+					has_title = title:k_bohemia
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_bohemia }
+						scope:western_slav_uniter = { completely_controls = prev }
+					}
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_duchy }
+						set_de_jure_liege_title = title:k_bohemia
+					}
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_bohemia }
+					}
+					scope:western_slav_uniter = { destroy_title = prev }
+				}
+			}
+			else_if = {
+				limit = { 
+					has_primary_title = title:e_wendish_empire
+					has_title = title:k_sorbia
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_sorbia }
+						scope:western_slav_uniter = { completely_controls = prev }
+					}
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_duchy }
+						set_de_jure_liege_title = title:k_sorbia
+					}
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_sorbia }
+					}
+					scope:western_slav_uniter = { destroy_title = prev }
+				}
+			}
+			else_if = {
+				limit = { 
+					has_primary_title = title:e_wendish_empire
+					has_title = title:k_moravia
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_moravia }
+						scope:western_slav_uniter = { completely_controls = prev }
+					}
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_duchy }
+						set_de_jure_liege_title = title:k_moravia
+					}
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_moravia }
+					}
+					scope:western_slav_uniter = { destroy_title = prev }
+				}
+			}
+			else_if = {
+				limit = { 
+					has_primary_title = title:e_hre
+					has_title = title:k_bohemia
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_bohemia }
+						scope:western_slav_uniter = { completely_controls = prev }
+					}
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_duchy }
+						set_de_jure_liege_title = title:k_bohemia
+					}
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_bohemia }
+					}
+					scope:western_slav_uniter = { destroy_title = prev }
+				}
+			}
+			else_if = {
+				limit = { 
+					has_primary_title = title:e_hre
+					has_title = title:k_sorbia
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_sorbia }
+						scope:western_slav_uniter = { completely_controls = prev }
+					}
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_duchy }
+						set_de_jure_liege_title = title:k_sorbia
+					}
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_sorbia }
+					}
+					scope:western_slav_uniter = { destroy_title = prev }
+				}
+			}
+			else_if = {
+				limit = { 
+					has_primary_title = title:e_hre
+					has_title = title:k_moravia
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_moravia }
+						scope:western_slav_uniter = { completely_controls = prev }
+					}
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_duchy }
+						set_de_jure_liege_title = title:k_moravia
+					}
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_moravia }
+					}
+					scope:western_slav_uniter = { destroy_title = prev }
+				}
+			}
+			else_if = {
+				limit = { 
+					has_primary_title = title:e_hre
+					has_title = title:k_pomerania
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_pomerania }
+						scope:western_slav_uniter = { completely_controls = prev }
+					}
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_duchy }
+						set_de_jure_liege_title = title:k_pomerania
+					}
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_pomerania }
+					}
+					scope:western_slav_uniter = { destroy_title = prev }
+				}
+			}
+			else_if = {
+				limit = { 
+					has_primary_title = title:e_hre
+					has_title = title:k_poland
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_poland }
+						scope:western_slav_uniter = { completely_controls = prev }
+					}
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_duchy }
+						set_de_jure_liege_title = title:k_poland
+					}
+				}
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = title:k_poland }
+					}
+					scope:western_slav_uniter = { destroy_title = prev }
+				}
+			}
+			else = {
+				every_in_list = {
+					list = west_slavic_kingdoms
+					limit = {
+						NOT = { this = scope:western_slav_uniter.primary_title }
+						scope:western_slav_uniter = { completely_controls = prev }
+					}
+
+					#De jure shift all held west slavic titles into your primary title
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_duchy }
+						set_de_jure_liege_title = scope:western_slav_uniter.primary_title
+					}
+
+					#Destroys them all!
+					scope:western_slav_uniter = { destroy_title = prev }
+				}
+			}
+		}
+	}	
+}

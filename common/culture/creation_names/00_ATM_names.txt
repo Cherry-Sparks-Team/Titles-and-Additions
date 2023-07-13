@@ -1,0 +1,8308 @@
+﻿# Used in definition order
+
+# east slavic
+
+belarusian = { #Aka white ruthenian
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_pinsk = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_minsk = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_grodno = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_polotsk = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_pinsk
+			has_primary_title = title:d_minsk
+			has_primary_title = title:d_grodno
+			has_primary_title = title:d_polotsk
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_pinsk
+				duchy = title:d_minsk
+				duchy = title:d_grodno
+				duchy = title:d_polotsk
+			}
+		}
+	}
+}
+
+red_ruthenian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_halych = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_cherven_cities = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_halych
+			has_primary_title = title:d_cherven_cities
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_halych
+				duchy = title:d_cherven_cities
+			}
+		}
+	}
+}
+
+black_ruthenian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_lithuanians = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_samogitia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_grodno = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_lithuanians
+			has_primary_title = title:d_samogitia
+			has_primary_title = title:d_grodno
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_lithuanians
+				duchy = title:d_samogitia
+				duchy = title:d_grodno
+			}
+		}
+	}
+}
+
+volzhian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_opolye = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_nizhny_novgorod = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_vologda = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_opolye
+			has_primary_title = title:d_nizhny_novgorod
+			has_primary_title = title:d_vologda
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_opolye
+				duchy = title:d_nizhny_novgorod
+				duchy = title:d_vologda
+			}
+		}
+	}
+}
+
+novgorodian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_novgorod = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_novgorod
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			duchy = title:d_novgorod
+		}
+	}
+}
+
+zaporozhian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_yedisan = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_levedia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_pontic_steppe = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_yedisan
+			has_primary_title = title:d_levedia
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_yedisan
+				duchy = title:d_levedia
+			}
+		}
+	}
+}
+
+donian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_don_valley = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_pontic_steppe = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_don_valley
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			duchy = title:d_don_valley
+		}
+	}
+}
+
+belovej = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_khazaria = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_khazaria
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			duchy = title:d_khazaria
+		}
+	}
+}
+
+tmutarakanian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_azov = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_crimea = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_azov
+			has_primary_title = title:d_crimea
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			duchy = title:d_azov
+		}
+	}
+}
+
+pomorc = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_biarmia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_karelia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_biarmia
+			has_primary_title = title:d_karelia
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_biarmia
+				duchy = title:d_karelia
+			}
+		}
+	}
+}
+
+zavolckian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_biarmia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_chudia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_ustyug = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_vologda = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_biarmia
+			has_primary_title = title:d_chudia
+			has_primary_title = title:d_ustyug
+			has_primary_title = title:d_vologda
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_biarmia
+				duchy = title:d_chudia
+				duchy = title:d_ustyug
+				duchy = title:d_vologda
+			}
+		}
+	}
+}
+
+zalesian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_nizhny_novgorod = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_opolye = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_ryazan = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_nizhny_novgorod
+			has_primary_title = title:d_opolye
+			has_primary_title = title:d_ryazan
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_nizhny_novgorod
+				duchy = title:d_opolye
+				duchy = title:d_ryazan
+			}
+		}
+	}
+}
+
+polesian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_volhynia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_turov = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_pinsk = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			#capital_county = {
+			#	title:d_chernigov = {
+			#		is_de_jure_liege_or_above_target = prev
+			#	}
+			#}
+			capital_county = {
+				title:d_grodno = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_volhynia
+			has_primary_title = title:d_turov
+			has_primary_title = title:d_pinsk
+			#has_primary_title = title:d_chernigov
+			has_primary_title = title:d_grodno
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_volhynia
+				duchy = title:d_turov
+				duchy = title:d_pinsk
+				#duchy = title:d_chernigov
+				duchy = title:d_grodno
+			}
+		}
+	}
+}
+
+#malorusian = {
+#	trigger = {
+#		OR = {
+#			capital_county = {
+#				title:d_kiev = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			capital_county = {
+#				title:d_halych = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			capital_county = {
+#				title:d_cherven_cities = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			capital_county = {
+#				title:d_volhynia = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			capital_county = {
+#				title:d_turov = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			capital_county = {
+#				title:d_pinsk = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			capital_county = {
+#				title:d_chernigov = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			capital_county = {
+#				title:d_pereyaslavl = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			has_primary_title = title:d_kiev
+#			has_primary_title = title:d_halych
+#			has_primary_title = title:d_cherven_cities
+#			has_primary_title = title:d_volhynia
+#			has_primary_title = title:d_turov
+#			has_primary_title = title:d_pinsk
+#			has_primary_title = title:d_chernigov
+#			has_primary_title = title:d_pereyaslavl
+#		}
+#		culture = { has_cultural_pillar = heritage_east_slavic }
+#		any_sub_realm_county = {
+#			culture = { has_cultural_pillar = heritage_east_slavic }
+#			OR = {
+#				duchy = title:d_kiev
+#				duchy = title:d_halych
+#				duchy = title:d_cherven_cities
+#				duchy = title:d_volhynia
+#				duchy = title:d_turov
+#				duchy = title:d_pinsk
+#				duchy = title:d_chernigov
+#				duchy = title:d_pereyaslavl
+#			}
+#		}
+#	}
+#}
+
+#velikorusian = {
+#	trigger = {
+#		OR = {
+#			capital_county = {
+#				title:d_karachev = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			capital_county = {
+#				title:d_novosil = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			capital_county = {
+#				title:d_smolensk = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			capital_county = {
+#				title:d_ryazan = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			capital_county = {
+#				title:d_opolye = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			capital_county = {
+#				title:d_nizhny_novgorod = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			capital_county = {
+#				title:d_luki = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			capital_county = {
+#				title:d_vepsia = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			capital_county = {
+#				title:d_novgorod = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			has_primary_title = title:d_karachev
+#			has_primary_title = title:d_novosil
+#			has_primary_title = title:d_smolensk
+#			has_primary_title = title:d_ryazan
+#			has_primary_title = title:d_opolye
+#			has_primary_title = title:d_nizhny_novgorod
+#			has_primary_title = title:d_luki
+#			has_primary_title = title:d_vepsia
+#			has_primary_title = title:d_novgorod
+#		}
+#		culture = { has_cultural_pillar = heritage_east_slavic }
+#		any_sub_realm_county = {
+#			culture = { has_cultural_pillar = heritage_east_slavic }
+#			OR = {
+#				duchy = title:d_karachev
+#				duchy = title:d_novosil
+#				duchy = title:d_smolensk
+#				duchy = title:d_ryazan
+#				duchy = title:d_opolye
+#				duchy = title:d_nizhny_novgorod
+#				duchy = title:d_luki
+#				duchy = title:d_vepsia
+#				duchy = title:d_novgorod
+#			}
+#		}
+#	}
+#}
+
+okrainian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_yedisan = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_levedia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_don_valley = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_yedisan
+			has_primary_title = title:d_levedia
+			has_primary_title = title:d_don_valley
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_yedisan
+				duchy = title:d_levedia
+				duchy = title:d_don_valley
+			}
+		}
+	}
+}
+
+ruthenian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_bugeac = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_bukovina = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_moldova = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_muntenia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_oltenia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_transylvanian_alps = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_transylvania = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_transcarpathia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_bugeac
+			has_primary_title = title:d_bukovina
+			has_primary_title = title:d_moldova
+			has_primary_title = title:d_muntenia
+			has_primary_title = title:d_oltenia
+			has_primary_title = title:d_transylvanian_alps
+			has_primary_title = title:d_transylvania
+			has_primary_title = title:d_transcarpathia
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_bugeac
+				duchy = title:d_bukovina
+				duchy = title:d_moldova
+				duchy = title:d_muntenia
+				duchy = title:d_oltenia
+				duchy = title:d_transylvanian_alps
+				duchy = title:d_transylvania
+				duchy = title:d_transcarpathia
+			}
+		}
+	}
+}
+
+rusnak = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_ungvar = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_nyitra = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_lesser_poland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_ungvar
+			has_primary_title = title:d_nyitra
+			has_primary_title = title:d_lesser_poland
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_ungvar
+				duchy = title:d_nyitra
+				duchy = title:d_lesser_poland
+			}
+		}
+	}
+}
+
+routhenian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_dobrudja = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_turnovo = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_dobrudja
+			has_primary_title = title:d_turnovo
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_dobrudja
+				duchy = title:d_turnovo
+			}
+		}
+	}
+}
+
+litvin = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_lithuanians = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_courland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_prussia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_samogitia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_latgalians = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_masuria = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_livonia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_esthonia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_lithuanians
+			has_primary_title = title:d_courland
+			has_primary_title = title:d_prussia
+			has_primary_title = title:d_samogitia
+			has_primary_title = title:d_latgalians
+			has_primary_title = title:d_masuria
+			has_primary_title = title:d_livonia
+			has_primary_title = title:d_esthonia
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_lithuanians
+				duchy = title:d_courland
+				duchy = title:d_prussia
+				duchy = title:d_samogitia
+				duchy = title:d_latgalians
+				duchy = title:d_masuria
+				duchy = title:d_livonia
+				duchy = title:d_esthonia
+			}
+		}
+	}
+}
+
+rosian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_ruthenia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_galicia-volhynia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_novgorod = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_opolye = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_white_rus = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_bjarmaland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_ruthenia
+			has_primary_title = title:k_galicia-volhynia
+			has_primary_title = title:k_novgorod
+			has_primary_title = title:k_opolye
+			has_primary_title = title:k_white_rus
+			has_primary_title = title:k_bjarmaland
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+		}
+	}
+}
+
+rusianian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_ruthenia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_galicia-volhynia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_novgorod = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_opolye = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_white_rus = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_bjarmaland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_ruthenia
+			has_primary_title = title:k_galicia-volhynia
+			has_primary_title = title:k_novgorod
+			has_primary_title = title:k_opolye
+			has_primary_title = title:k_white_rus
+			has_primary_title = title:k_bjarmaland
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			#OR = {
+			#	#k_ruthenia
+			#	duchy = title:d_kiev
+			#	duchy = title:d_chernigov
+			#	#k_galicia
+			#	#k_novgorod
+			#	duchy = title:d_novgorod
+			#	#k_opolye
+			#	#k_white_rus
+			#	duchy = title:d_grodno
+			#	#k_bjarmaland
+			#}
+		}
+	}
+}
+
+rusak = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_ruthenia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_galicia-volhynia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_novgorod = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_opolye = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_white_rus = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_bjarmaland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_ruthenia
+			has_primary_title = title:k_galicia-volhynia
+			has_primary_title = title:k_novgorod
+			has_primary_title = title:k_opolye
+			has_primary_title = title:k_white_rus
+			has_primary_title = title:k_bjarmaland
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+		}
+	}
+}
+
+beloozerian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_vepsia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_vepsia
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			duchy = title:d_vepsia
+		}
+	}
+}
+
+lukian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_luki = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_luki
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			duchy = title:d_luki
+		}
+	}
+}
+
+kievian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_kiev = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_kiev
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_kiev
+			}
+		}
+	}
+}
+
+turovian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_turov = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_turov
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_turov
+			}
+		}
+	}
+}
+
+chernigovian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_chernigov = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_chernigov
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_chernigov
+			}
+		}
+	}
+}
+
+pereyaslavlian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_pereyaslavl = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_pereyaslavl
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_pereyaslavl
+			}
+		}
+	}
+}
+
+karachevian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_karachev = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_karachev
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_karachev
+			}
+		}
+	}
+}
+
+novosilian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_novosil = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_novosil
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_novosil
+			}
+		}
+	}
+}
+
+volhynianian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_volhynia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_volhynia
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_volhynia
+			}
+		}
+	}
+}
+
+halychian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_halych = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_halych
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_halych
+			}
+		}
+	}
+}
+
+peremyshlian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_cherven_cities = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_cherven_cities
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_cherven_cities
+			}
+		}
+	}
+}
+
+polotskian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_polotsk = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_polotsk
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_polotsk
+			}
+		}
+	}
+}
+
+minskian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_minsk = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_minsk
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_minsk
+			}
+		}
+	}
+}
+
+smolenskian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_smolensk = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_smolensk
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_smolensk
+			}
+		}
+	}
+}
+
+pinskian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_pinsk = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_pinsk
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_pinsk
+			}
+		}
+	}
+}
+
+grodnian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_grodno = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_grodno
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_grodno
+			}
+		}
+	}
+}
+
+nizhnenovgorodian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_nizhny_novgorod = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_nizhny_novgorod
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_nizhny_novgorod
+			}
+		}
+	}
+}
+
+ryazanian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_ryazan = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_ryazan
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_ryazan
+			}
+		}
+	}
+}
+
+yaroslavlian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_opolye = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_opolye
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_opolye
+			}
+		}
+	}
+}
+
+kolmogorian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_biarmia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_biarmia
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_biarmia
+			}
+		}
+	}
+}
+
+vologdian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_vologda = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_vologda
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_vologda
+			}
+		}
+	}
+}
+
+ustyugian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_ustyug = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_ustyug
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_ustyug
+			}
+		}
+	}
+}
+
+kargopolian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_chudia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_chudia
+		}
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_east_slavic }
+			OR = {
+				duchy = title:d_chudia
+			}
+		}
+	}
+}
+
+# west slavic
+
+silesian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_upper_silesia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_lower_silesia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_upper_silesia
+			has_primary_title = title:d_lower_silesia
+		}
+		OR = {
+			culture = culture:polish
+			culture = culture:czech
+			culture = { any_parent_culture_or_above = { this = culture:polish } }
+			culture = { any_parent_culture_or_above = { this = culture:czech } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:polish
+				culture = culture:czech
+				culture = { any_parent_culture_or_above = { this = culture:polish } }
+				culture = { any_parent_culture_or_above = { this = culture:czech } }
+			}
+			OR = {
+				duchy = title:d_upper_silesia
+				duchy = title:d_lower_silesia
+			}
+		}
+	}
+}
+
+gural = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_lesser_poland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_upper_silesia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_lesser_poland
+			has_primary_title = title:d_upper_silesia
+		}
+		OR = {
+			culture = culture:polish
+			culture = { any_parent_culture_or_above = { this = culture:polish } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:polish
+				culture = { any_parent_culture_or_above = { this = culture:polish } }
+			}
+			OR = {
+				duchy = title:d_lesser_poland
+				duchy = title:d_upper_silesia
+			}
+		}
+	}
+}
+
+wielkopolskian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_wielkopolska = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_wielkopolska
+		}
+		OR = {
+			culture = culture:polish
+			culture = { any_parent_culture_or_above = { this = culture:polish } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:polish
+				culture = { any_parent_culture_or_above = { this = culture:polish } }
+			}
+			duchy = title:d_wielkopolska
+		}
+	}
+}
+
+malopolskian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_lesser_poland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_lesser_poland
+		}
+		OR = {
+			culture = culture:polish
+			culture = { any_parent_culture_or_above = { this = culture:polish } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:polish
+				culture = { any_parent_culture_or_above = { this = culture:polish } }
+			}
+			duchy = title:d_lesser_poland
+		}
+	}
+}
+
+kuyavian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_kuyavia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_kuyavia
+		}
+		OR = {
+			culture = culture:polish
+			culture = { any_parent_culture_or_above = { this = culture:polish } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:polish
+				culture = { any_parent_culture_or_above = { this = culture:polish } }
+			}
+			duchy = title:d_kuyavia
+		}
+	}
+}
+
+mazovian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_mazovia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_mazovia
+		}
+		OR = {
+			culture = culture:polish
+			culture = { any_parent_culture_or_above = { this = culture:polish } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:polish
+				culture = { any_parent_culture_or_above = { this = culture:polish } }
+			}
+			duchy = title:d_mazovia
+		}
+	}
+}
+
+mazurian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_masuria = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_masuria
+		}
+		OR = {
+			culture = culture:polish
+			culture = { any_parent_culture_or_above = { this = culture:polish } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:polish
+				culture = { any_parent_culture_or_above = { this = culture:polish } }
+			}
+			duchy = title:d_masuria
+		}
+	}
+}
+
+lusatsian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_lausitz = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_meissen = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			} 
+			has_primary_title = title:d_lausitz
+			has_primary_title = title:d_meissen
+		}
+		OR = {
+			culture = culture:pommeranian
+			culture = culture:polabian
+			culture = { any_parent_culture_or_above = { this = culture:pommeranian } }
+			culture = { any_parent_culture_or_above = { this = culture:polabian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:pommeranian
+				culture = culture:polabian
+				culture = { any_parent_culture_or_above = { this = culture:pommeranian } }
+				culture = { any_parent_culture_or_above = { this = culture:polabian } }
+			}
+			OR = {
+				duchy = title:d_lausitz
+				duchy = title:d_meissen
+			}
+		}
+	}
+}
+
+kashubian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_pomerelia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_pomerelia
+		}
+		OR = {
+			culture = culture:pommeranian
+			culture = culture:polabian
+			culture = { any_parent_culture_or_above = { this = culture:pommeranian } }
+			culture = { any_parent_culture_or_above = { this = culture:polabian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:pommeranian
+				culture = culture:polabian
+				culture = { any_parent_culture_or_above = { this = culture:pommeranian } }
+				culture = { any_parent_culture_or_above = { this = culture:polabian } }
+			}
+			duchy = title:d_pomerelia
+		}
+	}
+}
+
+obodritian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_holstein = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_nordmark = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_holstein
+			has_primary_title = title:d_nordmark
+		}
+		OR = {
+			culture = culture:pommeranian
+			culture = culture:polabian
+			culture = { any_parent_culture_or_above = { this = culture:pommeranian } }
+			culture = { any_parent_culture_or_above = { this = culture:polabian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:pommeranian
+				culture = culture:polabian
+				culture = { any_parent_culture_or_above = { this = culture:pommeranian } }
+				culture = { any_parent_culture_or_above = { this = culture:polabian } }
+			}
+			OR = {
+				duchy = title:d_holstein
+				duchy = title:d_nordmark
+			}
+		}
+	}
+}
+
+wenedian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_nordmark = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_ostmark = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_pommerania = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_pomerelia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_lausitz = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_meissen = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_nordmark
+			has_primary_title = title:d_ostmark
+			has_primary_title = title:d_pommerania
+			has_primary_title = title:d_pomerelia
+			has_primary_title = title:d_lausitz
+			has_primary_title = title:d_meissen
+		}
+		OR = {
+			culture = culture:pommeranian
+			culture = culture:polabian
+			culture = { any_parent_culture_or_above = { this = culture:pommeranian } }
+			culture = { any_parent_culture_or_above = { this = culture:polabian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:pommeranian
+				culture = culture:polabian
+				culture = { any_parent_culture_or_above = { this = culture:pommeranian } }
+				culture = { any_parent_culture_or_above = { this = culture:polabian } }
+			}
+			OR = {
+				duchy = title:d_nordmark
+				duchy = title:d_ostmark
+				duchy = title:d_pommerania
+				duchy = title:d_pomerelia
+				duchy = title:d_lausitz
+				duchy = title:d_meissen
+			}
+		}
+	}
+}
+
+lechitian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_poland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_pomerania = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_poland
+			has_primary_title = title:k_pomerania
+		}
+		OR = {
+			culture = culture:pommeranian
+			culture = culture:polabian
+			culture = culture:polish
+			culture = { any_parent_culture_or_above = { this = culture:pommeranian } }
+			culture = { any_parent_culture_or_above = { this = culture:polabian } }
+			culture = { any_parent_culture_or_above = { this = culture:polish } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:pommeranian
+				culture = culture:polabian
+				culture = culture:polish
+				culture = { any_parent_culture_or_above = { this = culture:pommeranian } }
+				culture = { any_parent_culture_or_above = { this = culture:polabian } }
+				culture = { any_parent_culture_or_above = { this = culture:polish } }
+			}
+		}
+	}
+}
+
+moravian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_moravia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_moravia
+		}
+		OR = {
+			culture = culture:czech
+			culture = culture:slovien
+			culture = { any_parent_culture_or_above = { this = culture:czech } }
+			culture = { any_parent_culture_or_above = { this = culture:slovien } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:czech
+				culture = culture:slovien
+				culture = { any_parent_culture_or_above = { this = culture:czech } }
+				culture = { any_parent_culture_or_above = { this = culture:slovien } }
+			}
+			duchy = title:d_moravia
+		}
+	}
+}
+
+bohemian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_bohemia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_bohemia
+		}
+		OR = {
+			culture = culture:czech
+			culture = culture:slovien
+			culture = { any_parent_culture_or_above = { this = culture:czech } }
+			culture = { any_parent_culture_or_above = { this = culture:slovien } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:czech
+				culture = culture:slovien
+				culture = { any_parent_culture_or_above = { this = culture:czech } }
+				culture = { any_parent_culture_or_above = { this = culture:slovien } }
+			}
+			duchy = title:d_bohemia
+		}
+	}
+}
+
+nitranian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_nyitra = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_nyitra
+		}
+		OR = {
+			culture = culture:czech
+			culture = culture:slovien
+			culture = { any_parent_culture_or_above = { this = culture:czech } }
+			culture = { any_parent_culture_or_above = { this = culture:slovien } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:czech
+				culture = culture:slovien
+				culture = { any_parent_culture_or_above = { this = culture:czech } }
+				culture = { any_parent_culture_or_above = { this = culture:slovien } }
+			}
+			duchy = title:d_nyitra
+		}
+	}
+}
+
+krainian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_krain = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_carinthia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_steyermark = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_krain
+			has_primary_title = title:d_carinthia
+			has_primary_title = title:d_steyermark
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_west_slavic }
+			culture = { has_cultural_pillar = heritage_south_slavic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_west_slavic }
+				culture = { has_cultural_pillar = heritage_south_slavic }
+			}
+			OR = {
+				duchy = title:d_krain
+				duchy = title:d_carinthia
+				duchy = title:d_steyermark
+			}
+		}
+	}
+}
+
+# vlach
+
+morlach = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_lower_bosna = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_bosna = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_dalmatia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_lower_bosna
+			has_primary_title = title:d_bosna
+			has_primary_title = title:d_dalmatia
+		}
+		culture = { has_cultural_pillar = heritage_vlach }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_vlach }
+			OR = {
+				duchy = title:d_lower_bosna
+				duchy = title:d_bosna
+				duchy = title:d_dalmatia
+			}
+		}
+	}
+}
+
+moldavian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_bugeac = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_moldova = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_bukovina = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_bugeac
+			has_primary_title = title:d_moldova
+			has_primary_title = title:d_bukovina
+		}
+		culture = { has_cultural_pillar = heritage_vlach }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_vlach }
+			OR = {
+				duchy = title:d_bugeac
+				duchy = title:d_moldova
+				duchy = title:d_bukovina
+			}
+		}
+	}
+}
+
+volochian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_dacia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_moldavia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_dacia
+			has_primary_title = title:k_moldavia
+		}
+		culture = { has_cultural_pillar = heritage_vlach }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_vlach }
+		}
+	}
+}
+
+# magyar
+
+szekely = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_transylvania = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_transylvanian_alps = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_transylvania
+			has_primary_title = title:d_transylvanian_alps
+		}
+		culture = { has_cultural_pillar = heritage_magyar }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_magyar }
+			OR = {
+				duchy = title:d_transylvania
+				duchy = title:d_transylvanian_alps
+			}
+		}
+	}
+}
+
+pannonian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_hungary = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_hungary
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_vlach }
+			culture = { has_cultural_pillar = heritage_magyar }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_vlach }
+				culture = { has_cultural_pillar = heritage_magyar }
+			}
+		}
+	}
+}
+
+carpatian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_dacia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_moldavia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_hungary = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_dacia
+			has_primary_title = title:k_moldavia
+			has_primary_title = title:k_hungary
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_vlach }
+			culture = { has_cultural_pillar = heritage_magyar }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_vlach }
+				culture = { has_cultural_pillar = heritage_magyar }
+			}
+		}
+	}
+}
+
+# byzantine
+
+newgreek = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_achaia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_athens = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_cephalonia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_thessaly = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_thessalonika = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_strymon = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_epirus = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_achaia
+			has_primary_title = title:d_athens
+			has_primary_title = title:d_cephalonia
+			has_primary_title = title:d_thessaly
+			has_primary_title = title:d_thessalonika
+			has_primary_title = title:d_strymon
+			has_primary_title = title:d_epirus
+		}
+		OR = {
+			culture = culture:greek
+			culture = { any_parent_culture_or_above = { this = culture:greek } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:greek
+				culture = { any_parent_culture_or_above = { this = culture:greek } }
+			}
+			OR = {
+				duchy = title:d_achaia
+				duchy = title:d_athens
+				duchy = title:d_cephalonia
+				duchy = title:d_thessaly
+				duchy = title:d_thessalonika
+				duchy = title:d_strymon
+				duchy = title:d_epirus
+			}
+		}
+	}
+}
+
+greatgreek = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_benevento = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_capua = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_apulia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_salerno = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_calabria = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_sicily = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_benevento
+			has_primary_title = title:d_capua
+			has_primary_title = title:d_apulia
+			has_primary_title = title:d_salerno
+			has_primary_title = title:d_calabria
+			has_primary_title = title:d_sicily
+		}
+		OR = {
+			culture = culture:greek
+			culture = { any_parent_culture_or_above = { this = culture:greek } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:greek
+				culture = { any_parent_culture_or_above = { this = culture:greek } }
+			}
+			OR = {
+				duchy = title:d_benevento
+				duchy = title:d_capua
+				duchy = title:d_apulia
+				duchy = title:d_salerno
+				duchy = title:d_calabria
+				duchy = title:d_sicily
+			}
+		}
+	}
+}
+
+thessalian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_thessaly = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_thessalonika = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_thessaly
+			has_primary_title = title:d_thessalonika
+		}
+		OR = {
+			culture = culture:greek
+			culture = { any_parent_culture_or_above = { this = culture:greek } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:greek
+				culture = { any_parent_culture_or_above = { this = culture:greek } }
+			}
+			duchy = title:d_thessaly
+			duchy = title:d_thessalonika
+		}
+	}
+}
+
+trebizondian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_chaldia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_chaldia
+		}
+		OR = {
+			culture = culture:greek
+			culture = { any_parent_culture_or_above = { this = culture:greek } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:greek
+				culture = { any_parent_culture_or_above = { this = culture:greek } }
+			}
+			duchy = title:d_chaldia
+		}
+	}
+}
+
+moreian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_achaia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_achaia
+		}
+		OR = {
+			culture = culture:greek
+			culture = { any_parent_culture_or_above = { this = culture:greek } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:greek
+				culture = { any_parent_culture_or_above = { this = culture:greek } }
+			}
+			duchy = title:d_achaia
+		}
+	}
+}
+
+gotalan = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_crimea = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_crimea
+		}
+		OR = {
+			culture = culture:greek
+			culture = culture:alan
+			culture = { any_parent_culture_or_above = { this = culture:greek } }
+			culture = { any_parent_culture_or_above = { this = culture:alan } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:greek
+				culture = culture:alan
+				culture = { any_parent_culture_or_above = { this = culture:greek } }
+				culture = { any_parent_culture_or_above = { this = culture:alan } }
+			}
+			duchy = title:d_crimea
+		}
+	}
+}
+
+pontic = {
+	trigger = {
+		OR = {
+			culture = culture:greek
+			culture = { any_parent_culture_or_above = { this = culture:greek } }
+		}
+		OR = {
+			capital_county = {
+				title_province = { geographical_region = world_steppe }
+			}
+			capital_county = {
+				title:d_chaldia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			#primary_title = title:d_chaldia
+		}
+	}
+}
+
+cilician = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_cilicia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_cilicia
+		}
+		OR = {
+			culture = culture:armenian
+			culture = { any_parent_culture_or_above = { this = culture:armenian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:armenian
+				culture = { any_parent_culture_or_above = { this = culture:armenian } }
+			}
+			duchy = title:d_cilicia
+		}
+	}
+}
+
+kartlian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_tao-klarjeti = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_tao-klarjeti
+		}
+		OR = {
+			culture = culture:georgian
+			culture = { any_parent_culture_or_above = { this = culture:georgian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:georgian
+				culture = { any_parent_culture_or_above = { this = culture:georgian } }
+			}
+			duchy = title:d_tao-klarjeti
+		}
+	}
+}
+
+imeretian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_abkhazia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_abkhazia
+		}
+		OR = {
+			culture = culture:georgian
+			culture = { any_parent_culture_or_above = { this = culture:georgian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:georgian
+				culture = { any_parent_culture_or_above = { this = culture:georgian } }
+			}
+			duchy = title:d_abkhazia
+		}
+	}
+}
+
+kakhetian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_georgia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_georgia
+		}
+		OR = {
+			culture = culture:georgian
+			culture = { any_parent_culture_or_above = { this = culture:georgian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:georgian
+				culture = { any_parent_culture_or_above = { this = culture:georgian } }
+			}
+			duchy = title:d_georgia
+		}
+	}
+}
+
+megrelian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_georgia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_georgia
+		}
+		OR = {
+			culture = culture:georgian
+			culture = { any_parent_culture_or_above = { this = culture:georgian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:georgian
+				culture = { any_parent_culture_or_above = { this = culture:georgian } }
+			}
+		}
+	}
+}
+
+svanetian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_georgia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_georgia
+		}
+		OR = {
+			culture = culture:georgian
+			culture = { any_parent_culture_or_above = { this = culture:georgian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:georgian
+				culture = { any_parent_culture_or_above = { this = culture:georgian } }
+			}
+		}
+	}
+}
+
+aykian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_armenia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_armenia
+		}
+		OR = {
+			culture = culture:armenian
+			culture = { any_parent_culture_or_above = { this = culture:armenian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:armenian
+				culture = { any_parent_culture_or_above = { this = culture:armenian } }
+			}
+		}
+	}
+}
+
+arminian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_armenia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_armenia
+		}
+		OR = {
+			culture = culture:armenian
+			culture = { any_parent_culture_or_above = { this = culture:armenian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:armenian
+				culture = { any_parent_culture_or_above = { this = culture:armenian } }
+			}
+		}
+	}
+}
+
+caspian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_caucasus = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_caucasus
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_byzantine }
+			culture = { has_cultural_pillar = heritage_turkic }
+			culture = { has_cultural_pillar = heritage_mongolic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_byzantine }
+				culture = { has_cultural_pillar = heritage_turkic }
+				culture = { has_cultural_pillar = heritage_mongolic }
+			}
+		}
+	}
+}
+
+kreteian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_krete = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_krete
+		}
+		culture = { has_cultural_pillar = heritage_byzantine }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_byzantine }
+			duchy = title:d_krete
+		}
+	}
+}
+
+cyprusian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_cyprus = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_cyprus
+		}
+		culture = { has_cultural_pillar = heritage_byzantine }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_byzantine }
+			duchy = title:d_cyprus
+		}
+	}
+}
+
+pontician = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_armeniac = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_paphlagonia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_sebasteia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_chaldia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_armeniac
+			has_primary_title = title:d_paphlagonia
+			has_primary_title = title:d_sebasteia
+			has_primary_title = title:d_chaldia
+		}
+		culture = { has_cultural_pillar = heritage_byzantine }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_byzantine }
+			OR = {
+				duchy = title:d_armeniac
+				duchy = title:d_paphlagonia
+				duchy = title:d_sebasteia
+				duchy = title:d_chaldia
+			}
+		}
+	}
+}
+
+anatolician = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_anatolia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_cappadocia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_cibyrrhaeot = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_cilicia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_charsianon = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_anatolia
+			has_primary_title = title:d_cappadocia
+			has_primary_title = title:d_cibyrrhaeot
+			has_primary_title = title:d_cilicia
+			has_primary_title = title:d_charsianon
+		}
+		culture = { has_cultural_pillar = heritage_byzantine }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_byzantine }
+			OR = {
+				duchy = title:d_anatolia
+				duchy = title:d_cappadocia
+				duchy = title:d_cibyrrhaeot
+				duchy = title:d_cilicia
+				duchy = title:d_charsianon
+			}
+		}
+	}
+}
+
+nikaeian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_bucellaria = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_opsikion = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_optimatoi = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_thracesia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_ephese = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_bucellaria
+			has_primary_title = title:d_opsikion
+			has_primary_title = title:d_optimatoi
+			has_primary_title = title:d_thracesia
+			has_primary_title = title:d_ephese
+		}
+		culture = { has_cultural_pillar = heritage_byzantine }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_byzantine }
+			OR = {
+				duchy = title:d_bucellaria
+				duchy = title:d_opsikion
+				duchy = title:d_optimatoi
+				duchy = title:d_thracesia
+				duchy = title:d_ephese
+			}
+		}
+	}
+}
+
+thracian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_strymon = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_thessaly = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_thessalonika = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_thrace = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_aegean_islands = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_strymon
+			has_primary_title = title:d_thessaly
+			has_primary_title = title:d_thessalonika
+			has_primary_title = title:d_thrace
+			has_primary_title = title:d_aegean_islands
+		}
+		culture = { has_cultural_pillar = heritage_byzantine }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_byzantine }
+			OR = {
+				duchy = title:d_strymon
+				duchy = title:d_cappadocia
+				duchy = title:d_thessalonika
+				duchy = title:d_thrace
+				duchy = title:d_aegean_islands
+			}
+		}
+	}
+}
+
+achaian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_athens = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_achaia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_athens
+			has_primary_title = title:d_achaia
+		}
+		culture = { has_cultural_pillar = heritage_byzantine }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_byzantine }
+			OR = {
+				duchy = title:d_athens
+				duchy = title:d_achaia
+			}
+		}
+	}
+}
+
+epirian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_dyrrachion = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_cephalonia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_epirus = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_dyrrachion
+			has_primary_title = title:d_cephalonia
+			has_primary_title = title:d_epirus
+		}
+		culture = { has_cultural_pillar = heritage_byzantine }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_byzantine }
+			OR = {
+				duchy = title:d_dyrrachion
+				duchy = title:d_cephalonia
+				duchy = title:d_epirus
+			}
+		}
+	}
+}
+
+tauric = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_pontic_steppe = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_pontic_steppe
+		}
+		culture = { has_cultural_pillar = heritage_byzantine }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_byzantine }
+		}
+	}
+}
+
+# south slavic
+
+muslimanian = {
+	trigger = {
+		faith.religion = religion:islam_religion
+		culture = { has_cultural_pillar = heritage_south_slavic }
+	}
+}
+
+dalmatian = {
+	trigger = {
+		capital_county = {
+			title:k_croatia = {
+				is_de_jure_liege_or_above_target = prev
+			}
+			any_county_province = { is_coastal = yes }
+		}
+		culture = {
+			OR = {
+				has_cultural_pillar = heritage_south_slavic
+				has_cultural_pillar = heritage_byzantine
+				has_cultural_pillar = heritage_latin
+			}
+		}
+	}
+}
+
+makedonian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_bulgaria = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_bulgaria
+		}
+		OR = {
+			culture = culture:greek
+			culture = { any_parent_culture_or_above = { this = culture:greek } }
+			culture = { has_cultural_pillar = heritage_south_slavic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:greek
+				culture = { any_parent_culture_or_above = { this = culture:greek } }
+				culture = { has_cultural_pillar = heritage_south_slavic }
+			}
+			duchy = title:d_bulgaria
+		}
+	}
+}
+
+albanian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_dyrrachion = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_dyrrachion
+		}
+		culture = { has_cultural_pillar = heritage_south_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_south_slavic }
+			duchy = title:d_dyrrachion
+		}
+	}
+}
+
+rashkian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_rashka = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_rashka
+		}
+		culture = { has_cultural_pillar = heritage_south_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_south_slavic }
+			duchy = title:d_rashka
+		}
+	}
+}
+
+duklanian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_ragusa = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_duklja = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_ragusa
+			has_primary_title = title:d_duklja
+		}
+		culture = { has_cultural_pillar = heritage_south_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_south_slavic }
+			OR = {
+				duchy = title:d_ragusa
+				duchy = title:d_duklja
+			}
+		}
+	}
+}
+
+banatian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_temes = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_temes
+		}
+		culture = { has_cultural_pillar = heritage_south_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_south_slavic }
+			duchy = title:d_temes
+		}
+	}
+}
+
+sokcian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_macva = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_syrmia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_macva
+			has_primary_title = title:d_syrmia
+		}
+		culture = { has_cultural_pillar = heritage_south_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_south_slavic }
+			OR = {
+				duchy = title:d_macva
+				duchy = title:d_syrmia
+			}
+		}
+	}
+}
+
+bunjevcian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_macva = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_syrmia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_macva
+			has_primary_title = title:d_syrmia
+		}
+		culture = { has_cultural_pillar = heritage_south_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_south_slavic }
+			OR = {
+				duchy = title:d_macva
+				duchy = title:d_syrmia
+			}
+		}
+	}
+}
+
+whitecroatian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_visegrad = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_somogy = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_ungvar = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_transcarpathia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_transylvania = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_bihar = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_temes = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_bacs = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_gyor = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_syrmia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_visegrad
+			has_primary_title = title:d_somogy
+			has_primary_title = title:d_ungvar
+			has_primary_title = title:d_transcarpathia
+			has_primary_title = title:d_transylvania
+			has_primary_title = title:d_bihar
+			has_primary_title = title:d_temes
+			has_primary_title = title:d_bacs
+			has_primary_title = title:d_gyor
+			has_primary_title = title:d_syrmia
+		}
+		OR = {
+			culture = culture:croatian
+			culture = { any_parent_culture_or_above = { this = culture:croatian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:croatian
+				culture = { any_parent_culture_or_above = { this = culture:croatian } }
+			}
+			OR = {
+				duchy = title:d_visegrad
+				duchy = title:d_somogy
+				duchy = title:d_ungvar
+				duchy = title:d_transcarpathia
+				duchy = title:d_transylvania
+				duchy = title:d_bihar
+				duchy = title:d_temes
+				duchy = title:d_bacs
+				duchy = title:d_gyor
+				duchy = title:d_syrmia
+			}
+		}
+	}
+}
+
+redcroatian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_dalmatia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_croatia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_slavonia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_ragusa = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_bosna = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_lower_bosna = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_usora = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_rashka = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_macva = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_duklja = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_rashka
+			has_primary_title = title:d_croatia
+			has_primary_title = title:d_slavonia
+			has_primary_title = title:d_ragusa
+			has_primary_title = title:d_bosna
+			has_primary_title = title:d_lower_bosna
+			has_primary_title = title:d_usora
+			has_primary_title = title:d_rashka
+			has_primary_title = title:d_macva
+			has_primary_title = title:d_duklja
+		}
+		OR = {
+			culture = culture:croatian
+			culture = { any_parent_culture_or_above = { this = culture:croatian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:croatian
+				culture = { any_parent_culture_or_above = { this = culture:croatian } }
+			}
+			OR = {
+				duchy = title:d_dalmatia
+				duchy = title:d_croatia
+				duchy = title:d_slavonia
+				duchy = title:d_ragusa
+				duchy = title:d_bosna
+				duchy = title:d_lower_bosna
+				duchy = title:d_usora
+				duchy = title:d_rashka
+				duchy = title:d_macva
+				duchy = title:d_duklja
+			}
+		}
+	}
+}
+
+slovencian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_croatia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_croatia
+		}
+		culture = { has_cultural_pillar = heritage_south_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_south_slavic }
+		}
+	}
+}
+
+slavinian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_bosnia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_serbia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_croatia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_bosnia
+			has_primary_title = title:k_serbia
+			has_primary_title = title:k_croatia
+		}
+		culture = { has_cultural_pillar = heritage_south_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_south_slavic }
+		}
+	}
+}
+
+planinian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_bulgaria = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_bulgaria
+		}
+		culture = { has_cultural_pillar = heritage_south_slavic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_south_slavic }
+		}
+	}
+}
+
+# latin
+
+ligurian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_genoa = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_genoa
+		}
+		culture = { has_cultural_pillar = heritage_latin }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_latin }
+			duchy = title:d_genoa
+		}
+	}
+}
+
+romagnol = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_romagna = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_emilia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_romagna
+			has_primary_title = title:d_emilia
+		}
+		culture = { has_cultural_pillar = heritage_latin }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_latin }
+			OR = {
+				duchy = title:d_romagna
+				duchy = title:d_emilia
+			}
+		}
+	}
+}
+
+tuscan = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_toscana = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_toscana
+		}
+		culture = { has_cultural_pillar = heritage_latin }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_latin }
+			duchy = title:d_toscana
+		}
+	}
+}
+
+pisanian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_pisa = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_pisa
+		}
+		culture = { has_cultural_pillar = heritage_latin }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_latin }
+			duchy = title:d_pisa
+		}
+	}
+}
+
+umbrian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_spoleto = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_spoleto
+		}
+		culture = { has_cultural_pillar = heritage_latin }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_latin }
+			duchy = title:d_spoleto
+		}
+	}
+}
+
+venetian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_venice = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_venice
+		}
+		culture = { has_cultural_pillar = heritage_latin }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_latin }
+			duchy = title:d_venice
+		}
+	}
+}
+
+corsician = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_corsica = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_corsica
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_frankish }
+			culture = { has_cultural_pillar = heritage_latin }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_frankish }
+				culture = { has_cultural_pillar = heritage_latin }
+			}
+			duchy = title:d_corsica
+		}
+	}
+}
+
+friulian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_friuli = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_friuli
+		}
+		culture = { has_cultural_pillar = heritage_latin }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_latin }
+			duchy = title:d_friuli
+		}
+	}
+}
+
+milanian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_lombardia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_lombardia
+		}
+		culture = { has_cultural_pillar = heritage_latin }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_latin }
+			duchy = title:d_lombardia
+		}
+	}
+}
+
+neapolitan = {
+	trigger = {
+		capital_county = {
+			title:k_sicily = {
+				is_de_jure_liege_or_above_target = prev
+			}
+			NOT = {
+				title:d_sicily = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+		}
+		culture = {
+			OR = {
+				has_cultural_pillar = heritage_berber
+				has_cultural_pillar = heritage_byzantine
+				has_cultural_pillar = heritage_latin
+			}
+		}
+		any_sub_realm_county = {
+			title:d_capua = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+	}
+}
+
+trinacrian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_sicily = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_sicily
+		}
+		culture = { has_cultural_pillar = heritage_latin }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_latin }
+		}
+	}
+}
+
+appenninic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_genoa = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_pisa = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_naples = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_italy = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_romagna = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_genoa
+			has_primary_title = title:k_pisa
+			has_primary_title = title:k_naples
+			has_primary_title = title:k_italy
+			has_primary_title = title:k_romagna
+		}
+		culture = { has_cultural_pillar = heritage_latin }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_latin }
+		}
+	}
+}
+
+#iberian
+
+moriscian = {
+	trigger = {
+		faith.religion = religion:christianity_religion
+		OR = {
+			capital_county = {
+				title:k_valencia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_castille = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_aragon = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_navarra = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_asturias = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_leon = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_spanish_galicia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_portugal = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_badajoz = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_andalusia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_valencia
+			has_primary_title = title:k_castille
+			has_primary_title = title:k_aragon
+			has_primary_title = title:k_navarra
+			has_primary_title = title:k_asturias
+			has_primary_title = title:k_leon
+			has_primary_title = title:k_spanish_galicia
+			has_primary_title = title:k_portugal
+			has_primary_title = title:k_badajoz
+			has_primary_title = title:k_andalusia
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_arabic }
+			culture = { has_cultural_pillar = heritage_berber }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_arabic }
+				culture = { has_cultural_pillar = heritage_berber }
+			}
+		}
+	}
+}
+
+gascognic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_gascogne = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_gascogne
+		}
+		OR = {
+			culture = culture:basque
+			culture = { any_parent_culture_or_above = { this = culture:basque } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:basque
+				culture = { any_parent_culture_or_above = { this = culture:basque } }
+			}
+			duchy = title:d_gascogne
+		}
+	}
+}
+
+pamplonian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_navarra = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_navarra
+		}
+		NOT = { culture = culture:andalusian }
+		culture = { has_cultural_pillar = heritage_iberian }
+		any_sub_realm_county = {
+			NOT = { culture = culture:andalusian }
+			culture = { has_cultural_pillar = heritage_iberian }
+		}
+	}
+}
+
+valencian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_valencia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_valencia
+		}
+		NOT = { culture = culture:andalusian }
+		culture = { has_cultural_pillar = heritage_iberian }
+		any_sub_realm_county = {
+			NOT = { culture = culture:andalusian }
+			culture = { has_cultural_pillar = heritage_iberian }
+		}
+	}
+}
+
+cordobian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_andalusia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_andalusia
+		}
+		OR = {
+			culture = culture:andalusian
+			culture = { any_parent_culture_or_above = { this = culture:andalusian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:andalusian
+				culture = { any_parent_culture_or_above = { this = culture:andalusian } }
+			}
+		}
+	}
+}
+
+andalusian_iberian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_andalusia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_andalusia
+		}
+		NOT = { culture = culture:andalusian }
+		culture = { has_cultural_pillar = heritage_iberian }
+		any_sub_realm_county = {
+			NOT = { culture = culture:andalusian }
+			culture = { has_cultural_pillar = heritage_iberian }
+		}
+	}
+}
+
+lusitanian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_badajoz = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_badajoz
+		}
+		NOT = { culture = culture:andalusian }
+		culture = { has_cultural_pillar = heritage_iberian }
+		any_sub_realm_county = {
+			NOT = { culture = culture:andalusian }
+			culture = { has_cultural_pillar = heritage_iberian }
+		}
+	}
+}
+
+tarraconic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_valencia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_castille = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_aragon = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_navarra = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_asturias = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_leon = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_spanish_galicia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_portugal = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_valencia
+			has_primary_title = title:k_castille
+			has_primary_title = title:k_aragon
+			has_primary_title = title:k_navarra
+			has_primary_title = title:k_asturias
+			has_primary_title = title:k_leon
+			has_primary_title = title:k_spanish_galicia
+			has_primary_title = title:k_portugal
+		}
+		NOT = { culture = culture:andalusian }
+		culture = { has_cultural_pillar = heritage_iberian }
+		any_sub_realm_county = {
+			NOT = { culture = culture:andalusian }
+			culture = { has_cultural_pillar = heritage_iberian }
+		}
+	}
+}
+
+pyrenic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_valencia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_castille = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_aragon = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_navarra = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_asturias = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_leon = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_spanish_galicia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_portugal = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_badajoz = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_andalusia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_valencia
+			has_primary_title = title:k_castille
+			has_primary_title = title:k_aragon
+			has_primary_title = title:k_navarra
+			has_primary_title = title:k_asturias
+			has_primary_title = title:k_leon
+			has_primary_title = title:k_spanish_galicia
+			has_primary_title = title:k_portugal
+			has_primary_title = title:k_badajoz
+			has_primary_title = title:k_andalusia
+		}
+		NOT = { culture = culture:andalusian }
+		culture = { has_cultural_pillar = heritage_iberian }
+		any_sub_realm_county = {
+			NOT = { culture = culture:andalusian }
+			culture = { has_cultural_pillar = heritage_iberian }
+		}
+	}
+}
+
+mozarabian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_valencia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_castille = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_aragon = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_navarra = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_asturias = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_leon = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_spanish_galicia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_portugal = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_badajoz = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_andalusia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_valencia
+			has_primary_title = title:k_castille
+			has_primary_title = title:k_aragon
+			has_primary_title = title:k_navarra
+			has_primary_title = title:k_asturias
+			has_primary_title = title:k_leon
+			has_primary_title = title:k_spanish_galicia
+			has_primary_title = title:k_portugal
+			has_primary_title = title:k_badajoz
+			has_primary_title = title:k_andalusia
+		}
+		OR = {
+			culture = culture:andalusian
+			culture = { any_parent_culture_or_above = { this = culture:andalusian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:andalusian
+				culture = { any_parent_culture_or_above = { this = culture:andalusian } }
+			}
+		}
+	}
+}
+
+# celtic
+
+gwyneddian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_gwynedd = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_gwynedd
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_gwynedd
+		}
+	}
+}
+
+powysian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_powys = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_powys
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_powys
+		}
+	}
+}
+
+deheubarthian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_deheubarth = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_deheubarth
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_deheubarth
+		}
+	}
+}
+
+deifran = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_york = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_york
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_york
+		}
+	}
+}
+
+glouvian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_gloucester = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_gloucester
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_gloucester
+		}
+	}
+}
+
+atrebatian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_somerset = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_somerset
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_somerset
+		}
+	}
+}
+
+ceintian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_canterbury = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_canterbury
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_canterbury
+		}
+	}
+}
+
+colunian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_bedford = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_bedford
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_bedford
+		}
+	}
+}
+
+wentian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_norfolk = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_norfolk
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_norfolk
+		}
+	}
+}
+
+pengwernian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_hereford = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_hereford
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_hereford
+		}
+	}
+}
+
+bryneichian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_northumberland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_northumberland
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_northumberland
+		}
+	}
+}
+
+strathcluaidean = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_galloway = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_galloway
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_galloway
+		}
+	}
+}
+
+circinnian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_albany = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_albany
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_albany
+		}
+	}
+}
+
+ulsterian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_ulster = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_ulster
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_ulster
+		}
+	}
+}
+
+connachtian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_connacht = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_connacht
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_connacht
+		}
+	}
+}
+
+meathian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_meath = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_meath
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_meath
+		}
+	}
+}
+
+leinsterian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_leinster = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_leinster
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_leinster
+		}
+	}
+}
+
+munsterian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_munster = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_munster
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_munster
+		}
+	}
+}
+
+hybernian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_ireland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_ireland
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+		}
+	}
+}
+
+milesian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_ireland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_ireland
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+		}
+	}
+}
+
+# west germanic
+
+new_english = {
+	trigger = {
+		capital_county = {
+			title_province = {
+				geographical_region = world_steppe
+			}
+		}
+		culture = { has_cultural_pillar = heritage_west_germanic }
+		any_sub_realm_county = {
+			title_province = {
+				geographical_region = world_steppe
+			}
+		}
+	}
+}
+
+deiran = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_york = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_york
+		}
+		culture = { has_cultural_pillar = heritage_west_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			duchy = title:d_york
+		}
+	}
+}
+
+rhegedian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_lancaster = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_lancaster
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_west_germanic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_lancaster
+		}
+	}
+}
+
+hwiccean = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_gloucester = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_gloucester
+		}
+		culture = { has_cultural_pillar = heritage_west_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			duchy = title:d_gloucester
+		}
+	}
+}
+
+wessexian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_somerset = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_somerset
+		}
+		culture = { has_cultural_pillar = heritage_west_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			duchy = title:d_somerset
+		}
+	}
+}
+
+cantian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_canterbury = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_canterbury
+		}
+		culture = { has_cultural_pillar = heritage_west_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			duchy = title:d_canterbury
+		}
+	}
+}
+
+eastseaxean = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_bedford = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_bedford
+		}
+		culture = { has_cultural_pillar = heritage_west_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			duchy = title:d_bedford
+		}
+	}
+}
+
+eastanglian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_norfolk = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_norfolk
+		}
+		culture = { has_cultural_pillar = heritage_west_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			duchy = title:d_norfolk
+		}
+	}
+}
+
+mercian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_hereford = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_hereford
+		}
+		culture = { has_cultural_pillar = heritage_west_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			duchy = title:d_hereford
+		}
+	}
+}
+
+northumbrian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_northumberland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_york = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_lancaster = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_northumberland
+			has_primary_title = title:d_york
+			has_primary_title = title:d_lancaster
+		}
+		culture = { has_cultural_pillar = heritage_west_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			OR = {
+				duchy = title:d_northumberland
+				duchy = title:d_york
+				duchy = title:d_lancaster
+			}
+		}
+	}
+}
+
+bernician = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_northumberland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_northumberland
+		}
+		culture = { has_cultural_pillar = heritage_west_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			duchy = title:d_northumberland
+		}
+	}
+}
+
+dumnonian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_cornwall = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_cornwall
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_west_germanic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_cornwall
+		}
+	}
+}
+
+manian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_the_isles = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_the_isles
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+			culture = { has_cultural_pillar = heritage_north_germanic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_west_germanic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+				culture = { has_cultural_pillar = heritage_north_germanic }
+			}
+			duchy = title:d_the_isles
+		}
+	}
+}
+
+lothianian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_lothian = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_lothian
+		}
+		NOT = { culture = culture:anglo_saxon }
+		NOT = { culture = culture:old_saxon }
+		OR = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			NOT = { culture = culture:anglo_saxon }
+			NOT = { culture = culture:old_saxon }
+			OR = {
+				culture = { has_cultural_pillar = heritage_west_germanic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_lothian
+		}
+	}
+}
+
+gododdinian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_lothian = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_lothian
+		}
+		NOT = { culture = culture:scottish }
+		NOT = { culture = culture:english }
+		OR = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			culture = { has_cultural_pillar = heritage_brythonic }
+		}
+		any_sub_realm_county = {
+			NOT = { culture = culture:scottish }
+			NOT = { culture = culture:english }
+			OR = {
+				culture = { has_cultural_pillar = heritage_west_germanic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+			}
+			duchy = title:d_lothian
+		}
+	}
+}
+
+gallowayan = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_galloway = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_galloway
+		}
+		culture = { has_cultural_pillar = heritage_west_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			duchy = title:d_galloway
+		}
+	}
+}
+
+albanyan = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_albany = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_albany
+		}
+		culture = { has_cultural_pillar = heritage_west_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			duchy = title:d_albany
+		}
+	}
+}
+
+morayan = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_moray = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_moray
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_west_germanic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_moray
+		}
+	}
+}
+
+hebridian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_western_isles = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_western_isles
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_west_germanic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+			duchy = title:d_western_isles
+		}
+	}
+}
+
+orkadian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_northern_isles = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_northern_isles
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+			culture = { has_cultural_pillar = heritage_north_germanic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_west_germanic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+				culture = { has_cultural_pillar = heritage_north_germanic }
+			}
+			duchy = title:d_northern_isles
+		}
+	}
+}
+
+#northerner = {
+#	trigger = {
+#		OR = {
+#			capital_county = {
+#				title:d_northumberland = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			capital_county = {
+#				title:d_york = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			capital_county = {
+#				title:d_lancaster = {
+#					is_de_jure_liege_or_above_target = prev
+#				}
+#			}
+#			has_primary_title = title:d_northumberland
+#			has_primary_title = title:d_york
+#			has_primary_title = title:d_lancaster
+#		}
+#		OR = {
+#			culture = culture:english
+#			culture = { any_parent_culture_or_above = { this = culture:english } }
+#		}
+#		any_sub_realm_county = {
+#			OR = {
+#				culture = culture:english
+#				culture = { any_parent_culture_or_above = { this = culture:english } }
+#			}
+#			OR = {
+#				duchy = title:d_northumberland
+#				duchy = title:d_york
+#				duchy = title:d_lancaster
+#			}
+#		}
+#	}
+#}
+
+cambrianic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_wales = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_wales
+		}
+		culture = { has_cultural_pillar = heritage_west_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+		}
+	}
+}
+
+hibernoangl = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_ireland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_ireland
+		}
+		NOT = { culture = culture:scottish }
+		culture = { has_cultural_pillar = heritage_west_germanic }
+		any_sub_realm_county = {
+			NOT = { culture = culture:scottish }
+			culture = { has_cultural_pillar = heritage_west_germanic }
+		}
+	}
+}
+
+hibernoscott = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_ireland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_ireland
+		}
+		OR = {
+			culture = culture:scottish
+			culture = { any_parent_culture_or_above = { this = culture:scottish } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:scottish
+				culture = { any_parent_culture_or_above = { this = culture:scottish } }
+			}
+		}
+	}
+}
+
+albianic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_scotland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_scotland
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+			culture = { has_cultural_pillar = heritage_west_germanic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+				culture = { has_cultural_pillar = heritage_west_germanic }
+			}
+		}
+	}
+}
+
+# north germanic
+
+jorvikian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_york = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_york
+		}
+		culture = { has_cultural_pillar = heritage_north_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_north_germanic }
+			duchy = title:d_york
+		}
+	}
+}
+
+sudreyjarian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_western_isles = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_western_isles
+		}
+		culture = { has_cultural_pillar = heritage_north_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_north_germanic }
+			duchy = title:d_western_isles
+		}
+	}
+}
+
+galveian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_galloway = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_galloway
+		}
+		culture = { has_cultural_pillar = heritage_north_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_north_germanic }
+			duchy = title:d_galloway
+		}
+	}
+}
+
+katanesian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_moray = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_moray
+		}
+		culture = { has_cultural_pillar = heritage_north_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_north_germanic }
+			duchy = title:d_moray
+		}
+	}
+}
+
+geatish = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_smaland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_vastergotland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_ostergotland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_smaland
+			has_primary_title = title:d_vastergotland
+			has_primary_title = title:d_ostergotland
+		}
+		culture = { has_cultural_pillar = heritage_north_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_north_germanic }
+			OR = {
+				duchy = title:d_smaland
+				duchy = title:d_vastergotland
+				duchy = title:d_ostergotland
+			}
+		}
+	}
+}
+
+gutish = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_gotland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_gotland
+		}
+		culture = { has_cultural_pillar = heritage_north_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_north_germanic }
+			duchy = title:d_gotland
+		}
+	}
+}
+
+scanian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_skane = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_skane
+		}
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_north_germanic }
+			duchy = title:d_skane
+		}
+		scope:culture = { has_cultural_pillar = heritage_north_germanic }
+	}
+}
+
+icelandic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_iceland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_iceland
+		}
+		culture = { has_cultural_pillar = heritage_north_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_north_germanic }
+			duchy = title:d_iceland
+		}
+	}
+}
+
+zelandic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_sjaelland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_sjaelland
+		}
+		culture = { has_cultural_pillar = heritage_north_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_north_germanic }
+			duchy = title:d_sjaelland
+		}
+	}
+}
+
+jutlandic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_jylland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_jylland
+		}
+		culture = { has_cultural_pillar = heritage_north_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_north_germanic }
+			duchy = title:d_jylland
+		}
+	}
+}
+
+deiran = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_york = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_york
+		}
+		culture = { has_cultural_pillar = heritage_west_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			duchy = title:d_york
+		}
+	}
+}
+
+ascomannian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_norway = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_sweden = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_denmark = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_sapmi = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_finland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_norway
+			has_primary_title = title:k_sweden
+			has_primary_title = title:k_denmark
+			has_primary_title = title:k_sapmi
+			has_primary_title = title:k_finland
+		}
+		culture = { has_cultural_pillar = heritage_north_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_north_germanic }
+		}
+	}
+}
+
+nordician = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_norway = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_sweden = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_denmark = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_sapmi = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_finland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_norway
+			has_primary_title = title:k_sweden
+			has_primary_title = title:k_denmark
+			has_primary_title = title:k_sapmi
+			has_primary_title = title:k_finland
+		}
+		culture = { has_cultural_pillar = heritage_north_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_north_germanic }
+		}
+	}
+}
+
+vikingian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_norway = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_sweden = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_denmark = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_sapmi = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_finland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_norway
+			has_primary_title = title:k_sweden
+			has_primary_title = title:k_denmark
+			has_primary_title = title:k_sapmi
+			has_primary_title = title:k_finland
+		}
+		culture = { has_cultural_pillar = heritage_north_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_north_germanic }
+		}
+	}
+}
+
+# germanic
+
+flemish = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_flanders = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_brabant = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_luxembourg = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_julich = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_holland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			primary_title = title:d_flanders
+			primary_title = title:d_brabant
+			primary_title = title:d_luxembourg
+			primary_title = title:d_julich
+			primary_title = title:d_holland
+		}
+		OR = {
+			culture = culture:dutch
+			culture = { any_parent_culture_or_above = { this = culture:dutch } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:dutch
+				culture = { any_parent_culture_or_above = { this = culture:dutch } }
+			}
+			OR ={
+				duchy = title:d_flanders
+				duchy = title:d_brabant
+				duchy = title:d_luxembourg
+				duchy = title:d_julich
+				duchy = title:d_holland
+			}
+		}
+	}
+}
+
+hollandian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_holland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_holland
+		}
+		OR = {
+			culture = culture:dutch
+			culture = { any_parent_culture_or_above = { this = culture:dutch } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:dutch
+				culture = { any_parent_culture_or_above = { this = culture:dutch } }
+			}
+			duchy = title:d_holland
+		}
+	}
+}
+
+upper_saxon = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_thuringia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_anhalt = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_lausitz = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_meissen = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			primary_title = title:d_thuringia
+			primary_title = title:d_anhalt
+			primary_title = title:d_lausitz
+			primary_title = title:d_meissen
+		}
+		OR = {
+			culture = culture:saxon
+			culture = { any_parent_culture_or_above = { this = culture:saxon } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:saxon
+				culture = { any_parent_culture_or_above = { this = culture:saxon } }
+			}
+			OR ={
+				duchy = title:d_thuringia
+				duchy = title:d_anhalt
+				duchy = title:d_lausitz
+				duchy = title:d_meissen
+			}
+		}
+	}
+}
+
+lothringian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_upper_lorraine = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_lower_lorraine = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_lower_lorraine
+			has_primary_title = title:d_upper_lorraine
+		}
+		culture = { has_cultural_pillar = heritage_central_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_central_germanic }
+			OR = {
+				duchy = title:d_lower_lorraine
+				duchy = title:d_upper_lorraine
+			}
+		}
+	}
+}
+
+luxemburgian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_luxembourg = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_luxembourg
+		}
+		culture = { has_cultural_pillar = heritage_central_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_central_germanic }
+			duchy = title:d_luxembourg
+		}
+	}
+}
+
+zimbrian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_verona = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_friuli = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_venice = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_verona
+			has_primary_title = title:d_friuli
+			has_primary_title = title:d_venice
+		}
+		culture = { has_cultural_pillar = heritage_central_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_central_germanic }
+			OR = {
+				duchy = title:d_verona
+				duchy = title:d_friuli
+				duchy = title:d_venice
+			}
+		}
+	}
+}
+
+tirolian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_tyrol = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_tyrol
+		}
+		culture = { has_cultural_pillar = heritage_central_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_central_germanic }
+			duchy = title:d_tyrol
+		}
+	}
+}
+
+hessian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_hesse = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_hesse
+		}
+		culture = { has_cultural_pillar = heritage_central_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_central_germanic }
+			duchy = title:d_hesse
+		}
+	}
+}
+
+pfalcian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_west_franconia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_west_franconia
+		}
+		culture = { has_cultural_pillar = heritage_central_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_central_germanic }
+			duchy = title:d_west_franconia
+		}
+	}
+}
+
+ripuaric = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_lower_lorraine = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_julich = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_lower_lorraine
+			has_primary_title = title:d_julich
+		}
+		culture = { has_cultural_pillar = heritage_central_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_central_germanic }
+			OR = {
+				duchy = title:d_lower_lorraine
+				duchy = title:d_julich
+			}
+		}
+	}
+}
+
+austrian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_osterreich = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_salzburg = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_steyermark = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_carinthia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_osterreich
+			has_primary_title = title:d_salzburg
+			has_primary_title = title:d_steyermark
+			has_primary_title = title:d_carinthia
+			has_primary_title = title:k_austria
+		}
+		culture = { has_cultural_pillar = heritage_central_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_central_germanic }
+			OR = {
+				duchy = title:d_osterreich
+				duchy = title:d_salzburg
+				duchy = title:d_steyermark
+				duchy = title:d_carinthia
+			}
+		}
+	}
+}
+
+rhinelander = {
+	trigger = {
+		capital_county = {
+			title_province = { geographical_region = custom_rhineland }
+		}
+		culture = { has_cultural_pillar = heritage_central_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_central_germanic }
+			title_province = {
+				geographical_region = custom_rhineland
+			}
+		}
+	}
+}
+
+teutonic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_east_francia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_lotharingia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_bavaria = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_east_francia
+			has_primary_title = title:k_lotharingia
+			has_primary_title = title:k_bavaria
+		}
+		culture = { has_cultural_pillar = heritage_central_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_central_germanic }
+		}
+	}
+}
+
+nemetic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_east_francia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_lotharingia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_bavaria = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_east_francia
+			has_primary_title = title:k_lotharingia
+			has_primary_title = title:k_bavaria
+		}
+		culture = { has_cultural_pillar = heritage_central_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_central_germanic }
+		}
+	}
+}
+
+alemanic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_east_francia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_lotharingia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_bavaria = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_east_francia
+			has_primary_title = title:k_lotharingia
+			has_primary_title = title:k_bavaria
+		}
+		culture = { has_cultural_pillar = heritage_central_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_central_germanic }
+		}
+	}
+}
+
+# frankish
+
+siculo_norman = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_sicily = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_sicily
+		}
+		OR = {
+			culture = culture:norman
+			culture = { any_parent_culture_or_above = { this = culture:norman } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:norman
+				culture = { any_parent_culture_or_above = { this = culture:norman } }
+			}
+		}
+	}
+}
+
+hiberno_norman = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_ireland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_ireland
+		}
+		OR = {
+			culture = culture:norman
+			culture = { any_parent_culture_or_above = { this = culture:norman } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:norman
+				culture = { any_parent_culture_or_above = { this = culture:norman } }
+			}
+		}
+	}
+}
+
+angevin = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_anjou = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_anjou
+		}
+		OR = {
+			culture = culture:french
+			culture = { any_parent_culture_or_above = { this = culture:french } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:french
+				culture = { any_parent_culture_or_above = { this = culture:french } }
+			}
+			duchy = title:d_anjou
+		}
+	}
+}
+
+provancale = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_provence = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_provence
+		}
+		OR = {
+			culture = culture:occitan
+			culture = culture:french
+			culture = { any_parent_culture_or_above = { this = culture:occitan } }
+			culture = { any_parent_culture_or_above = { this = culture:french } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:occitan
+				culture = culture:french
+				culture = { any_parent_culture_or_above = { this = culture:occitan } }
+				culture = { any_parent_culture_or_above = { this = culture:french } }
+			}
+			duchy = title:d_provence
+		}
+	}
+}
+
+poitevin = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_poitou = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_poitou
+		}
+		OR = {
+			culture = culture:french
+			culture = { any_parent_culture_or_above = { this = culture:french } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:french
+				culture = { any_parent_culture_or_above = { this = culture:french } }
+			}
+			duchy = title:d_poitou
+		}
+	}
+}
+
+aquitanian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_aquitaine = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_gascogne = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_armagnac = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_aquitaine
+			has_primary_title = title:d_gascogne
+			has_primary_title = title:d_armagnac
+		}
+		OR = {
+			culture = culture:occitan
+			culture = { any_parent_culture_or_above = { this = culture:occitan } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:occitan
+				culture = { any_parent_culture_or_above = { this = culture:occitan } }
+			}
+			OR ={
+				duchy = title:d_aquitaine
+				duchy = title:d_gascogne
+				duchy = title:d_armagnac
+			}
+		}
+	}
+}
+
+auvergnat = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_auvergne = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_bourbon = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_auvergne
+			has_primary_title = title:d_bourbon
+		}
+		OR = {
+			culture = culture:occitan
+			culture = { any_parent_culture_or_above = { this = culture:occitan } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:occitan
+				culture = { any_parent_culture_or_above = { this = culture:occitan } }
+			}
+			OR = {
+				duchy = title:d_auvergne
+				duchy = title:d_bourbon
+			}
+		}
+	}
+}
+
+lengadocian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_languedoc = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_toulouse = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_languedoc
+			has_primary_title = title:d_toulouse
+		}
+		OR = {
+			culture = culture:occitan
+			culture = { any_parent_culture_or_above = { this = culture:occitan } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:occitan
+				culture = { any_parent_culture_or_above = { this = culture:occitan } }
+			}
+			OR = {
+				duchy = title:d_languedoc
+				duchy = title:d_toulouse
+			}
+		}
+	}
+}
+
+walloon = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_flanders = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_brabant = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_luxembourg = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_julich = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_holland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_flanders
+			has_primary_title = title:d_brabant
+			has_primary_title = title:d_luxembourg
+			has_primary_title = title:d_julich
+			has_primary_title = title:d_holland
+		}
+		culture = { has_cultural_pillar = heritage_frankish }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_frankish }
+			OR ={
+				duchy = title:d_flanders
+				duchy = title:d_brabant
+				duchy = title:d_luxembourg
+				duchy = title:d_julich
+				duchy = title:d_holland
+			}
+		}
+	}
+}
+
+burgundian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_burgundy = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_upper_burgundy = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_burgundy
+			has_primary_title = title:d_upper_burgundy
+		}
+		culture = { has_cultural_pillar = heritage_frankish }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_frankish }
+			OR = {
+				duchy = title:d_burgundy
+				duchy = title:d_upper_burgundy
+			}
+		}
+	}
+}
+
+arpitan = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_dauphine = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_savoie = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_provence = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_dauphine
+			has_primary_title = title:d_savoie
+			has_primary_title = title:d_provence
+		}
+		culture = { has_cultural_pillar = heritage_frankish }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_frankish }
+			OR = {
+				duchy = title:d_dauphine
+				duchy = title:d_savoie
+				duchy = title:d_provence
+			}
+		}
+	}
+}
+
+lorrainian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_upper_lorraine = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_lower_lorraine = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_lower_lorraine
+			has_primary_title = title:d_upper_lorraine
+		}
+		culture = { has_cultural_pillar = heritage_frankish }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_frankish }
+			OR = {
+				duchy = title:d_lower_lorraine
+				duchy = title:d_upper_lorraine
+			}
+		}
+	}
+}
+
+neustric = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_france = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_france
+		}
+		culture = { has_cultural_pillar = heritage_frankish }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_frankish }
+		}
+	}
+}
+
+narbonic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_aquitaine = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_aquitaine
+		}
+		culture = { has_cultural_pillar = heritage_frankish }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_frankish }
+		}
+	}
+}
+
+armoric = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_brittany = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_brittany
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_frankish }
+			culture = { has_cultural_pillar = heritage_brythonic }
+			culture = { has_cultural_pillar = heritage_goidelic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_frankish }
+				culture = { has_cultural_pillar = heritage_brythonic }
+				culture = { has_cultural_pillar = heritage_goidelic }
+			}
+		}
+	}
+}
+
+luaric = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_france = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_aquitaine = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_france
+			has_primary_title = title:k_aquitaine
+		}
+		culture = { has_cultural_pillar = heritage_frankish }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_frankish }
+		}
+	}
+}
+
+# finnic
+
+kolttic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_guoldat = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_giemajohka = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_duortnoseatnu = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_guoldat
+			has_primary_title = title:d_giemajohka
+			has_primary_title = title:d_duortnoseatnu
+		}
+		OR = {
+			culture = culture:sami
+			culture = { any_parent_culture_or_above = { this = culture:sami } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:sami
+				culture = { any_parent_culture_or_above = { this = culture:sami } }
+			}
+			OR = {
+				duchy = title:d_guoldat
+				duchy = title:d_giemajohka
+				duchy = title:d_duortnoseatnu
+			}
+		}
+	}
+}
+
+summic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_finland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_finland
+		}
+		OR = {
+			culture = culture:finnish
+			culture = { any_parent_culture_or_above = { this = culture:finnish } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:finnish
+				culture = { any_parent_culture_or_above = { this = culture:finnish } }
+			}
+			duchy = title:d_finland
+		}
+	}
+}
+
+emmic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_finland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_finland
+		}
+		OR = {
+			culture = culture:finnish
+			culture = { any_parent_culture_or_above = { this = culture:finnish } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:finnish
+				culture = { any_parent_culture_or_above = { this = culture:finnish } }
+			}
+			duchy = title:d_finland
+		}
+	}
+}
+
+savakian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_savo = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_savo
+		}
+		OR = {
+			culture = culture:finnish
+			culture = { any_parent_culture_or_above = { this = culture:finnish } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:finnish
+				culture = { any_parent_culture_or_above = { this = culture:finnish } }
+			}
+			duchy = title:d_savo
+		}
+	}
+}
+
+ijorian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_novgorod = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_novgorod
+		}
+		OR = {
+			culture = culture:finnish
+			culture = culture:karelian
+			culture = { any_parent_culture_or_above = { this = culture:finnish } }
+			culture = { any_parent_culture_or_above = { this = culture:karelian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:finnish
+				culture = culture:karelian
+				culture = { any_parent_culture_or_above = { this = culture:finnish } }
+				culture = { any_parent_culture_or_above = { this = culture:karelian } }
+			}
+			duchy = title:d_novgorod
+		}
+	}
+}
+
+vesian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_vepsia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_vepsia
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_balto_finnic }
+			culture = { has_cultural_pillar = heritage_volga_finnic }
+			culture = { has_cultural_pillar = heritage_ugro_permian }
+			culture = { has_cultural_pillar = heritage_baltic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_balto_finnic }
+				culture = { has_cultural_pillar = heritage_volga_finnic }
+				culture = { has_cultural_pillar = heritage_ugro_permian }
+				culture = { has_cultural_pillar = heritage_baltic }
+			}
+			duchy = title:d_vepsia
+		}
+	}
+}
+
+votyakian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_udmurtia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_udmurtia
+		}
+		culture = { has_cultural_pillar = heritage_ugro_permian }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_ugro_permian }
+			duchy = title:d_udmurtia
+		}
+	}
+}
+
+ayrameycian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_finland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_finland
+		}
+		OR = {
+			culture = culture:finnish
+			culture = { any_parent_culture_or_above = { this = culture:finnish } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:finnish
+				culture = { any_parent_culture_or_above = { this = culture:finnish } }
+			}
+		}
+	}
+}
+
+livvician = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_finland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_finland
+		}
+		OR = {
+			culture = culture:karelian
+			culture = { any_parent_culture_or_above = { this = culture:karelian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:karelian
+				culture = { any_parent_culture_or_above = { this = culture:karelian } }
+			}
+		}
+	}
+}
+
+ludician = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_finland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_finland
+		}
+		OR = {
+			culture = culture:karelian
+			culture = { any_parent_culture_or_above = { this = culture:karelian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:karelian
+				culture = { any_parent_culture_or_above = { this = culture:karelian } }
+			}
+		}
+	}
+}
+
+bjarmic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_bjarmaland = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_bjarmaland
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_balto_finnic }
+			culture = { has_cultural_pillar = heritage_volga_finnic }
+			culture = { has_cultural_pillar = heritage_ugro_permian }
+			culture = { has_cultural_pillar = heritage_baltic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_balto_finnic }
+				culture = { has_cultural_pillar = heritage_volga_finnic }
+				culture = { has_cultural_pillar = heritage_ugro_permian }
+				culture = { has_cultural_pillar = heritage_baltic }
+			}
+		}
+	}
+}
+
+lapponic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_sapmi = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_sapmi
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_balto_finnic }
+			culture = { has_cultural_pillar = heritage_baltic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_balto_finnic }
+				culture = { has_cultural_pillar = heritage_baltic }
+			}
+		}
+	}
+}
+
+mariyian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_opolye = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_opolye
+		}
+		culture = { has_cultural_pillar = heritage_volga_finnic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_volga_finnic }
+		}
+	}
+}
+
+mokshian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_mordvinia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_mordvinia
+		}
+		culture = { has_cultural_pillar = heritage_volga_finnic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_volga_finnic }
+		}
+	}
+}
+
+erzyian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_mordvinia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_mordvinia
+		}
+		culture = { has_cultural_pillar = heritage_volga_finnic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_volga_finnic }
+		}
+	}
+}
+
+vogulian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_yugra = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_yugra
+		}
+		culture = { has_cultural_pillar = heritage_ugro_permian }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_ugro_permian }
+		}
+	}
+}
+
+pelymian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_yugra = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_yugra
+		}
+		culture = { has_cultural_pillar = heritage_ugro_permian }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_ugro_permian }
+		}
+	}
+}
+
+zyryanian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_permia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_permia
+		}
+		culture = { has_cultural_pillar = heritage_ugro_permian }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_ugro_permian }
+		}
+	}
+}
+
+sibirian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_sibir = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_sibir
+		}
+		culture = { has_cultural_pillar = heritage_ugro_permian }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_ugro_permian }
+		}
+	}
+}
+
+obian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_ob = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_ob
+		}
+		culture = { has_cultural_pillar = heritage_ugro_permian }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_ugro_permian }
+		}
+	}
+}
+
+besermyan = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_volga_bulgaria = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_volga_bulgaria
+		}
+		culture = { has_cultural_pillar = heritage_ugro_permian }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_ugro_permian }
+		}
+	}
+}
+
+# baltic
+
+vodician = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_novgorod = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_novgorod
+		}
+		OR = {
+			culture = culture:estonian
+			culture = { any_parent_culture_or_above = { this = culture:estonian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:estonian
+				culture = { any_parent_culture_or_above = { this = culture:estonian } }
+			}
+			duchy = title:d_novgorod
+		}
+	}
+}
+
+narovian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_esthonia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_esthonia
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_balto_finnic }
+			culture = { has_cultural_pillar = heritage_baltic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_balto_finnic }
+				culture = { has_cultural_pillar = heritage_baltic }
+			}
+			duchy = title:d_esthonia
+		}
+	}
+}
+
+vyruvian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_livonia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_livonia
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_balto_finnic }
+			culture = { has_cultural_pillar = heritage_baltic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_balto_finnic }
+				culture = { has_cultural_pillar = heritage_baltic }
+			}
+			duchy = title:d_livonia
+		}
+	}
+}
+
+zemaytian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_samogitia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_samogitia
+		}
+		culture = { has_cultural_pillar = heritage_baltic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_baltic }
+			duchy = title:d_samogitia
+		}
+	}
+}
+
+nemanian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_lithuania = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_lithuania
+		}
+		culture = { has_cultural_pillar = heritage_baltic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_baltic }
+		}
+	}
+}
+
+litavian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_lithuania = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_lithuania
+		}
+		culture = { has_cultural_pillar = heritage_baltic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_baltic }
+		}
+	}
+}
+
+glesumian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_esthonia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_esthonia
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_baltic }
+			culture = { has_cultural_pillar = heritage_balto_finnic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_baltic }
+				culture = { has_cultural_pillar = heritage_balto_finnic }
+			}
+		}
+	}
+}
+
+#turkic
+
+azeri = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_shirvan = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_azerbaijan = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_shirvan
+			has_primary_title = title:d_azerbaijan
+		}
+		scope:culture = { has_cultural_pillar = heritage_turkic }
+		any_sub_realm_county = {
+			culture = scope:culture
+			OR = {
+				duchy = title:d_shirvan
+				duchy = title:d_azerbaijan
+			}
+		}
+	}
+}
+
+kazanian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_volga_bulgaria = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_volga_bulgaria
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_turkic }
+			culture = { has_cultural_pillar = heritage_mongolic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_turkic }
+				culture = { has_cultural_pillar = heritage_mongolic }
+			}
+		}
+	}
+}
+
+kazakh = { # изменено на дивергента
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_syr_darya = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_zhetysu = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_oghuz_il = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_syr_darya
+			has_primary_title = title:k_zhetysu
+			has_primary_title = title:k_oghuz_il
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_turkic }
+			culture = { has_cultural_pillar = heritage_mongolic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_turkic }
+				culture = { has_cultural_pillar = heritage_mongolic }
+			}
+		}
+	}
+}
+
+crymean = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_crimea = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_crimea
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_turkic }
+			culture = { has_cultural_pillar = heritage_mongolic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_turkic }
+				culture = { has_cultural_pillar = heritage_mongolic }
+			}
+			duchy = title:d_crimea
+		}
+	}
+}
+
+astrakhanian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_khazaria = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_khazaria
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_turkic }
+			culture = { has_cultural_pillar = heritage_mongolic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_turkic }
+				culture = { has_cultural_pillar = heritage_mongolic }
+			}
+			duchy = title:d_khazaria
+		}
+	}
+}
+
+sarochinian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_pontic_steppe = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_pontic_steppe
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_turkic }
+			culture = { has_cultural_pillar = heritage_mongolic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_turkic }
+				culture = { has_cultural_pillar = heritage_mongolic }
+			}
+		}
+	}
+}
+
+cunian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_kimek = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_cuman = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_kipchak = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_kimek
+			has_primary_title = title:k_cuman
+			has_primary_title = title:k_kipchak
+		}
+		culture = { has_cultural_pillar = heritage_turkic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_turkic }
+		}
+	}
+}
+
+khakassian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_khakassia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_khakassia
+		}
+		culture = { has_cultural_pillar = heritage_turkic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_turkic }
+		}
+	}
+}
+
+tuvian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_tuva = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_tuva
+		}
+		culture = { has_cultural_pillar = heritage_turkic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_turkic }
+		}
+	}
+}
+
+telengitian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_ob = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_ob
+		}
+		culture = { has_cultural_pillar = heritage_turkic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_turkic }
+		}
+	}
+}
+
+buryatian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_buryatia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_buryatia
+		}
+		culture = { has_cultural_pillar = heritage_mongolic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_mongolic }
+		}
+	}
+}
+
+dzungarian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_dzungaria = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_dzungaria
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_turkic }
+			culture = { has_cultural_pillar = heritage_mongolic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_turkic }
+				culture = { has_cultural_pillar = heritage_mongolic }
+			}
+		}
+	}
+}
+
+mangutian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_kimek = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_cuman = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_kipchak = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_oghuz_il = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_kimek
+			has_primary_title = title:k_cuman
+			has_primary_title = title:k_kipchak
+			has_primary_title = title:k_oghuz_il
+		}
+		culture = { has_cultural_pillar = heritage_mongolic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_mongolic }
+		}
+	}
+}
+
+mangulian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_mongolia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_tuva = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_khakassia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_buryatia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_angara = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_mongolia
+			has_primary_title = title:k_tuva
+			has_primary_title = title:k_khakassia
+			has_primary_title = title:k_buryatia
+			has_primary_title = title:k_angara
+		}
+		culture = { has_cultural_pillar = heritage_mongolic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_mongolic }
+		}
+	}
+}
+
+altayian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_mongolia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_tuva = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_khakassia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_buryatia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_angara = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_mongolia
+			has_primary_title = title:k_tuva
+			has_primary_title = title:k_khakassia
+			has_primary_title = title:k_buryatia
+			has_primary_title = title:k_angara
+		}
+		culture = { has_cultural_pillar = heritage_turkic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_turkic }
+		}
+	}
+}
+
+nogayian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_kimek = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_oghuz_il = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_kimek
+			has_primary_title = title:k_oghuz_il
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_turkic }
+			culture = { has_cultural_pillar = heritage_mongolic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_turkic }
+				culture = { has_cultural_pillar = heritage_mongolic }
+			}
+		}
+	}
+}
+
+sibirianic = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_sibir = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_yugra = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_ob = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_sibir
+			has_primary_title = title:k_yugra
+			has_primary_title = title:k_ob
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_turkic }
+			culture = { has_cultural_pillar = heritage_mongolic }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_turkic }
+				culture = { has_cultural_pillar = heritage_mongolic }
+			}
+		}
+	}
+}
+
+# arabic
+
+hejazi = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_mecca = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_medina = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_mecca
+			has_primary_title = title:d_medina
+		}
+		OR = {
+			culture = culture:bedouin
+			culture = { any_parent_culture_or_above = { this = culture:bedouin } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:bedouin
+				culture = { any_parent_culture_or_above = { this = culture:bedouin } }
+			}
+			OR = {
+				duchy = title:d_mecca
+				duchy = title:d_medina
+			}
+		}
+	}
+}
+
+kabylian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_kroumerie = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_bejaia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_zab = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_kroumerie
+			has_primary_title = title:d_bejaia
+			has_primary_title = title:d_zab
+		}
+		OR = {
+			culture = culture:butr
+			culture = culture:baranis
+			culture = { any_parent_culture_or_above = { this = culture:butr } }
+			culture = { any_parent_culture_or_above = { this = culture:baranis } }
+		}
+		any_sub_realm_county = {
+			OR ={
+				culture = culture:butr
+				culture = culture:baranis
+				culture = { any_parent_culture_or_above = { this = culture:butr } }
+				culture = { any_parent_culture_or_above = { this = culture:baranis } }
+			}
+			OR = {
+				duchy = title:d_kroumerie
+				duchy = title:d_bejaia
+				duchy = title:d_zab
+			}
+		}
+	}
+}
+
+lebanese = {
+	trigger = {
+		capital_county = {
+			is_coastal_county = yes
+		}
+		OR = {
+			capital_county = {
+				title:k_syria = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			primary_title = title:k_syria
+		}
+		culture = { has_cultural_pillar = heritage_arabic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_arabic }
+			title:k_syria = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+	}
+}
+
+omani = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_oman = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_oman
+		}
+		culture = { has_cultural_pillar = heritage_arabic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_arabic }
+			duchy = title:d_oman
+		}
+	}
+}
+
+khaleeji = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_al-hasa = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_bahrain = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_khuzestan = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_hormuz = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_fars = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_al-hasa
+			has_primary_title = title:d_bahrain
+			has_primary_title = title:d_khuzestan
+			has_primary_title = title:d_hormuz
+			has_primary_title = title:d_fars
+		}
+		culture = { has_cultural_pillar = heritage_arabic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_arabic }
+			OR = {
+				duchy = title:d_al-hasa
+				duchy = title:d_bahrain
+				duchy = title:d_khuzestan
+				duchy = title:d_hormuz
+				duchy = title:d_fars
+			}
+		}
+	}
+}
+
+mahri = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_mahra = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_mahra
+		}
+		culture = { has_cultural_pillar = heritage_arabic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_arabic }
+			duchy = title:d_mahra
+		}
+	}
+}
+
+maurician = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_valencia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_castille = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_aragon = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_navarra = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_asturias = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_leon = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_spanish_galicia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_portugal = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_badajoz = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:k_andalusia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_valencia
+			has_primary_title = title:k_castille
+			has_primary_title = title:k_aragon
+			has_primary_title = title:k_navarra
+			has_primary_title = title:k_asturias
+			has_primary_title = title:k_leon
+			has_primary_title = title:k_spanish_galicia
+			has_primary_title = title:k_portugal
+			has_primary_title = title:k_badajoz
+			has_primary_title = title:k_andalusia
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_arabic }
+			culture = { has_cultural_pillar = heritage_berber }
+			culture = culture:andalusian
+			culture = { any_parent_culture_or_above = { this = culture:andalusian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_arabic }
+				culture = { has_cultural_pillar = heritage_berber }
+				culture = culture:andalusian
+				culture = { any_parent_culture_or_above = { this = culture:andalusian } }
+			}
+		}
+	}
+}
+
+moroccan = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_maghreb = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			primary_title = title:k_maghreb
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_arabic }
+			culture = { has_cultural_pillar = heritage_berber }
+			culture = culture:andalusian
+			culture = { any_parent_culture_or_above = { this = culture:andalusian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_arabic }
+				culture = { has_cultural_pillar = heritage_berber }
+				culture = culture:andalusian
+				culture = { any_parent_culture_or_above = { this = culture:andalusian } }
+			}
+			title:k_maghreb = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+	}
+}
+
+algerian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_tahert = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			primary_title = title:k_tahert
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_arabic }
+			culture = { has_cultural_pillar = heritage_berber }
+			culture = culture:andalusian
+			culture = { any_parent_culture_or_above = { this = culture:andalusian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_arabic }
+				culture = { has_cultural_pillar = heritage_berber }
+				culture = culture:andalusian
+				culture = { any_parent_culture_or_above = { this = culture:andalusian } }
+			}
+			title:k_tahert = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+	}
+}
+
+tripolitanian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_syrte = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_fezzan = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_cyrenaica = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			primary_title = title:d_syrte
+			primary_title = title:d_fezzan
+			primary_title = title:d_cyrenaica
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_arabic }
+			culture = { has_cultural_pillar = heritage_berber }
+			culture = culture:andalusian
+			culture = { any_parent_culture_or_above = { this = culture:andalusian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_arabic }
+				culture = { has_cultural_pillar = heritage_berber }
+				culture = culture:andalusian
+				culture = { any_parent_culture_or_above = { this = culture:andalusian } }
+			}
+			OR = {
+				title:d_syrte = {
+					is_de_jure_liege_or_above_target = prev
+				}
+				title:d_fezzan = {
+					is_de_jure_liege_or_above_target = prev
+				}
+				title:d_cyrenaica = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+		}
+	}
+}
+
+tunisian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_africa = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			primary_title = title:k_africa
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_arabic }
+			culture = { has_cultural_pillar = heritage_berber }
+			culture = culture:andalusian
+			culture = { any_parent_culture_or_above = { this = culture:andalusian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_arabic }
+				culture = { has_cultural_pillar = heritage_berber }
+				culture = culture:andalusian
+				culture = { any_parent_culture_or_above = { this = culture:andalusian } }
+			}
+			title:k_africa = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+	}
+}
+
+syrian = {
+	trigger = {
+		capital_county = {
+			is_coastal_county = no
+		}
+		OR = {
+			capital_county = {
+				title:k_syria = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			primary_title = title:k_syria
+		}
+		culture = { has_cultural_pillar = heritage_arabic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_arabic }
+			title:k_syria = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+	}
+}
+
+iraqi = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_mesopotamia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+				title:k_jazira = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			primary_title = title:k_mesopotamia
+			primary_title = title:k_jazira
+		}
+		culture = { has_cultural_pillar = heritage_arabic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_arabic }
+			OR = {
+				title:k_mesopotamia = {
+					is_de_jure_liege_or_above_target = prev
+				}
+				title:k_jazira = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+		}
+	}
+}
+
+soqotri = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_socotra = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			primary_title = title:d_socotra
+		}
+		culture = { has_cultural_pillar = heritage_arabic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_arabic }
+			title:d_socotra = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+	}
+}
+
+palestinian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title_province = { geographical_region = world_middle_east_jerusalem }
+			}
+			primary_title = title:k_jerusalem
+			primary_title = title:k_israel
+		}
+		faith.religion = religion:islam_religion
+		culture = { has_cultural_pillar = heritage_arabic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_arabic }
+			title_province = { geographical_region = world_middle_east_jerusalem }
+		}
+	}
+}
+
+# iranian
+
+shirvani = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_shirvan = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_shirvan
+		}
+		OR = {
+			culture = culture:persian
+			culture = { any_parent_culture_or_above = { this = culture:persian } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:persian
+				culture = { any_parent_culture_or_above = { this = culture:persian } }
+			}
+			duchy = title:d_shirvan
+		}
+	}
+}
+
+mervi = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_merv = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_merv
+		}
+		culture = { has_cultural_pillar = heritage_iranian }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_iranian }
+			duchy = title:d_merv
+		}
+	}
+}
+
+parsi = {
+	trigger = {
+		capital_county = {
+			title_province = { geographical_region = world_india }
+		}
+		faith = { religion_tag = zoroastrianism_religion }
+		any_sub_realm_county = {
+			faith = { religion_tag = zoroastrianism_religion }
+			title_province = { geographical_region = world_india }
+		}
+	}
+}
+
+gorani = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_kermanshah = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_kermanshah
+		}
+		OR = {
+			culture = culture:kurdish
+			culture = { any_parent_culture_or_above = { this = culture:kurdish } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:kurdish
+				culture = { any_parent_culture_or_above = { this = culture:kurdish } }
+			}
+			duchy = title:d_kermanshah
+		}
+	}
+}
+
+luri = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_khuzestan = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_kermanshah = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_khuzestan
+			has_primary_title = title:d_kermanshah
+		}
+		culture = { has_cultural_pillar = heritage_iranian }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_iranian }
+			OR ={
+				duchy = title:d_khuzestan
+				duchy = title:d_kermanshah
+			}
+		}
+	}
+}
+
+tabari = { #or Mazandarani
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_tabaristan = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_daylam = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_tabaristan
+			has_primary_title = title:d_daylam
+		}
+		culture = { has_cultural_pillar = heritage_iranian }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_iranian }
+			OR ={
+				duchy = title:d_tabaristan
+				duchy = title:d_daylam
+			}
+		}
+	}
+}
+
+pamirian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_badakhshan = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_pamir = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_badakhshan
+			has_primary_title = title:d_pamir
+		}
+		culture = { has_cultural_pillar = heritage_iranian }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_iranian }
+			OR ={
+				duchy = title:d_badakhshan
+				duchy = title:d_pamir
+			}
+		}
+	}
+}
+
+dehkanian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_ghur = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_herat = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_merv = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_nishapur = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_balkh = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_kohestan = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_nasa = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_ghur
+			has_primary_title = title:d_herat
+			has_primary_title = title:d_merv
+			has_primary_title = title:d_nishapur
+			has_primary_title = title:d_balkh
+			has_primary_title = title:d_kohestan
+			has_primary_title = title:d_nasa
+		}
+		culture = { has_cultural_pillar = heritage_iranian }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_iranian }
+			OR = {
+				duchy = title:d_ghur
+				duchy = title:d_herat
+				duchy = title:d_merv
+				duchy = title:d_nishapur
+				duchy = title:d_balkh
+				duchy = title:d_kohestan
+				duchy = title:d_nasa
+			}
+		}
+	}
+}
+
+# indian
+
+maithili = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_tirabhukti = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_tirabhukti
+		}
+		OR = {
+			culture = culture:bengali
+			culture = culture:nepali
+			culture = { any_parent_culture_or_above = { this = culture:bengali } }
+			culture = { any_parent_culture_or_above = { this = culture:nepali } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:bengali
+				culture = culture:nepali
+				culture = { any_parent_culture_or_above = { this = culture:bengali } }
+				culture = { any_parent_culture_or_above = { this = culture:nepali } }
+			}
+			duchy = title:d_tirabhukti
+		}
+	}
+}
+
+malayali = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_chera_nadu = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_chera_nadu
+		}
+		OR = {
+			culture = culture:tamil
+			culture = { any_parent_culture_or_above = { this = culture:tamil } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:tamil
+				culture = { any_parent_culture_or_above = { this = culture:tamil } }
+			}
+			duchy = title:d_chera_nadu
+		}
+	}
+}
+
+avadhi = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:k_kosala = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:k_kosala
+		}
+		culture = { has_cultural_pillar = heritage_indo_aryan }
+		any_sub_realm_county = {
+			culture = scope:culture
+			kingdom = title:k_kosala
+		}
+	}
+}
+
+bihari = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_magadha = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_tirabhukti = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_kasi = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_magadha
+			has_primary_title = title:d_tirabhukti
+			has_primary_title = title:d_kasi
+		}
+		scope:culture = { has_cultural_pillar = heritage_indo_aryan }
+		any_sub_realm_county = {
+			culture = scope:culture
+			or = {
+				duchy = title:d_magadha
+				duchy = title:d_tirabhukti
+				duchy = title:d_kasi
+			}
+		}
+	}
+}
+
+dhundari = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_ajmer = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_ajmer
+		}
+		OR = {
+			culture = culture:rajput
+			culture = { any_parent_culture_or_above = { this = culture:rajput } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:rajput
+				culture = { any_parent_culture_or_above = { this = culture:rajput } }
+			}
+			duchy = title:d_ajmer
+		}
+	}
+}
+
+mewari = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_medapata = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_medapata
+		}
+		OR = {
+			culture = culture:rajput
+			culture = { any_parent_culture_or_above = { this = culture:rajput } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:rajput
+				culture = { any_parent_culture_or_above = { this = culture:rajput } }
+			}
+			duchy = title:d_medapata
+		}
+	}
+}
+
+marwari = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_maru = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_stravani = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_maru
+			has_primary_title = title:d_stravani
+		}
+		OR = {
+			culture = culture:rajput
+			culture = { any_parent_culture_or_above = { this = culture:rajput } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:rajput
+				culture = { any_parent_culture_or_above = { this = culture:rajput } }
+			}
+			OR = {
+				duchy = title:d_maru
+				duchy = title:d_stravani
+			}
+		}
+	}
+}
+
+nimadi = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_anupa = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_anupa
+		}
+		OR ={
+			culture = culture:marathi
+			culture = culture:malvi
+			culture = { any_parent_culture_or_above = { this = culture:marathi } }
+			culture = { any_parent_culture_or_above = { this = culture:malvi } }
+		}
+		any_sub_realm_county = {
+			OR ={
+				culture = culture:marathi
+				culture = culture:malvi
+				culture = { any_parent_culture_or_above = { this = culture:marathi } }
+				culture = { any_parent_culture_or_above = { this = culture:malvi } }
+			}
+			duchy = title:d_anupa
+		}
+	}
+}
+
+kathiawari = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_anartta = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_saurashtra = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_anartta
+			has_primary_title = title:d_saurashtra
+		}
+		OR = {
+			culture = culture:gujarati
+			culture = { any_parent_culture_or_above = { this = culture:gujarati } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:gujarati
+				culture = { any_parent_culture_or_above = { this = culture:gujarati } }
+			}
+			OR = {
+				duchy = title:d_anartta
+				duchy = title:d_saurashtra
+			}
+		}
+	}
+}
+
+munda = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_jharkand = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_jharkand
+		}
+		OR = {
+			culture = culture:bengali
+			culture = { any_parent_culture_or_above = { this = culture:bengali } }
+		}
+		any_sub_realm_county = {
+			OR = {
+				culture = culture:bengali
+				culture = { any_parent_culture_or_above = { this = culture:bengali } }
+			}
+			duchy = title:d_jharkand
+		}
+	}
+}
+
+# african
+
+beta_israeli = {
+	trigger = {
+		faith.religion = religion:judaism_religion
+		scope:culture = { has_cultural_pillar = heritage_east_african }
+	}
+}

@@ -1,0 +1,2517 @@
+﻿#On actions about titles
+
+# All on-actions in this file provide scope:transfer_type unless otherwise noted
+# scope:transfer_type has the following permutations:
+# flag:conquest
+# flag:conquest_holy_war
+# flag:conquest_claim
+# flag:conquest_populist
+# flag:inheritance
+# flag:abdication
+# flag:destroyed
+# flag:created
+# flag:usurped
+# flag:granted
+# flag:revoked
+# flag:election
+# flag:independency
+# flag:returned
+# flag:leased_out
+# flag:lease_revoked
+# flag:faction_demand
+# flag:swear_fealty
+
+# A title is destroyed
+# root = the holder before destruction
+# scope:landed_title = the title that is being destroyed
+# Does *not* provide scope:transfer_type
+on_action_ATM_title_destroyed_e_togskol_khanate = {
+	trigger = {
+		scope:landed_title = {
+			this = title:e_togskol_khanate
+		}
+	}
+	effect = {
+		title:e_togskol_khanate = {
+			reset_title_name = yes
+		}
+	}
+}
+
+# A title is lost by a character
+# root = the old holder
+# scope:title = the title that changes hands
+# scope:new_holder = new holder.
+on_action_ATM_title_lost_caliphate_imamate_e_togskol_khanate = {
+	trigger = {
+		has_title = title:e_togskol_khanate
+	}
+	on_actions = {
+		on_action_ATM_title_change_e_togskol_khanate
+	}
+}
+
+# A title is transferred to a new character
+# root = the new holder
+# scope:title = the title that changes hands
+# scope:previous_holder = previous holder. Might be dead
+on_action_ATM_title_gain_e_togskol_khanate = {
+	trigger = {
+		scope:title = {
+			this = title:e_togskol_khanate
+		}
+	}
+	on_actions = {
+		on_action_ATM_title_change_e_togskol_khanate
+	}
+}
+
+#############################################
+
+on_action_ATM_title_change_e_togskol_khanate = {
+	effect = {
+		# romanic
+		if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_roman
+						has_name_list = name_list_greek
+						has_name_list = name_list_assyrian
+					}
+				}
+				OR = {
+					has_title = title:d_sunni
+					has_title = title:d_shiite
+					has_title = title:d_masmudi
+					has_title = title:d_muwalladi
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_roman
+						has_name_list = name_list_greek
+						has_name_list = name_list_assyrian
+					}
+				}
+				has_title = title:d_imami
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_roman
+						has_name_list = name_list_greek
+						has_name_list = name_list_assyrian
+					}
+				}
+				OR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_tribal
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_EMPIRE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_roman
+						has_name_list = name_list_greek
+						has_name_list = name_list_assyrian
+					}
+				}
+				government_has_flag = government_is_republic
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_PRINCIPATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_roman
+						has_name_list = name_list_greek
+						has_name_list = name_list_assyrian
+					}
+				}
+				government_has_flag = government_is_clan
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_STATE
+			}
+		}
+		# west_slavic
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_pommeranian
+						has_name_list = name_list_czech
+						has_name_list = name_list_polish
+						has_name_list = name_list_polabian
+						has_name_list = name_list_slovien
+						has_name_list = name_list_carantanian
+					}
+				}
+				OR = {
+					has_title = title:d_sunni
+					has_title = title:d_shiite
+					has_title = title:d_masmudi
+					has_title = title:d_muwalladi
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_pommeranian
+						has_name_list = name_list_czech
+						has_name_list = name_list_polish
+						has_name_list = name_list_polabian
+						has_name_list = name_list_slovien
+						has_name_list = name_list_carantanian
+					}
+				}
+				has_title = title:d_imami
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_pommeranian
+						has_name_list = name_list_czech
+						has_name_list = name_list_polish
+						has_name_list = name_list_polabian
+						has_name_list = name_list_slovien
+						has_name_list = name_list_carantanian
+					}
+				}
+				OR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_tribal
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_EMPIRE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_pommeranian
+						has_name_list = name_list_czech
+						has_name_list = name_list_polish
+						has_name_list = name_list_polabian
+						has_name_list = name_list_slovien
+						has_name_list = name_list_carantanian
+					}
+				}
+				government_has_flag = government_is_republic
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_PRINCIPATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_pommeranian
+						has_name_list = name_list_czech
+						has_name_list = name_list_polish
+						has_name_list = name_list_polabian
+						has_name_list = name_list_slovien
+						has_name_list = name_list_carantanian
+					}
+				}
+				government_has_flag = government_is_clan
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_KHAGANATE
+			}
+		}
+		# south_slavic
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_croatian
+						has_name_list = name_list_bosnian
+						has_name_list = name_list_serbian
+						has_name_list = name_list_vlach
+						has_name_list = name_list_bulgarian
+					}
+				}
+				OR = {
+					has_title = title:d_sunni
+					has_title = title:d_shiite
+					has_title = title:d_masmudi
+					has_title = title:d_muwalladi
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_croatian
+						has_name_list = name_list_bosnian
+						has_name_list = name_list_serbian
+						has_name_list = name_list_vlach
+						has_name_list = name_list_bulgarian
+					}
+				}
+				has_title = title:d_imami
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_croatian
+						has_name_list = name_list_bosnian
+						has_name_list = name_list_serbian
+						has_name_list = name_list_vlach
+						has_name_list = name_list_bulgarian
+					}
+				}
+				OR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_tribal
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_EMPIRE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_croatian
+						has_name_list = name_list_bosnian
+						has_name_list = name_list_serbian
+						has_name_list = name_list_vlach
+						has_name_list = name_list_bulgarian
+					}
+				}
+				government_has_flag = government_is_republic
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_PRINCIPATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_croatian
+						has_name_list = name_list_bosnian
+						has_name_list = name_list_serbian
+						has_name_list = name_list_vlach
+						has_name_list = name_list_bulgarian
+					}
+				}
+				government_has_flag = government_is_clan
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_KHAGANATE
+			}
+		}
+		# east_slavic
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_russian
+						has_name_list = name_list_ilmenian
+						has_name_list = name_list_severian
+						has_name_list = name_list_volhynian
+					}
+				}
+				OR = {
+					has_title = title:d_sunni
+					has_title = title:d_shiite
+					has_title = title:d_masmudi
+					has_title = title:d_muwalladi
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_russian
+						has_name_list = name_list_ilmenian
+						has_name_list = name_list_severian
+						has_name_list = name_list_volhynian
+					}
+				}
+				has_title = title:d_imami
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_russian
+						has_name_list = name_list_ilmenian
+						has_name_list = name_list_severian
+						has_name_list = name_list_volhynian
+					}
+				}
+				OR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_tribal
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_TSARSTVO
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_russian
+						has_name_list = name_list_ilmenian
+						has_name_list = name_list_severian
+						has_name_list = name_list_volhynian
+					}
+				}
+				government_has_flag = government_is_republic
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_TSARSTVO
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_russian
+						has_name_list = name_list_ilmenian
+						has_name_list = name_list_severian
+						has_name_list = name_list_volhynian
+					}
+				}
+				government_has_flag = government_is_clan
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_KHAGANATE
+			}
+		}
+		# magyar
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_mogyer
+						has_name_list = name_list_hungarian
+					}
+				}
+				OR = {
+					has_title = title:d_sunni
+					has_title = title:d_shiite
+					has_title = title:d_masmudi
+					has_title = title:d_muwalladi
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_mogyer
+						has_name_list = name_list_hungarian
+					}
+				}
+				has_title = title:d_imami
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_mogyer
+						has_name_list = name_list_hungarian
+					}
+				}
+				government_has_flag = government_is_feudal
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_EMPIRE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_mogyer
+						has_name_list = name_list_hungarian
+					}
+				}
+				government_has_flag = government_is_republic
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_PRINCIPATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_mogyer
+						has_name_list = name_list_hungarian
+					}
+				}
+				OR = {
+					government_has_flag = government_is_tribal
+					government_has_flag = government_is_clan
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_KHAGANATE
+			}
+		}
+		# ugro_permian volga_finnic
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_komi
+						has_name_list = name_list_khanty
+						has_name_list = name_list_samoyed
+						has_name_list = name_list_mordvin
+						has_name_list = name_list_merya
+						has_name_list = name_list_meshchera
+						has_name_list = name_list_mari
+						has_name_list = name_list_muroma
+					}
+				}
+				OR = {
+					has_title = title:d_sunni
+					has_title = title:d_shiite
+					has_title = title:d_masmudi
+					has_title = title:d_muwalladi
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_komi
+						has_name_list = name_list_khanty
+						has_name_list = name_list_samoyed
+						has_name_list = name_list_mordvin
+						has_name_list = name_list_merya
+						has_name_list = name_list_meshchera
+						has_name_list = name_list_mari
+						has_name_list = name_list_muroma
+					}
+				}
+				has_title = title:d_imami
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_komi
+						has_name_list = name_list_khanty
+						has_name_list = name_list_samoyed
+						has_name_list = name_list_mordvin
+						has_name_list = name_list_merya
+						has_name_list = name_list_meshchera
+						has_name_list = name_list_mari
+						has_name_list = name_list_muroma
+					}
+				}
+				OR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_tribal
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_TSARSTVO
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_komi
+						has_name_list = name_list_khanty
+						has_name_list = name_list_samoyed
+						has_name_list = name_list_mordvin
+						has_name_list = name_list_merya
+						has_name_list = name_list_meshchera
+						has_name_list = name_list_mari
+						has_name_list = name_list_muroma
+					}
+				}
+				government_has_flag = government_is_republic
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_TSARSTVO
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_komi
+						has_name_list = name_list_khanty
+						has_name_list = name_list_samoyed
+						has_name_list = name_list_mordvin
+						has_name_list = name_list_merya
+						has_name_list = name_list_meshchera
+						has_name_list = name_list_mari
+						has_name_list = name_list_muroma
+					}
+				}
+				government_has_flag = government_is_clan
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_KHAGANATE
+			}
+		}
+		# baltic balto_finnic
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_latgalian
+						has_name_list = name_list_lithuanian
+						has_name_list = name_list_prussian
+						has_name_list = name_list_finnish
+						has_name_list = name_list_sami
+						has_name_list = name_list_estonian
+						has_name_list = name_list_karelian
+						has_name_list = name_list_vepsian
+					}
+				}
+				OR = {
+					has_title = title:d_sunni
+					has_title = title:d_shiite
+					has_title = title:d_masmudi
+					has_title = title:d_muwalladi
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_latgalian
+						has_name_list = name_list_lithuanian
+						has_name_list = name_list_prussian
+						has_name_list = name_list_finnish
+						has_name_list = name_list_sami
+						has_name_list = name_list_estonian
+						has_name_list = name_list_karelian
+						has_name_list = name_list_vepsian
+					}
+				}
+				has_title = title:d_imami
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_latgalian
+						has_name_list = name_list_lithuanian
+						has_name_list = name_list_prussian
+						has_name_list = name_list_finnish
+						has_name_list = name_list_sami
+						has_name_list = name_list_estonian
+						has_name_list = name_list_karelian
+						has_name_list = name_list_vepsian
+					}
+				}
+				OR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_tribal
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_EMPIRE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_latgalian
+						has_name_list = name_list_lithuanian
+						has_name_list = name_list_prussian
+						has_name_list = name_list_finnish
+						has_name_list = name_list_sami
+						has_name_list = name_list_estonian
+						has_name_list = name_list_karelian
+						has_name_list = name_list_vepsian
+					}
+				}
+				government_has_flag = government_is_republic
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_PRINCIPATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_latgalian
+						has_name_list = name_list_lithuanian
+						has_name_list = name_list_prussian
+						has_name_list = name_list_finnish
+						has_name_list = name_list_sami
+						has_name_list = name_list_estonian
+						has_name_list = name_list_karelian
+						has_name_list = name_list_vepsian
+					}
+				}
+				government_has_flag = government_is_clan
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_KHAGANATE
+			}
+		}
+		# iranian arabic berber
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_persian
+						has_name_list = name_list_sogdian
+						has_name_list = name_list_tocharian
+						has_name_list = name_list_kurdish
+						has_name_list = name_list_afghan
+						has_name_list = name_list_baloch
+						has_name_list = name_list_saka
+						has_name_list = name_list_daylamite
+						has_name_list = name_list_khwarezmian
+						has_name_list = name_list_tajik
+						has_name_list = name_list_bedouin
+						has_name_list = name_list_levantine
+						has_name_list = name_list_egyptian
+						has_name_list = name_list_maghrebi
+						has_name_list = name_list_andalusian
+						has_name_list = name_list_yemeni
+						has_name_list = name_list_butr
+						has_name_list = name_list_baranis
+						has_name_list = name_list_zaghawa
+						has_name_list = name_list_guanches
+					}
+				}
+				OR = {
+					has_title = title:d_sunni
+					has_title = title:d_shiite
+					has_title = title:d_masmudi
+					has_title = title:d_muwalladi
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_persian
+						has_name_list = name_list_sogdian
+						has_name_list = name_list_tocharian
+						has_name_list = name_list_kurdish
+						has_name_list = name_list_afghan
+						has_name_list = name_list_baloch
+						has_name_list = name_list_saka
+						has_name_list = name_list_daylamite
+						has_name_list = name_list_khwarezmian
+						has_name_list = name_list_tajik
+						has_name_list = name_list_bedouin
+						has_name_list = name_list_levantine
+						has_name_list = name_list_egyptian
+						has_name_list = name_list_maghrebi
+						has_name_list = name_list_andalusian
+						has_name_list = name_list_yemeni
+						has_name_list = name_list_butr
+						has_name_list = name_list_baranis
+						has_name_list = name_list_zaghawa
+						has_name_list = name_list_guanches
+					}
+				}
+				has_title = title:d_imami
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					has_name_list = name_list_andalusian
+				}
+				government_has_flag = government_is_feudal
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_EMPIRE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_persian
+						has_name_list = name_list_sogdian
+						has_name_list = name_list_tocharian
+						has_name_list = name_list_kurdish
+						has_name_list = name_list_afghan
+						has_name_list = name_list_baloch
+						has_name_list = name_list_saka
+						has_name_list = name_list_daylamite
+						has_name_list = name_list_khwarezmian
+						has_name_list = name_list_tajik
+						has_name_list = name_list_bedouin
+						has_name_list = name_list_levantine
+						has_name_list = name_list_egyptian
+						has_name_list = name_list_maghrebi
+						has_name_list = name_list_andalusian
+						has_name_list = name_list_yemeni
+						has_name_list = name_list_butr
+						has_name_list = name_list_baranis
+						has_name_list = name_list_zaghawa
+						has_name_list = name_list_guanches
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_STATE
+			}
+		}
+		# brythonic goidelic central_germanic north_germanic west_germanic latin frankish iberian
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_pictish
+						has_name_list = name_list_welsh
+						has_name_list = name_list_breton
+						has_name_list = name_list_cornish
+						has_name_list = name_list_cumbrian
+						has_name_list = name_list_irish
+						has_name_list = name_list_gaelic
+						has_name_list = name_list_saxon
+						has_name_list = name_list_franconian
+						has_name_list = name_list_swabian
+						has_name_list = name_list_bavarian
+						has_name_list = name_list_frisian
+						has_name_list = name_list_dutch
+						has_name_list = name_list_norse
+						has_name_list = name_list_swedish
+						has_name_list = name_list_norwegian
+						has_name_list = name_list_danish
+						has_name_list = name_list_english
+						has_name_list = name_list_anglo_saxon
+						has_name_list = name_list_old_saxon
+						has_name_list = name_list_scottish
+						has_name_list = name_list_italian
+						has_name_list = name_list_sardinian
+						has_name_list = name_list_cisalpine
+						has_name_list = name_list_lombard
+						has_name_list = name_list_sicilian
+						has_name_list = name_list_frankish
+						has_name_list = name_list_french
+						has_name_list = name_list_norman
+						has_name_list = name_list_occitan
+						has_name_list = name_list_outremer
+						has_name_list = name_list_basque
+						has_name_list = name_list_castilian
+						has_name_list = name_list_catalan
+						has_name_list = name_list_portuguese
+						has_name_list = name_list_visigothic
+						has_name_list = name_list_galician
+						has_name_list = name_list_asturleonese
+						has_name_list = name_list_aragonese
+						has_name_list = name_list_suebi
+					}
+				}
+				OR = {
+					has_title = title:d_sunni
+					has_title = title:d_shiite
+					has_title = title:d_masmudi
+					has_title = title:d_muwalladi
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_pictish
+						has_name_list = name_list_welsh
+						has_name_list = name_list_breton
+						has_name_list = name_list_cornish
+						has_name_list = name_list_cumbrian
+						has_name_list = name_list_irish
+						has_name_list = name_list_gaelic
+						has_name_list = name_list_saxon
+						has_name_list = name_list_franconian
+						has_name_list = name_list_swabian
+						has_name_list = name_list_bavarian
+						has_name_list = name_list_frisian
+						has_name_list = name_list_dutch
+						has_name_list = name_list_norse
+						has_name_list = name_list_swedish
+						has_name_list = name_list_norwegian
+						has_name_list = name_list_danish
+						has_name_list = name_list_english
+						has_name_list = name_list_anglo_saxon
+						has_name_list = name_list_old_saxon
+						has_name_list = name_list_scottish
+						has_name_list = name_list_italian
+						has_name_list = name_list_sardinian
+						has_name_list = name_list_cisalpine
+						has_name_list = name_list_lombard
+						has_name_list = name_list_sicilian
+						has_name_list = name_list_frankish
+						has_name_list = name_list_french
+						has_name_list = name_list_norman
+						has_name_list = name_list_occitan
+						has_name_list = name_list_outremer
+						has_name_list = name_list_basque
+						has_name_list = name_list_castilian
+						has_name_list = name_list_catalan
+						has_name_list = name_list_portuguese
+						has_name_list = name_list_visigothic
+						has_name_list = name_list_galician
+						has_name_list = name_list_asturleonese
+						has_name_list = name_list_aragonese
+						has_name_list = name_list_suebi
+					}
+				}
+				has_title = title:d_imami
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_pictish
+						has_name_list = name_list_welsh
+						has_name_list = name_list_breton
+						has_name_list = name_list_cornish
+						has_name_list = name_list_cumbrian
+						has_name_list = name_list_irish
+						has_name_list = name_list_gaelic
+						has_name_list = name_list_saxon
+						has_name_list = name_list_franconian
+						has_name_list = name_list_swabian
+						has_name_list = name_list_bavarian
+						has_name_list = name_list_frisian
+						has_name_list = name_list_dutch
+						has_name_list = name_list_norse
+						has_name_list = name_list_swedish
+						has_name_list = name_list_norwegian
+						has_name_list = name_list_danish
+						has_name_list = name_list_english
+						has_name_list = name_list_anglo_saxon
+						has_name_list = name_list_old_saxon
+						has_name_list = name_list_scottish
+						has_name_list = name_list_italian
+						has_name_list = name_list_sardinian
+						has_name_list = name_list_cisalpine
+						has_name_list = name_list_lombard
+						has_name_list = name_list_sicilian
+						has_name_list = name_list_frankish
+						has_name_list = name_list_french
+						has_name_list = name_list_norman
+						has_name_list = name_list_occitan
+						has_name_list = name_list_outremer
+						has_name_list = name_list_basque
+						has_name_list = name_list_castilian
+						has_name_list = name_list_catalan
+						has_name_list = name_list_portuguese
+						has_name_list = name_list_visigothic
+						has_name_list = name_list_galician
+						has_name_list = name_list_asturleonese
+						has_name_list = name_list_aragonese
+						has_name_list = name_list_suebi
+					}
+				}
+				OR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_tribal
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_EMPIRE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_pictish
+						has_name_list = name_list_welsh
+						has_name_list = name_list_breton
+						has_name_list = name_list_cornish
+						has_name_list = name_list_cumbrian
+						has_name_list = name_list_irish
+						has_name_list = name_list_gaelic
+						has_name_list = name_list_saxon
+						has_name_list = name_list_franconian
+						has_name_list = name_list_swabian
+						has_name_list = name_list_bavarian
+						has_name_list = name_list_frisian
+						has_name_list = name_list_dutch
+						has_name_list = name_list_norse
+						has_name_list = name_list_swedish
+						has_name_list = name_list_norwegian
+						has_name_list = name_list_danish
+						has_name_list = name_list_english
+						has_name_list = name_list_anglo_saxon
+						has_name_list = name_list_old_saxon
+						has_name_list = name_list_scottish
+						has_name_list = name_list_italian
+						has_name_list = name_list_sardinian
+						has_name_list = name_list_cisalpine
+						has_name_list = name_list_lombard
+						has_name_list = name_list_sicilian
+						has_name_list = name_list_frankish
+						has_name_list = name_list_french
+						has_name_list = name_list_norman
+						has_name_list = name_list_occitan
+						has_name_list = name_list_outremer
+						has_name_list = name_list_basque
+						has_name_list = name_list_castilian
+						has_name_list = name_list_catalan
+						has_name_list = name_list_portuguese
+						has_name_list = name_list_visigothic
+						has_name_list = name_list_galician
+						has_name_list = name_list_asturleonese
+						has_name_list = name_list_aragonese
+						has_name_list = name_list_suebi
+					}
+				}
+				government_has_flag = government_is_republic
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_PRINCIPATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_pictish
+						has_name_list = name_list_welsh
+						has_name_list = name_list_breton
+						has_name_list = name_list_cornish
+						has_name_list = name_list_cumbrian
+						has_name_list = name_list_irish
+						has_name_list = name_list_gaelic
+						has_name_list = name_list_saxon
+						has_name_list = name_list_franconian
+						has_name_list = name_list_swabian
+						has_name_list = name_list_bavarian
+						has_name_list = name_list_frisian
+						has_name_list = name_list_dutch
+						has_name_list = name_list_norse
+						has_name_list = name_list_swedish
+						has_name_list = name_list_norwegian
+						has_name_list = name_list_danish
+						has_name_list = name_list_english
+						has_name_list = name_list_anglo_saxon
+						has_name_list = name_list_old_saxon
+						has_name_list = name_list_scottish
+						has_name_list = name_list_italian
+						has_name_list = name_list_sardinian
+						has_name_list = name_list_cisalpine
+						has_name_list = name_list_lombard
+						has_name_list = name_list_sicilian
+						has_name_list = name_list_frankish
+						has_name_list = name_list_french
+						has_name_list = name_list_norman
+						has_name_list = name_list_occitan
+						has_name_list = name_list_outremer
+						has_name_list = name_list_basque
+						has_name_list = name_list_castilian
+						has_name_list = name_list_catalan
+						has_name_list = name_list_portuguese
+						has_name_list = name_list_visigothic
+						has_name_list = name_list_galician
+						has_name_list = name_list_asturleonese
+						has_name_list = name_list_aragonese
+						has_name_list = name_list_suebi
+					}
+				}
+				government_has_flag = government_is_clan
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_STATE
+			}
+		}
+		# turkic
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_turkish
+						has_name_list = name_list_pecheneg
+						has_name_list = name_list_cuman
+						has_name_list = name_list_khazar
+						has_name_list = name_list_bolghar
+						has_name_list = name_list_bashkir
+						has_name_list = name_list_avar
+						has_name_list = name_list_karluk
+						has_name_list = name_list_kimek
+						has_name_list = name_list_kipchak
+						has_name_list = name_list_laktan
+						has_name_list = name_list_kirghiz
+						has_name_list = name_list_uyghur
+						has_name_list = name_list_yughur
+						has_name_list = name_list_uriankhai
+						has_name_list = name_list_chuvash
+						has_name_list = name_list_shatuo
+						has_name_list = name_list_ongud
+					}
+				}
+				OR = {
+					has_title = title:d_sunni
+					has_title = title:d_shiite
+					has_title = title:d_masmudi
+					has_title = title:d_muwalladi
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_turkish
+						has_name_list = name_list_pecheneg
+						has_name_list = name_list_cuman
+						has_name_list = name_list_khazar
+						has_name_list = name_list_bolghar
+						has_name_list = name_list_bashkir
+						has_name_list = name_list_avar
+						has_name_list = name_list_karluk
+						has_name_list = name_list_kimek
+						has_name_list = name_list_kipchak
+						has_name_list = name_list_laktan
+						has_name_list = name_list_kirghiz
+						has_name_list = name_list_uyghur
+						has_name_list = name_list_yughur
+						has_name_list = name_list_uriankhai
+						has_name_list = name_list_chuvash
+						has_name_list = name_list_shatuo
+						has_name_list = name_list_ongud
+					}
+				}
+				has_title = title:d_imami
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					has_name_list = name_list_turkish
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_STATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_pecheneg
+						has_name_list = name_list_cuman
+						has_name_list = name_list_khazar
+						has_name_list = name_list_bolghar
+						has_name_list = name_list_bashkir
+						has_name_list = name_list_avar
+						has_name_list = name_list_karluk
+						has_name_list = name_list_kimek
+						has_name_list = name_list_kipchak
+						has_name_list = name_list_laktan
+						has_name_list = name_list_kirghiz
+						has_name_list = name_list_uyghur
+						has_name_list = name_list_yughur
+						has_name_list = name_list_uriankhai
+						has_name_list = name_list_chuvash
+						has_name_list = name_list_shatuo
+						has_name_list = name_list_ongud
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_KHAGANATE
+			}
+		}
+		# mongolic
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_mongol
+						has_name_list = name_list_buryat
+						has_name_list = name_list_oirat
+						has_name_list = name_list_naiman
+						has_name_list = name_list_kerait
+						has_name_list = name_list_tuyuhun
+						has_name_list = name_list_jurchen
+					}
+				}
+				OR = {
+					has_title = title:d_sunni
+					has_title = title:d_shiite
+					has_title = title:d_masmudi
+					has_title = title:d_muwalladi
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_mongol
+						has_name_list = name_list_buryat
+						has_name_list = name_list_oirat
+						has_name_list = name_list_naiman
+						has_name_list = name_list_kerait
+						has_name_list = name_list_tuyuhun
+						has_name_list = name_list_jurchen
+					}
+				}
+				has_title = title:d_imami
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_mongol
+						has_name_list = name_list_buryat
+						has_name_list = name_list_oirat
+						has_name_list = name_list_naiman
+						has_name_list = name_list_kerait
+						has_name_list = name_list_tuyuhun
+						has_name_list = name_list_jurchen
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_HORDE
+			}
+		}
+		# alan
+		else_if = {
+			limit = {
+				culture = {
+					has_name_list = name_list_alan
+				}
+				OR = {
+					has_title = title:d_sunni
+					has_title = title:d_shiite
+					has_title = title:d_masmudi
+					has_title = title:d_muwalladi
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					has_name_list = name_list_alan
+				}
+				has_title = title:d_imami
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					has_name_list = name_list_alan
+				}
+				government_has_flag = government_is_feudal
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_EMPIRE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					has_name_list = name_list_alan
+				}
+				government_has_flag = government_is_republic
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_PRINCIPATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					has_name_list = name_list_alan
+				}
+				OR = {
+					government_has_flag = government_is_tribal
+					government_has_flag = government_is_clan
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_KHAGANATE
+			}
+		}
+		# byzantine
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_armenian
+						has_name_list = name_list_georgian
+					}
+				}
+				OR = {
+					has_title = title:d_sunni
+					has_title = title:d_shiite
+					has_title = title:d_masmudi
+					has_title = title:d_muwalladi
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_armenian
+						has_name_list = name_list_georgian
+					}
+				}
+				has_title = title:d_imami
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_armenian
+						has_name_list = name_list_georgian
+					}
+				}
+				OR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_tribal
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_EMPIRE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_armenian
+						has_name_list = name_list_georgian
+					}
+				}
+				government_has_flag = government_is_republic
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_PRINCIPATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_armenian
+						has_name_list = name_list_georgian
+					}
+				}
+				government_has_flag = government_is_clan
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_STATE
+			}
+		}
+		# burman dravidian indo_aryan qiangic tibetan
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_burmese
+						has_name_list = name_list_mon
+						has_name_list = name_list_tamil
+						has_name_list = name_list_telugu
+						has_name_list = name_list_kannada
+						has_name_list = name_list_gond
+						has_name_list = name_list_bengali
+						has_name_list = name_list_oriya
+						has_name_list = name_list_assamese
+						has_name_list = name_list_hindustani
+						has_name_list = name_list_gujarati
+						has_name_list = name_list_punjabi
+						has_name_list = name_list_rajput
+						has_name_list = name_list_sindhi
+						has_name_list = name_list_marathi
+						has_name_list = name_list_kashmiri
+						has_name_list = name_list_sinhala
+						has_name_list = name_list_nepali
+						has_name_list = name_list_malvi
+						has_name_list = name_list_tangut
+						has_name_list = name_list_qiang
+						has_name_list = name_list_bodpa
+						has_name_list = name_list_zhangzhung
+						has_name_list = name_list_sumpa
+						has_name_list = name_list_tsangpa
+						has_name_list = name_list_kirati
+						has_name_list = name_list_lhomon
+					}
+				}
+				OR = {
+					has_title = title:d_sunni
+					has_title = title:d_shiite
+					has_title = title:d_masmudi
+					has_title = title:d_muwalladi
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_burmese
+						has_name_list = name_list_mon
+						has_name_list = name_list_tamil
+						has_name_list = name_list_telugu
+						has_name_list = name_list_kannada
+						has_name_list = name_list_gond
+						has_name_list = name_list_bengali
+						has_name_list = name_list_oriya
+						has_name_list = name_list_assamese
+						has_name_list = name_list_hindustani
+						has_name_list = name_list_gujarati
+						has_name_list = name_list_punjabi
+						has_name_list = name_list_rajput
+						has_name_list = name_list_sindhi
+						has_name_list = name_list_marathi
+						has_name_list = name_list_kashmiri
+						has_name_list = name_list_sinhala
+						has_name_list = name_list_nepali
+						has_name_list = name_list_malvi
+						has_name_list = name_list_tangut
+						has_name_list = name_list_qiang
+						has_name_list = name_list_bodpa
+						has_name_list = name_list_zhangzhung
+						has_name_list = name_list_sumpa
+						has_name_list = name_list_tsangpa
+						has_name_list = name_list_kirati
+						has_name_list = name_list_lhomon
+					}
+				}
+				has_title = title:d_imami
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_burmese
+						has_name_list = name_list_mon
+						has_name_list = name_list_tamil
+						has_name_list = name_list_telugu
+						has_name_list = name_list_kannada
+						has_name_list = name_list_gond
+						has_name_list = name_list_bengali
+						has_name_list = name_list_oriya
+						has_name_list = name_list_assamese
+						has_name_list = name_list_hindustani
+						has_name_list = name_list_gujarati
+						has_name_list = name_list_punjabi
+						has_name_list = name_list_rajput
+						has_name_list = name_list_sindhi
+						has_name_list = name_list_marathi
+						has_name_list = name_list_kashmiri
+						has_name_list = name_list_sinhala
+						has_name_list = name_list_nepali
+						has_name_list = name_list_malvi
+						has_name_list = name_list_tangut
+						has_name_list = name_list_qiang
+						has_name_list = name_list_bodpa
+						has_name_list = name_list_zhangzhung
+						has_name_list = name_list_sumpa
+						has_name_list = name_list_tsangpa
+						has_name_list = name_list_kirati
+						has_name_list = name_list_lhomon
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_STATE
+			}
+		}
+		# akan central_african east_african west_african sahelian senegambian somalian yoruba
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_akan
+						has_name_list = name_list_kru
+						has_name_list = name_list_guan
+						has_name_list = name_list_kanuri
+						has_name_list = name_list_hausa
+						has_name_list = name_list_sao
+						has_name_list = name_list_nupe
+						has_name_list = name_list_ethiopian
+						has_name_list = name_list_nubian
+						has_name_list = name_list_welayta
+						has_name_list = name_list_daju
+						has_name_list = name_list_malinke
+						has_name_list = name_list_bobo
+						has_name_list = name_list_gur
+						has_name_list = name_list_marka
+						has_name_list = name_list_mel
+						has_name_list = name_list_soninke
+						has_name_list = name_list_bozo
+						has_name_list = name_list_mossi
+						has_name_list = name_list_sorko
+						has_name_list = name_list_gaw
+						has_name_list = name_list_songhai
+						has_name_list = name_list_pulaar
+						has_name_list = name_list_serer
+						has_name_list = name_list_wolof
+						has_name_list = name_list_somali
+						has_name_list = name_list_beja
+						has_name_list = name_list_afar
+						has_name_list = name_list_yoruba
+						has_name_list = name_list_edo
+						has_name_list = name_list_igbo
+						has_name_list = name_list_ewe
+					}
+				}
+				OR = {
+					has_title = title:d_sunni
+					has_title = title:d_shiite
+					has_title = title:d_masmudi
+					has_title = title:d_muwalladi
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_akan
+						has_name_list = name_list_kru
+						has_name_list = name_list_guan
+						has_name_list = name_list_kanuri
+						has_name_list = name_list_hausa
+						has_name_list = name_list_sao
+						has_name_list = name_list_nupe
+						has_name_list = name_list_ethiopian
+						has_name_list = name_list_nubian
+						has_name_list = name_list_welayta
+						has_name_list = name_list_daju
+						has_name_list = name_list_malinke
+						has_name_list = name_list_bobo
+						has_name_list = name_list_gur
+						has_name_list = name_list_marka
+						has_name_list = name_list_mel
+						has_name_list = name_list_soninke
+						has_name_list = name_list_bozo
+						has_name_list = name_list_mossi
+						has_name_list = name_list_sorko
+						has_name_list = name_list_gaw
+						has_name_list = name_list_songhai
+						has_name_list = name_list_pulaar
+						has_name_list = name_list_serer
+						has_name_list = name_list_wolof
+						has_name_list = name_list_somali
+						has_name_list = name_list_beja
+						has_name_list = name_list_afar
+						has_name_list = name_list_yoruba
+						has_name_list = name_list_edo
+						has_name_list = name_list_igbo
+						has_name_list = name_list_ewe
+					}
+				}
+				has_title = title:d_imami
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_akan
+						has_name_list = name_list_kru
+						has_name_list = name_list_guan
+						has_name_list = name_list_kanuri
+						has_name_list = name_list_hausa
+						has_name_list = name_list_sao
+						has_name_list = name_list_nupe
+						has_name_list = name_list_ethiopian
+						has_name_list = name_list_nubian
+						has_name_list = name_list_welayta
+						has_name_list = name_list_daju
+						has_name_list = name_list_malinke
+						has_name_list = name_list_bobo
+						has_name_list = name_list_gur
+						has_name_list = name_list_marka
+						has_name_list = name_list_mel
+						has_name_list = name_list_soninke
+						has_name_list = name_list_bozo
+						has_name_list = name_list_mossi
+						has_name_list = name_list_sorko
+						has_name_list = name_list_gaw
+						has_name_list = name_list_songhai
+						has_name_list = name_list_pulaar
+						has_name_list = name_list_serer
+						has_name_list = name_list_wolof
+						has_name_list = name_list_somali
+						has_name_list = name_list_beja
+						has_name_list = name_list_afar
+						has_name_list = name_list_yoruba
+						has_name_list = name_list_edo
+						has_name_list = name_list_igbo
+						has_name_list = name_list_ewe
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_STATE
+			}
+		}
+		# chinese
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_khitan
+						has_name_list = name_list_han
+					}
+				}
+				OR = {
+					has_title = title:d_sunni
+					has_title = title:d_shiite
+					has_title = title:d_masmudi
+					has_title = title:d_muwalladi
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_khitan
+						has_name_list = name_list_han
+					}
+				}
+				has_title = title:d_imami
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_khitan
+						has_name_list = name_list_han
+					}
+				}
+				government_has_flag = government_is_republic
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_STATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_khitan
+						has_name_list = name_list_han
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_EMPIRE
+			}
+		}
+		# israelite
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_ashkenazi
+						has_name_list = name_list_sephardi
+						has_name_list = name_list_radhanite
+					}
+				}
+				OR = {
+					has_title = title:d_sunni
+					has_title = title:d_shiite
+					has_title = title:d_masmudi
+					has_title = title:d_muwalladi
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_ashkenazi
+						has_name_list = name_list_sephardi
+						has_name_list = name_list_radhanite
+					}
+				}
+				has_title = title:d_imami
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_ashkenazi
+						has_name_list = name_list_sephardi
+						has_name_list = name_list_radhanite
+					}
+				}
+				OR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_tribal
+					government_has_flag = government_is_clan
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_EMPIRE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_ashkenazi
+						has_name_list = name_list_sephardi
+						has_name_list = name_list_radhanite
+					}
+				}
+				government_has_flag = government_is_republic
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_PRINCIPATE
+			}
+		}
+		#
+		else = {
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_EMPIRE
+			}
+		}
+	}
+}
+
+#############################################
+
+on_action_ATM_title_gain_caliphate_e_togskol_khanate = {
+	trigger = {
+		has_title = title:e_togskol_khanate
+	}
+	effect = {
+		if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_roman
+						has_name_list = name_list_greek
+						has_name_list = name_list_assyrian
+						has_name_list = name_list_pommeranian
+						has_name_list = name_list_czech
+						has_name_list = name_list_polish
+						has_name_list = name_list_polabian
+						has_name_list = name_list_slovien
+						has_name_list = name_list_carantanian
+						has_name_list = name_list_croatian
+						has_name_list = name_list_bosnian
+						has_name_list = name_list_serbian
+						has_name_list = name_list_vlach
+						has_name_list = name_list_bulgarian	
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_russian
+						has_name_list = name_list_ilmenian
+						has_name_list = name_list_severian
+						has_name_list = name_list_volhynian
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_mogyer
+						has_name_list = name_list_hungarian
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_komi
+						has_name_list = name_list_khanty
+						has_name_list = name_list_samoyed
+						has_name_list = name_list_mordvin
+						has_name_list = name_list_merya
+						has_name_list = name_list_meshchera
+						has_name_list = name_list_mari
+						has_name_list = name_list_muroma
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_latgalian
+						has_name_list = name_list_lithuanian
+						has_name_list = name_list_prussian
+						has_name_list = name_list_finnish
+						has_name_list = name_list_sami
+						has_name_list = name_list_estonian
+						has_name_list = name_list_karelian
+						has_name_list = name_list_vepsian
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_persian
+						has_name_list = name_list_sogdian
+						has_name_list = name_list_tocharian
+						has_name_list = name_list_kurdish
+						has_name_list = name_list_afghan
+						has_name_list = name_list_baloch
+						has_name_list = name_list_saka
+						has_name_list = name_list_daylamite
+						has_name_list = name_list_khwarezmian
+						has_name_list = name_list_tajik
+						has_name_list = name_list_bedouin
+						has_name_list = name_list_levantine
+						has_name_list = name_list_egyptian
+						has_name_list = name_list_maghrebi
+						has_name_list = name_list_andalusian
+						has_name_list = name_list_yemeni
+						has_name_list = name_list_butr
+						has_name_list = name_list_baranis
+						has_name_list = name_list_zaghawa
+						has_name_list = name_list_guanches
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_pictish
+						has_name_list = name_list_welsh
+						has_name_list = name_list_breton
+						has_name_list = name_list_cornish
+						has_name_list = name_list_cumbrian
+						has_name_list = name_list_irish
+						has_name_list = name_list_gaelic
+						has_name_list = name_list_saxon
+						has_name_list = name_list_franconian
+						has_name_list = name_list_swabian
+						has_name_list = name_list_bavarian
+						has_name_list = name_list_frisian
+						has_name_list = name_list_dutch
+						has_name_list = name_list_norse
+						has_name_list = name_list_swedish
+						has_name_list = name_list_norwegian
+						has_name_list = name_list_danish
+						has_name_list = name_list_english
+						has_name_list = name_list_anglo_saxon
+						has_name_list = name_list_old_saxon
+						has_name_list = name_list_scottish
+						has_name_list = name_list_italian
+						has_name_list = name_list_sardinian
+						has_name_list = name_list_cisalpine
+						has_name_list = name_list_lombard
+						has_name_list = name_list_sicilian
+						has_name_list = name_list_frankish
+						has_name_list = name_list_french
+						has_name_list = name_list_norman
+						has_name_list = name_list_occitan
+						has_name_list = name_list_outremer
+						has_name_list = name_list_basque
+						has_name_list = name_list_castilian
+						has_name_list = name_list_catalan
+						has_name_list = name_list_portuguese
+						has_name_list = name_list_visigothic
+						has_name_list = name_list_galician
+						has_name_list = name_list_asturleonese
+						has_name_list = name_list_aragonese
+						has_name_list = name_list_suebi
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_turkish
+						has_name_list = name_list_pecheneg
+						has_name_list = name_list_cuman
+						has_name_list = name_list_khazar
+						has_name_list = name_list_bolghar
+						has_name_list = name_list_bashkir
+						has_name_list = name_list_avar
+						has_name_list = name_list_karluk
+						has_name_list = name_list_kimek
+						has_name_list = name_list_kipchak
+						has_name_list = name_list_laktan
+						has_name_list = name_list_kirghiz
+						has_name_list = name_list_uyghur
+						has_name_list = name_list_yughur
+						has_name_list = name_list_uriankhai
+						has_name_list = name_list_chuvash
+						has_name_list = name_list_shatuo
+						has_name_list = name_list_ongud
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_mongol
+						has_name_list = name_list_buryat
+						has_name_list = name_list_oirat
+						has_name_list = name_list_naiman
+						has_name_list = name_list_kerait
+						has_name_list = name_list_tuyuhun
+						has_name_list = name_list_jurchen
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_alan
+						has_name_list = name_list_armenian
+						has_name_list = name_list_georgian
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_burmese
+						has_name_list = name_list_mon
+						has_name_list = name_list_tamil
+						has_name_list = name_list_telugu
+						has_name_list = name_list_kannada
+						has_name_list = name_list_gond
+						has_name_list = name_list_bengali
+						has_name_list = name_list_oriya
+						has_name_list = name_list_assamese
+						has_name_list = name_list_hindustani
+						has_name_list = name_list_gujarati
+						has_name_list = name_list_punjabi
+						has_name_list = name_list_rajput
+						has_name_list = name_list_sindhi
+						has_name_list = name_list_marathi
+						has_name_list = name_list_kashmiri
+						has_name_list = name_list_sinhala
+						has_name_list = name_list_nepali
+						has_name_list = name_list_malvi
+						has_name_list = name_list_tangut
+						has_name_list = name_list_qiang
+						has_name_list = name_list_bodpa
+						has_name_list = name_list_zhangzhung
+						has_name_list = name_list_sumpa
+						has_name_list = name_list_tsangpa
+						has_name_list = name_list_kirati
+						has_name_list = name_list_lhomon
+						has_name_list = name_list_akan
+						has_name_list = name_list_kru
+						has_name_list = name_list_guan
+						has_name_list = name_list_kanuri
+						has_name_list = name_list_hausa
+						has_name_list = name_list_sao
+						has_name_list = name_list_nupe
+						has_name_list = name_list_ethiopian
+						has_name_list = name_list_nubian
+						has_name_list = name_list_welayta
+						has_name_list = name_list_daju
+						has_name_list = name_list_malinke
+						has_name_list = name_list_bobo
+						has_name_list = name_list_gur
+						has_name_list = name_list_marka
+						has_name_list = name_list_mel
+						has_name_list = name_list_soninke
+						has_name_list = name_list_bozo
+						has_name_list = name_list_mossi
+						has_name_list = name_list_sorko
+						has_name_list = name_list_gaw
+						has_name_list = name_list_songhai
+						has_name_list = name_list_pulaar
+						has_name_list = name_list_serer
+						has_name_list = name_list_wolof
+						has_name_list = name_list_somali
+						has_name_list = name_list_beja
+						has_name_list = name_list_afar
+						has_name_list = name_list_yoruba
+						has_name_list = name_list_edo
+						has_name_list = name_list_igbo
+						has_name_list = name_list_ewe
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_khitan
+						has_name_list = name_list_han
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_ashkenazi
+						has_name_list = name_list_sephardi
+						has_name_list = name_list_radhanite
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+		#
+		else = {
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_CALIPHATE
+			}
+		}
+	}
+}
+
+#############################################
+
+on_action_ATM_title_gain_imamate_e_togskol_khanate = {
+	trigger = {
+		has_title = title:e_togskol_khanate
+	}
+	effect = {
+		if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_roman
+						has_name_list = name_list_greek
+						has_name_list = name_list_assyrian
+						has_name_list = name_list_pommeranian
+						has_name_list = name_list_czech
+						has_name_list = name_list_polish
+						has_name_list = name_list_polabian
+						has_name_list = name_list_slovien
+						has_name_list = name_list_carantanian
+						has_name_list = name_list_croatian
+						has_name_list = name_list_bosnian
+						has_name_list = name_list_serbian
+						has_name_list = name_list_vlach
+						has_name_list = name_list_bulgarian	
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_russian
+						has_name_list = name_list_ilmenian
+						has_name_list = name_list_severian
+						has_name_list = name_list_volhynian
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_mogyer
+						has_name_list = name_list_hungarian
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_komi
+						has_name_list = name_list_khanty
+						has_name_list = name_list_samoyed
+						has_name_list = name_list_mordvin
+						has_name_list = name_list_merya
+						has_name_list = name_list_meshchera
+						has_name_list = name_list_mari
+						has_name_list = name_list_muroma
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_latgalian
+						has_name_list = name_list_lithuanian
+						has_name_list = name_list_prussian
+						has_name_list = name_list_finnish
+						has_name_list = name_list_sami
+						has_name_list = name_list_estonian
+						has_name_list = name_list_karelian
+						has_name_list = name_list_vepsian
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_persian
+						has_name_list = name_list_sogdian
+						has_name_list = name_list_tocharian
+						has_name_list = name_list_kurdish
+						has_name_list = name_list_afghan
+						has_name_list = name_list_baloch
+						has_name_list = name_list_saka
+						has_name_list = name_list_daylamite
+						has_name_list = name_list_khwarezmian
+						has_name_list = name_list_tajik
+						has_name_list = name_list_bedouin
+						has_name_list = name_list_levantine
+						has_name_list = name_list_egyptian
+						has_name_list = name_list_maghrebi
+						has_name_list = name_list_andalusian
+						has_name_list = name_list_yemeni
+						has_name_list = name_list_butr
+						has_name_list = name_list_baranis
+						has_name_list = name_list_zaghawa
+						has_name_list = name_list_guanches
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_pictish
+						has_name_list = name_list_welsh
+						has_name_list = name_list_breton
+						has_name_list = name_list_cornish
+						has_name_list = name_list_cumbrian
+						has_name_list = name_list_irish
+						has_name_list = name_list_gaelic
+						has_name_list = name_list_saxon
+						has_name_list = name_list_franconian
+						has_name_list = name_list_swabian
+						has_name_list = name_list_bavarian
+						has_name_list = name_list_frisian
+						has_name_list = name_list_dutch
+						has_name_list = name_list_norse
+						has_name_list = name_list_swedish
+						has_name_list = name_list_norwegian
+						has_name_list = name_list_danish
+						has_name_list = name_list_english
+						has_name_list = name_list_anglo_saxon
+						has_name_list = name_list_old_saxon
+						has_name_list = name_list_scottish
+						has_name_list = name_list_italian
+						has_name_list = name_list_sardinian
+						has_name_list = name_list_cisalpine
+						has_name_list = name_list_lombard
+						has_name_list = name_list_sicilian
+						has_name_list = name_list_frankish
+						has_name_list = name_list_french
+						has_name_list = name_list_norman
+						has_name_list = name_list_occitan
+						has_name_list = name_list_outremer
+						has_name_list = name_list_basque
+						has_name_list = name_list_castilian
+						has_name_list = name_list_catalan
+						has_name_list = name_list_portuguese
+						has_name_list = name_list_visigothic
+						has_name_list = name_list_galician
+						has_name_list = name_list_asturleonese
+						has_name_list = name_list_aragonese
+						has_name_list = name_list_suebi
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_turkish
+						has_name_list = name_list_pecheneg
+						has_name_list = name_list_cuman
+						has_name_list = name_list_khazar
+						has_name_list = name_list_bolghar
+						has_name_list = name_list_bashkir
+						has_name_list = name_list_avar
+						has_name_list = name_list_karluk
+						has_name_list = name_list_kimek
+						has_name_list = name_list_kipchak
+						has_name_list = name_list_laktan
+						has_name_list = name_list_kirghiz
+						has_name_list = name_list_uyghur
+						has_name_list = name_list_yughur
+						has_name_list = name_list_uriankhai
+						has_name_list = name_list_chuvash
+						has_name_list = name_list_shatuo
+						has_name_list = name_list_ongud
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_mongol
+						has_name_list = name_list_buryat
+						has_name_list = name_list_oirat
+						has_name_list = name_list_naiman
+						has_name_list = name_list_kerait
+						has_name_list = name_list_tuyuhun
+						has_name_list = name_list_jurchen
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_alan
+						has_name_list = name_list_armenian
+						has_name_list = name_list_georgian
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_burmese
+						has_name_list = name_list_mon
+						has_name_list = name_list_tamil
+						has_name_list = name_list_telugu
+						has_name_list = name_list_kannada
+						has_name_list = name_list_gond
+						has_name_list = name_list_bengali
+						has_name_list = name_list_oriya
+						has_name_list = name_list_assamese
+						has_name_list = name_list_hindustani
+						has_name_list = name_list_gujarati
+						has_name_list = name_list_punjabi
+						has_name_list = name_list_rajput
+						has_name_list = name_list_sindhi
+						has_name_list = name_list_marathi
+						has_name_list = name_list_kashmiri
+						has_name_list = name_list_sinhala
+						has_name_list = name_list_nepali
+						has_name_list = name_list_malvi
+						has_name_list = name_list_tangut
+						has_name_list = name_list_qiang
+						has_name_list = name_list_bodpa
+						has_name_list = name_list_zhangzhung
+						has_name_list = name_list_sumpa
+						has_name_list = name_list_tsangpa
+						has_name_list = name_list_kirati
+						has_name_list = name_list_lhomon
+						has_name_list = name_list_akan
+						has_name_list = name_list_kru
+						has_name_list = name_list_guan
+						has_name_list = name_list_kanuri
+						has_name_list = name_list_hausa
+						has_name_list = name_list_sao
+						has_name_list = name_list_nupe
+						has_name_list = name_list_ethiopian
+						has_name_list = name_list_nubian
+						has_name_list = name_list_welayta
+						has_name_list = name_list_daju
+						has_name_list = name_list_malinke
+						has_name_list = name_list_bobo
+						has_name_list = name_list_gur
+						has_name_list = name_list_marka
+						has_name_list = name_list_mel
+						has_name_list = name_list_soninke
+						has_name_list = name_list_bozo
+						has_name_list = name_list_mossi
+						has_name_list = name_list_sorko
+						has_name_list = name_list_gaw
+						has_name_list = name_list_songhai
+						has_name_list = name_list_pulaar
+						has_name_list = name_list_serer
+						has_name_list = name_list_wolof
+						has_name_list = name_list_somali
+						has_name_list = name_list_beja
+						has_name_list = name_list_afar
+						has_name_list = name_list_yoruba
+						has_name_list = name_list_edo
+						has_name_list = name_list_igbo
+						has_name_list = name_list_ewe
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_khitan
+						has_name_list = name_list_han
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		else_if = {
+			limit = {
+				culture = {
+					OR = {
+						has_name_list = name_list_ashkenazi
+						has_name_list = name_list_sephardi
+						has_name_list = name_list_radhanite
+					}
+				}
+			}
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+		#
+		else = {
+			title:e_togskol_khanate = {
+				set_title_name = AN_TOGSKOL_IMAMATE
+			}
+		}
+	}
+}
