@@ -1,0 +1,69 @@
+﻿l_russian:
+  # No tooltip versions
+ knight_grid_no_tooltip:0 "Гридь"
+ knight_grid_no_tooltip_plural:0 "Гриди"
+ 
+ knight_junak_no_tooltip:0 "Юнак"
+ knight_junak_no_tooltip_plural:0 "Юнаки"
+ 
+ knight_sepuh_no_tooltip:0 "Сепух"
+ knight_sepuh_no_tooltip_plural:0 "Сепухи"
+ 
+ knight_azat_no_tooltip:0 "Азат"
+ knight_azat_no_tooltip_plural:0 "Азаты"
+ 
+ knight_equit_no_tooltip:0 "Эквит"
+ knight_equit_no_tooltip_plural:0 "Эквиты"
+ 
+ knight_voinik_no_tooltip:0 "Войник"
+ knight_voinik_no_tooltip_plural:0 "Войники"
+  
+  # Lowercase versions
+ knight_grid_no_tooltip_lowercase:0 "гридь"
+ knight_grid_no_tooltip_lowercase_plural:0 "гриди"
+ knight_grid_no_tooltip_lowercase_plural_possessive:0 "гридей"
+ knight_grid_no_tooltip_lowercase_adjective:0 "гридск"
+ 
+ knight_junak_no_tooltip_lowercase:0 "юнак"
+ knight_junak_no_tooltip_lowercase_plural:0 "юнаки"
+ knight_junak_no_tooltip_lowercase_plural_possessive:0 "юнаков"
+ knight_junak_no_tooltip_lowercase_adjective:0 "юнакск"
+ 
+ knight_sepuh_no_tooltip_lowercase:0 "сепух"
+ knight_sepuh_no_tooltip_lowercase_plural:0 "сепухи"
+ knight_sepuh_no_tooltip_lowercase_plural_possessive:0 "сепухов"
+ knight_sepuh_no_tooltip_lowercase_adjective:0 "сепухск"
+ 
+ knight_azat_no_tooltip_lowercase:0 "азат"
+ knight_azat_no_tooltip_lowercase_plural:0 "азаты"
+ knight_azat_no_tooltip_lowercase_plural_possessive:0 "азатов"
+ knight_azat_no_tooltip_lowercase_adjective:0 "азатск"
+ 
+ knight_equit_no_tooltip_lowercase:0 "эквит"
+ knight_equit_no_tooltip_lowercase_plural:0 "эквиты"
+ knight_equit_no_tooltip_lowercase_plural_possessive:0 "эквитов"
+ knight_equit_no_tooltip_lowercase_adjective:0 "эквитск"
+ 
+ knight_voinik_no_tooltip_lowercase:0 "войник"
+ knight_voinik_no_tooltip_lowercase_plural:0 "войники"
+ knight_voinik_no_tooltip_lowercase_plural_possessive:0 "войников"
+ knight_voinik_no_tooltip_lowercase_adjective:0 "войникск"
+
+  #Game Concept versions
+ knight_grid:0 "[Concept( 'knight', '$knight_grid_no_tooltip$' )|E]"
+ knight_grid_plural:0 "[Concept( 'knight', '$knight_grid_no_tooltip_plural$' )|E]"
+ 
+ knight_junak:0 "[Concept( 'knight', '$knight_junak_no_tooltip$' )|E]"
+ knight_junak_plural:0 "[Concept( 'knight', '$knight_junak_no_tooltip_plural$' )|E]"
+ 
+ knight_sepuh:0 "[Concept( 'knight', '$knight_sepuh_no_tooltip$' )|E]"
+ knight_sepuh_plural:0 "[Concept( 'knight', '$knight_sepuh_no_tooltip_plural$' )|E]"
+ 
+ knight_azat:0 "[Concept( 'knight', '$knight_azat_no_tooltip$' )|E]"
+ knight_azat_plural:0 "[Concept( 'knight', '$knight_azat_no_tooltip_plural$' )|E]"
+ 
+ knight_equit:0 "[Concept( 'knight', '$knight_equit_no_tooltip$' )|E]"
+ knight_equit_plural:0 "[Concept( 'knight', '$knight_equit_no_tooltip_plural$' )|E]"
+ 
+ knight_voinik:0 "[Concept( 'knight', '$knight_voinik_no_tooltip$' )|E]"
+ knight_voinik_plural:0 "[Concept( 'knight', '$knight_voinik_no_tooltip_plural$' )|E]"
