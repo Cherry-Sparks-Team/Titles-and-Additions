@@ -7,5 +7,5 @@ tags={
 	"Culture"
 }
 name="Titles&Additions - Версия Стукова"
-supported_version="1.9.2.1"
+supported_version="1.11.2"
 remote_file_id="2981919404"

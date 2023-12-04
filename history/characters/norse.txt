@@ -51,7 +51,8 @@
 	learning = 3
 	trait = gregarious
 	trait = ambitious
-	trait=greedy
+	trait = greedy
+	trait = intellect_good_1
 	sexuality = heterosexual
 	867.1.1 = {
 		birth = yes
@@ -629,7 +630,8 @@
 }
 
 6879 = {
-	name = "Vigdis" #
+	name = "Vigdis" # Haesteinn's wife Vigdis
+	dna = 6879_vigdis
 	female = yes
 	religion = norse_pagan
 	culture = norse
@@ -793,6 +795,7 @@
 
 40606 = {
 	name = "Oleg"		#Oleg the Seer
+	dna = 40606_helgi_the_seer
 	#dynasty = 705
 	dynasty = norse_roden
 	religion = slavic_pagan
@@ -1012,6 +1015,7 @@
 
 100500 = {
 	name = "Eirikr" # According to most sources son of "Anund_Uppsale", but we've cut both him and his father "Erik", son of Björn Ironside
+	dna = 100500_eirikr
 	dynasty_house = house_munso #Munsö
 	martial = 4
 	diplomacy = 4
@@ -3700,6 +3704,7 @@
 
 6836 = {
 	name = "Aslaug" # Aka Kraka or Randalin
+	dna = 6836_aslaug
 	female = yes
 	religion = "norse_pagan"
 	culture = "norse"
@@ -3940,6 +3945,7 @@
 
 306011 = { #Fictional wife of Ivar the Boneless
 	name = Freydi_s
+	dna = 306011_freydis
 	female = yes
 	religion = norse_pagan
 	culture = norse
@@ -4089,6 +4095,7 @@
 
 306009 = { #Fictional wife of Halfdan
 	name = IngjerT_r
+	dna = 306009_ingjerdr
 	female = yes
 	religion = "norse_pagan"
 	culture = norse
@@ -4105,6 +4112,7 @@
 
 306010 = { #Fictional daughter of Halfdan
 	name = Saga
+	dna = 306010_saga
 	female = yes
 	religion = "norse_pagan"
 	culture = norse
@@ -5621,6 +5629,7 @@
 
 168336 = {
 	name = "GuT_friT_" #the Seaking
+	dna = 168336_gudfrid
 	dynasty_house = house_hvitserk
 	religion = "norse_pagan"
 	culture = norse

@@ -39,6 +39,7 @@
 #Karlmann of Bavaria
 42018 = {
 	name = "Karlmann"
+	dna = 42018_karlmann
 	dynasty = 25061
 	martial = 8
 	diplomacy = 5
@@ -99,6 +100,7 @@
 42019 = {
 	name = "Ludwig"
 	# AKA: Ludwig 'der Junge'
+	dna = 42019_ludwig
 	dynasty = 25061
 	martial = 6
 	diplomacy = 8
@@ -123,6 +125,7 @@
 
 90105 = {
 	name = "Karl" # AKA: Karl 'Pinguis'
+	dna = 90105_karl
 	dynasty = 25061
 	martial = 4
 	diplomacy = 5

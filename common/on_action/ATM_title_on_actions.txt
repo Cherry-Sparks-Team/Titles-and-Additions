@@ -220,7 +220,13 @@ on_action_ATM_title_gain_caliphate = {
 on_action_ATM_title_gain_imamate = {
 	trigger = {
 		scope:title = {
-			this = title:d_imami
+			OR = {
+				this = title:d_imami
+				this = title:d_ismaili
+				this = title:d_nizari
+				this = title:d_zayidi
+				this = title:d_ghulat
+			}
 		}
 	}
 	on_actions = {

@@ -1,5 +1,6 @@
 ﻿6877 = { #Spouse of Lothaire II, 144998
 	name = Teutberga
+	dna = 6877_teutberga
 	female = yes
 	dynasty = 7052
 	religion = catholic
@@ -21938,6 +21939,7 @@
 6440 = {
 	name = "Rober_t" #Robert the Strong, marquis of Neustrie, count of Tour and Anjou.
 	# AKA: Robert 'Fortis'
+	dna = 6440_robert_the_strong
 	dynasty = 743 #House Capet #Robertine (dynasty of house Capet)
 	religion = "catholic"
 	culture = french
@@ -26899,6 +26901,7 @@
 #Judith of Flanders
 90110 = {
 	name = "Judith"
+	dna = 90110_judith
 	female = yes
 	dynasty = 25061
 	religion = "catholic"
@@ -27167,6 +27170,7 @@
 90123 = {
 	name = "Louis"
 	# AKA: Louis 'le Begue'
+	dna = 90123_louis_the_stammerer
 	dynasty = 25061
 	religion = "catholic"
 	culture = french
@@ -42857,6 +42861,7 @@
 #Odo I, Count of Troyes
 163065 = {
 	name = "Eudes"
+	dna = 163065_eudes_of_bourbon
 	dynasty = 743 #Robertine (dynasty of house Capet)
 	religion = "catholic"
 	culture = french
@@ -44122,6 +44127,7 @@
 
 167894 = {
 	name = "Engelberga"
+	dna = 167894_engelberga
 	female = yes
 	dynasty = 9561
 	religion = "catholic"
@@ -46713,6 +46719,7 @@
 }
 167830 = {	
 	name = "Irmintrud"
+	dna = 167830_irmintrud
 	#AKA Ermentrude, wife of Charles the Bald
 	female = yes	
 	dynasty_house = house_orleans #Orléans	

@@ -1,11 +1,26 @@
-﻿DuchyFeudalIndependentKingdom = {
+﻿CountyFeudalIndependentJarldom = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_feudal_north_germanic
+	}
+	text = {
+		fallback = yes
+		localization_key = atm_duchy_default_norse
+	}
+}
+
+DuchyFeudalIndependentKingdom = {
 	type = character
 
 	text = {
 		trigger = {
 			highest_held_title_tier >= tier_kingdom
 		}
-		localization_key = duchy_feudal_western
+		localization_key = atm_duchy_default
 	}
 	text = {
 		fallback = yes
@@ -20,7 +35,7 @@ DuchyFeudalIndependentKingdomBrythonic = {
 		trigger = {
 			highest_held_title_tier >= tier_kingdom
 		}
-		localization_key = duchy_feudal_brythonic
+		localization_key = atm_duchy_default_irish
 	}
 	text = {
 		fallback = yes
@@ -35,7 +50,7 @@ DuchyFeudalIndependentKingdomNorthGermanic = {
 		trigger = {
 			highest_held_title_tier >= tier_kingdom
 		}
-		localization_key = duchy_feudal_western
+		localization_key = atm_duchy_default_norse
 	}
 	text = {
 		fallback = yes
@@ -50,7 +65,7 @@ DuchyTribalIndependentKingdomNorthGermanic = {
 		trigger = {
 			highest_held_title_tier >= tier_kingdom
 		}
-		localization_key = duchy_tribal_north_germanic
+		localization_key = atm_duchy_default_norse
 	}
 	text = {
 		fallback = yes
@@ -310,5 +325,50 @@ DuchyFeudalIndependentKingdomRomanic = {
 	text = {
 		fallback = yes
 		localization_key = duchy_feudal_independent_kingdom_romanic_default
+	}
+}
+
+KingdomIndependentIranian = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_empire
+		}
+		localization_key = kingdom_feudal_iranian
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_feudal_iranian_independent_default
+	}
+}
+
+KingdomIndependentIranianMuslim = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_empire
+		}
+		localization_key = kingdom_feudal_muslim_iranian_group
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_feudal_muslim_iranian_group_independent_default
+	}
+}
+
+DuchyIndependentOrderCommon = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = atm_duchy_order
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_order_common_independent_default
 	}
 }

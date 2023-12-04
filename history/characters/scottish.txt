@@ -1,6 +1,7 @@
 ﻿986 = {  	
 	name = "Donald"
 	# AKA: Domnall 'Ban'
+	dna = 986_donald
 	dynasty = 1687
 	martial = 4
 	diplomacy = 8
@@ -30,6 +31,7 @@
 988 = {  	
 	name = "Duncan"
 	# AKA: Donnchad
+	dna = 988_duncan
 	dynasty = 1687
 	martial = 8
 	diplomacy = 7

@@ -6712,7 +6712,8 @@
 	trait = diligent
 	trait = generous
 	trait = zealous
-	trait = education_martial_2
+	trait = rowdy
+	disallow_random_traits = yes
 	father = 1764
 	mother = 1765
 	1054.1.1 = {

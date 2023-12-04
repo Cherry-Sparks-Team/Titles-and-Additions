@@ -574,7 +574,8 @@
 	trait = ambitious #Involved in the second imperial coup 
 	trait = diligent
 	trait = generous #Noted for her charity
-	trait = education_intrigue_3
+	trait = curious
+	disallow_random_traits = yes
 	father = 9952
 	mother = 9953
 	1053.1.1 = {
@@ -2980,7 +2981,8 @@
 	culture = "georgian"
 	trait = humble
 	trait = just
-	trait = education_martial_2
+	trait = rowdy
+	disallow_random_traits = yes
 	father = 41541
 	mother = 41528
 	854.1.1 = {
@@ -3186,4 +3188,21 @@
 		death = "876.1.1"
 	}
 }
+
+extra_georgians_1 = { #unnamed in the sources, but known to have married Alp Arslan
+	name = "Chiora"
+	dynasty_house = house_bagrationi # Georgian Bagrationi cadets
+	religion = "orthodox"
+	culture = "georgian"
+	female = yes 
+	mother = 41553
+	father = extra_armenians_1
+	1045.1.1 = {
+		birth = yes
+	}
+	1090.1.1 = {
+		death = yes
+	}
+}
+
 

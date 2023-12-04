@@ -25451,6 +25451,7 @@
 
 107501 = {
 	name = "Elvira" # Elvira Fernández, Baroness of Toro (1065-1099)
+	dna = 107501_elvira
 	female = yes
 	dynasty = 442 # Jimena Dynasty
 	martial = 2

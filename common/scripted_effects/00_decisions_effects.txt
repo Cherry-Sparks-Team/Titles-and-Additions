@@ -72,6 +72,7 @@ create_holy_order_effect = {
 	if = {
 		limit = {
 			exists = faith.religious_head
+			NOT = { faith.religious_head = root }
 		}
 		faith.religious_head = {
 			add_opinion = {
@@ -540,6 +541,7 @@ unite_the_spanish_thrones_decision_effects = {
 	title:k_andalusia = { add_to_list = spanish_kingdoms }
 	title:k_badajoz = { add_to_list = spanish_kingdoms }
 	title:k_valencia = { add_to_list = spanish_kingdoms }
+	title:k_toledo = { add_to_list = spanish_kingdoms }
 
 	custom_tooltip = unite_the_spanish_thrones_decision_titles_tt
 	hidden_effect = {
@@ -1172,8 +1174,10 @@ lunatic_building_decision_effect = {
 			name = variable_greenhouse
 			value = yes
 		}
-		add_province_modifier = extra_building_slot
-		add_building = special_greenhouse_01
+		add_special_building_slot = special_greenhouse_01
+		add_special_building = special_greenhouse_01
+		#add_province_modifier = extra_building_slot
+		#add_building = special_greenhouse_01
 	}
 	
 	give_nickname = nick_the_glass
@@ -1708,6 +1712,52 @@ special_succession_tanistry_effect = {
 				target = root
 			}
 			custom = major_decisions.3100.tt_opinion_tanistry
+		}
+	}
+}
+
+special_succession_jirga_effect = {
+	if = {
+		limit = { highest_held_title_tier = tier_empire }
+		every_held_title = {
+			limit = {
+				tier = tier_empire
+				NOR = {
+					has_title_law_flag = advanced_succession_law
+					has_title_law_flag = elective_succession_law
+				}
+			}
+			add_title_law = tribal_elective_succession_law
+		}
+		every_vassal = {
+			limit = { special_succession_jirga_trigger = yes }
+			add_opinion = {
+				modifier = implemented_traditional_succession_law_opinion
+				years = 20
+				target = root
+			}
+			custom = major_decisions.3100.tt_opinion_thing
+		}
+	}
+	else = {
+		every_held_title = {
+			limit = {
+				tier = tier_kingdom
+				NOR = {
+					has_title_law_flag = advanced_succession_law
+					has_title_law_flag = elective_succession_law
+				}
+			}
+			add_title_law = tribal_elective_succession_law
+		}
+		every_vassal = {
+			limit = { special_succession_jirga_trigger = yes }
+			add_opinion = {
+				modifier = implemented_traditional_succession_law_opinion
+				years = 20
+				target = root
+			}
+			custom = major_decisions.3100.tt_opinion_jirga
 		}
 	}
 }
@@ -2681,6 +2731,7 @@ found_cadet_house_decision_effect = {
 		}
 		add_achievement_flag_effect = { FLAG = achievement_a_house_of_my_own_flag }
 	}
+
 	create_cadet_branch = yes
 	add_prestige = $PRESTIGE$
 	hidden_effect = {
@@ -2763,12 +2814,35 @@ found_cadet_house_decision_effect = {
 				add_house_artifact_claim = scope:new_branch_dynasty_banner
 			}
 		}
+
+		# Struggle Catalysts
+		if = {
+			limit = {
+				root =  {
+					exists = house
+					exists = house.house_head
+					any_character_struggle	 = {
+						involvement = involved
+						phase_has_catalyst = catalyst_cadet_branch_created
+					}
+				}
+			}
+			every_character_struggle = {
+				involvement = involved
+				activate_struggle_catalyst = {
+					catalyst = catalyst_cadet_branch_created
+					character = root
+				}
+				log_debug_variable_for_persian_struggle_effect = { VAR = unrest_catalyst_cadet_branch_created }
+			}
+		}
 	}
 }
 
 learn_language_linguist_effect = {
-	hidden_effect = { recruit_courtier = $LINGUIST$ }
+	hidden_effect = { add_courtier = $LINGUIST$ }
 	$LINGUIST$ = { save_scope_as = selected_linguist }
+	custom_tooltip = ep1_decision.0201.tt.aptitude
 	send_interface_toast = {
 		title = learn_court_language_toast_title
 		left_icon = root

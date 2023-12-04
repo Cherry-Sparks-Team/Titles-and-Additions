@@ -28,7 +28,12 @@
 # princes priority 3 (40)
 
 #############################################
-
+# Common
+unoccupied_free_land = {
+	type = title
+	tier = barony
+	priority = 6
+}
 ### special titles ###
 kaan_male = {
 	type = character
@@ -1390,13 +1395,13 @@ emperor_clan_female_slavic = {
 	governments = { clan_government }
 	name_lists = { name_list_russian name_list_ilmenian name_list_severian name_list_pommeranian name_list_czech name_list_polish name_list_polabian name_list_slovien name_list_carantanian name_list_croatian name_list_bosnian name_list_serbian name_list_bulgarian name_list_komi name_list_khanty name_list_samoyed name_list_mordvin name_list_merya name_list_meshchera name_list_mari name_list_muroma name_list_finnish name_list_sami name_list_estonian name_list_karelian name_list_vepsian name_list_latgalian name_list_lithuanian name_list_prussian name_list_mogyer name_list_hungarian }
 }
-#empire_clan_slavic = {
-#	type = title
-#	tier = empire
-#	priority = 102
-#	governments = { clan_government }
-#	name_lists = { name_list_russian name_list_ilmenian name_list_severian name_list_pommeranian name_list_czech name_list_polish name_list_polabian name_list_slovien name_list_carantanian name_list_croatian name_list_bosnian name_list_serbian name_list_bulgarian name_list_komi name_list_khanty name_list_samoyed name_list_mordvin name_list_merya name_list_meshchera name_list_mari name_list_muroma name_list_finnish name_list_sami name_list_estonian name_list_karelian name_list_vepsian name_list_latgalian name_list_lithuanian name_list_prussian name_list_mogyer name_list_hungarian }
-#}
+empire_clan_slavic = {
+	type = title
+	tier = empire
+	priority = 102
+	governments = { clan_government }
+	name_lists = { name_list_russian name_list_ilmenian name_list_severian name_list_pommeranian name_list_czech name_list_polish name_list_polabian name_list_slovien name_list_carantanian name_list_croatian name_list_bosnian name_list_serbian name_list_bulgarian name_list_komi name_list_khanty name_list_samoyed name_list_mordvin name_list_merya name_list_meshchera name_list_mari name_list_muroma name_list_finnish name_list_sami name_list_estonian name_list_karelian name_list_vepsian name_list_latgalian name_list_lithuanian name_list_prussian name_list_mogyer name_list_hungarian }
+}
 
 # Feudal Tribal
 prince_male_slavic = {
@@ -1503,7 +1508,7 @@ duke_feudal_male_slavic = {
 	priority = 27
 	top_liege = no
 	governments = { feudal_government tribal_government }
-	name_lists = { name_list_russian name_list_ilmenian name_list_severian name_list_volhynian name_list_pommeranian name_list_czech name_list_polish name_list_polabian name_list_slovien name_list_carantanian name_list_komi name_list_khanty name_list_samoyed name_list_mordvin name_list_merya name_list_meshchera name_list_mari name_list_muroma name_list_finnish name_list_sami name_list_estonian name_list_karelian name_list_vepsian name_list_latgalian name_list_lithuanian name_list_prussian }
+	name_lists = { name_list_russian name_list_ilmenian name_list_severian name_list_volhynian name_list_pommeranian name_list_czech name_list_polabian name_list_slovien name_list_carantanian name_list_komi name_list_khanty name_list_samoyed name_list_mordvin name_list_merya name_list_meshchera name_list_mari name_list_muroma name_list_finnish name_list_sami name_list_estonian name_list_karelian name_list_vepsian name_list_latgalian name_list_lithuanian name_list_prussian }
 }
 duke_feudal_female_slavic = {
 	type = character
@@ -1513,7 +1518,7 @@ duke_feudal_female_slavic = {
 	priority = 27
 	top_liege = no
 	governments = { feudal_government tribal_government }
-	name_lists = { name_list_russian name_list_ilmenian name_list_severian name_list_volhynian name_list_pommeranian name_list_czech name_list_polish name_list_polabian name_list_slovien name_list_carantanian name_list_komi name_list_khanty name_list_samoyed name_list_mordvin name_list_merya name_list_meshchera name_list_mari name_list_muroma name_list_finnish name_list_sami name_list_estonian name_list_karelian name_list_vepsian name_list_latgalian name_list_lithuanian name_list_prussian }
+	name_lists = { name_list_russian name_list_ilmenian name_list_severian name_list_volhynian name_list_pommeranian name_list_czech name_list_polabian name_list_slovien name_list_carantanian name_list_komi name_list_khanty name_list_samoyed name_list_mordvin name_list_merya name_list_meshchera name_list_mari name_list_muroma name_list_finnish name_list_sami name_list_estonian name_list_karelian name_list_vepsian name_list_latgalian name_list_lithuanian name_list_prussian }
 }
 duchy_feudal_slavic = {
 	type = title
@@ -1521,7 +1526,7 @@ duchy_feudal_slavic = {
 	priority = 27
 	top_liege = no
 	governments = { feudal_government tribal_government }
-	name_lists = { name_list_russian name_list_ilmenian name_list_severian name_list_volhynian name_list_pommeranian name_list_czech name_list_polish name_list_polabian name_list_slovien name_list_carantanian name_list_komi name_list_khanty name_list_samoyed name_list_mordvin name_list_merya name_list_meshchera name_list_mari name_list_muroma name_list_finnish name_list_sami name_list_estonian name_list_karelian name_list_vepsian name_list_latgalian name_list_lithuanian name_list_prussian }
+	name_lists = { name_list_russian name_list_ilmenian name_list_severian name_list_volhynian name_list_pommeranian name_list_czech name_list_polabian name_list_slovien name_list_carantanian name_list_komi name_list_khanty name_list_samoyed name_list_mordvin name_list_merya name_list_meshchera name_list_mari name_list_muroma name_list_finnish name_list_sami name_list_estonian name_list_karelian name_list_vepsian name_list_latgalian name_list_lithuanian name_list_prussian }
 }
 king_feudal_male_slavic = {
 	type = character
@@ -1575,6 +1580,65 @@ empire_feudal_slavic = {
 	priority = 102
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_russian name_list_ilmenian name_list_severian name_list_volhynian name_list_komi name_list_khanty name_list_samoyed name_list_mordvin name_list_merya name_list_meshchera name_list_mari name_list_muroma }
+}
+
+# Polish
+
+duke_feudal_male_polish = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 28
+	top_liege = no
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_polish }
+}
+duke_feudal_female_polish = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 28
+	top_liege = no
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_polish }
+}
+duchy_feudal_polish = {
+	type = title
+	tier = duchy
+	priority = 28
+	top_liege = no
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_polish }
+}
+king_feudal_male_polish = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 48
+	top_liege = no
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_polish }
+}
+king_feudal_female_polish = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 48
+	top_liege = no
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_polish }
+}
+kingdom_feudal_polish = {
+	type = title
+	tier = kingdom
+	priority = 48
+	top_liege = no
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_polish }
 }
 
 # West Slavic
@@ -2626,7 +2690,7 @@ khwarazmshah_iranian = {
 	gender = male
 	special = holder
 	tier = kingdom
-	priority = 47
+	priority = 49
 	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
 	titles = { k_transoxiana }
 	governments = { feudal_government clan_government tribal_government }
@@ -2637,7 +2701,7 @@ khwarazmbanebshen_iranian = {
 	gender = female
 	special = holder
 	tier = kingdom
-	priority = 47
+	priority = 49
 	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
 	titles = { k_transoxiana }
 	governments = { feudal_government clan_government tribal_government }
@@ -2646,7 +2710,7 @@ khwarazmbanebshen_iranian = {
 khwarazmshahinat_iranian = {
 	type = title
 	tier = kingdom
-	priority = 47
+	priority = 49
 	top_liege = no
 	governments = { feudal_government clan_government tribal_government }
 	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
@@ -2708,6 +2772,34 @@ kingdom_feudal_iranian = {
 	governments = { feudal_government tribal_government clan_government }
 	name_lists = { name_list_persian name_list_tocharian name_list_kurdish name_list_afghan name_list_baloch name_list_saka name_list_daylamite name_list_khwarezmian name_list_tajik }
 }
+king_feudal_male_iranian_independent = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 48
+	only_independent = yes
+	governments = { feudal_government tribal_government clan_government }
+	name_lists = { name_list_persian name_list_tocharian name_list_kurdish name_list_afghan name_list_baloch name_list_saka name_list_daylamite name_list_khwarezmian name_list_tajik }
+}
+king_feudal_female_iranian_independent = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 48
+	only_independent = yes
+	governments = { feudal_government tribal_government clan_government }
+	name_lists = { name_list_persian name_list_tocharian name_list_kurdish name_list_afghan name_list_baloch name_list_saka name_list_daylamite name_list_khwarezmian name_list_tajik }
+}
+kingdom_feudal_iranian_independent = {
+	type = title
+	tier = kingdom
+	priority = 48
+	only_independent = yes
+	governments = { feudal_government tribal_government clan_government }
+	name_lists = { name_list_persian name_list_tocharian name_list_kurdish name_list_afghan name_list_baloch name_list_saka name_list_daylamite name_list_khwarezmian name_list_tajik }
+}
 emperor_feudal_male_iranian = {
 	type = character
 	gender = male
@@ -2733,6 +2825,163 @@ emperor_feudal_female_iranian = {
 #	governments = { feudal_government tribal_government clan_government }
 #	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
 #}
+
+# Muslim variants
+baron_feudal_muslim_male_iranian_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 8
+	top_liege = no
+	governments = { feudal_government clan_government tribal_government }
+	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
+	religions = { islam_religion }
+}
+baron_feudal_muslim_female_iranian_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 8
+	top_liege = no
+	governments = { feudal_government clan_government tribal_government }
+	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
+	religions = { islam_religion }
+}
+barony_feudal_muslim_iranian_group = {
+	type = title
+	tier = barony
+	priority = 8
+	top_liege = no
+	governments = { feudal_government clan_government tribal_government }
+	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
+	religions = { islam_religion }
+}
+count_feudal_muslim_male_iranian_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 19
+	top_liege = no
+	governments = { feudal_government clan_government tribal_government }
+	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
+	religions = { islam_religion }
+}
+count_feudal_muslim_female_iranian_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 19
+	top_liege = no
+	governments = { feudal_government clan_government tribal_government }
+	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
+	religions = { islam_religion }
+}
+county_feudal_muslim_iranian_group = {
+	type = title
+	tier = county
+	priority = 19
+	top_liege = no
+	governments = { feudal_government clan_government tribal_government }
+	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
+	religions = { islam_religion }
+}
+duke_feudal_muslim_male_iranian_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 28
+	top_liege = no
+	governments = { feudal_government clan_government tribal_government }
+	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
+	religions = { islam_religion }
+}
+duke_feudal_muslim_female_iranian_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 28
+	top_liege = no
+	governments = { feudal_government clan_government tribal_government }
+	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
+	religions = { islam_religion }
+}
+duchy_feudal_muslim_iranian_group = {
+	type = title
+	tier = duchy
+	priority = 28
+	top_liege = no
+	governments = { feudal_government clan_government tribal_government }
+	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
+	religions = { islam_religion }
+}
+king_feudal_muslim_male_iranian_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 48
+	top_liege = no
+	governments = { feudal_government clan_government tribal_government }
+	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
+	religions = { islam_religion }
+}
+king_feudal_muslim_female_iranian_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 48
+	top_liege = no
+	governments = { feudal_government clan_government tribal_government }
+	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
+	religions = { islam_religion }
+}
+kingdom_feudal_muslim_iranian_group = {
+	type = title
+	tier = kingdom
+	priority = 48
+	top_liege = no
+	governments = { feudal_government clan_government tribal_government }
+	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
+	religions = { islam_religion }
+}
+king_feudal_muslim_male_iranian_group_independent = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 49
+	only_independent = yes
+	governments = { feudal_government clan_government tribal_government }
+	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
+	religions = { islam_religion }
+}
+king_feudal_muslim_female_iranian_group_independent = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 49
+	only_independent = yes
+	governments = { feudal_government clan_government tribal_government }
+	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
+	religions = { islam_religion }
+}
+kingdom_feudal_muslim_iranian_group_independent = {
+	type = title
+	tier = kingdom
+	priority = 49
+	only_independent = yes
+	governments = { feudal_government clan_government tribal_government }
+	name_lists = { name_list_persian name_list_kurdish name_list_baloch name_list_daylamite name_list_tajik name_list_afghan name_list_saka name_list_sogdian name_list_khwarezmian name_list_tocharian }
+	religions = { islam_religion }
+}
 
 ### Group: Arabic ###
 
@@ -3112,17 +3361,16 @@ queen_mother_north_germanic = {
 	tier = kingdom
 	priority = 43
 	top_liege = no
-	governments = { feudal_government }
+	governments = { tribal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
-queen_mother_north_germanic_christian = {
+queen_mother_north_germanic_feudal = {
 	type = character
 	gender = female
 	special = queen_mother
 	tier = kingdom
 	priority = 43
 	top_liege = no
-	religions = { christianity_religion dualism_religion }
 	governments = { feudal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
@@ -3133,8 +3381,7 @@ empress_mother_north_germanic = {
 	tier = empire
 	priority = 77
 	top_liege = no
-	religions = { christianity_religion dualism_religion }
-	governments = { feudal_government }
+	governments = { tribal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
 empress_mother_north_germanic_christian = {
@@ -3144,7 +3391,6 @@ empress_mother_north_germanic_christian = {
 	tier = empire
 	priority = 77
 	top_liege = no
-	religions = { christianity_religion dualism_religion }
 	governments = { feudal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
@@ -3915,7 +4161,7 @@ duke_feudal_independent_king_north_germanic = {
 	tier = duchy
 	priority = 27
 	only_independent = yes
-	governments = { feudal_government tribal_government }
+	governments = { tribal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
 duke_feudal_independent_king_female_north_germanic = {
@@ -3925,7 +4171,7 @@ duke_feudal_independent_king_female_north_germanic = {
 	tier = duchy
 	priority = 27
 	only_independent = yes
-	governments = { feudal_government tribal_government }
+	governments = { tribal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
 duchy_feudal_independent_kingdom_north_germanic = {
@@ -3933,7 +4179,7 @@ duchy_feudal_independent_kingdom_north_germanic = {
 	tier = duchy
 	priority = 27
 	only_independent = yes
-	governments = { feudal_government }
+	governments = { tribal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
 duke_feudal_independent_king_north_germanic_christian = {
@@ -3941,10 +4187,9 @@ duke_feudal_independent_king_north_germanic_christian = {
 	gender = male
 	special = holder
 	tier = duchy
-	priority = 28
+	priority = 27
 	only_independent = yes
-	religions = { christianity_religion dualism_religion }
-	governments = { feudal_government tribal_government }
+	governments = { feudal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
 duke_feudal_independent_king_female_north_germanic_christian = {
@@ -3952,19 +4197,17 @@ duke_feudal_independent_king_female_north_germanic_christian = {
 	gender = female
 	special = holder
 	tier = duchy
-	priority = 28
+	priority = 27
 	only_independent = yes
-	religions = { christianity_religion dualism_religion }
-	governments = { feudal_government tribal_government }
+	governments = { feudal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
 duchy_feudal_independent_kingdom_north_germanic_christian = {
 	type = title
 	tier = duchy
-	priority = 28
+	priority = 27
 	only_independent = yes
-	religions = { christianity_religion dualism_religion }
-	governments = { feudal_government tribal_government }
+	governments = { feudal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
 dauphin_male = {
@@ -4196,6 +4439,42 @@ western_mistress_count = {
 	priority = 5
 	governments = { feudal_government }
 	name_lists = { name_list_saxon name_list_franconian name_list_swabian name_list_bavarian name_list_frisian name_list_dutch name_list_german name_list_frankish name_list_french name_list_norman name_list_occitan name_list_andalusian name_list_basque name_list_castilian name_list_catalan name_list_portuguese name_list_visigothic name_list_galician name_list_asturleonese name_list_aragonese name_list_suebi name_list_breton name_list_italian name_list_cisalpine name_list_sicilian name_list_lombard name_list_old_saxon name_list_scottish name_list_english }
+}
+
+slavic_russian_knyajich_duke = {
+	gender = male
+	special = ruler_child
+	tier = duchy
+	priority = 6
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_russian name_list_ilmenian name_list_severian name_list_volhynian }
+}
+
+slavic_russian_knyajna_duke = {
+	gender = female
+	special = ruler_child
+	tier = duchy
+	priority = 6
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_russian name_list_ilmenian name_list_severian name_list_volhynian }
+}
+
+slavic_russian_knyajich_count = {
+	gender = male
+	special = ruler_child
+	tier = county
+	priority = 5
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_russian name_list_ilmenian name_list_severian name_list_volhynian }
+}
+
+slavic_russian_knyajna_count = {
+	gender = female
+	special = ruler_child
+	tier = county
+	priority = 5
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_russian name_list_ilmenian name_list_severian name_list_volhynian }
 }
 
 ### Holy Roman Empire ###
@@ -4523,6 +4802,34 @@ county_feudal_north_germanic = {
 	governments = { feudal_government tribal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
+count_feudal_male_north_germanic_independent = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 19
+	only_independent = yes
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
+}
+count_feudal_female_north_germanic_independent = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 19
+	only_independent = yes
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
+}
+county_feudal_north_germanic_independent = {
+	type = title
+	tier = county
+	priority = 19
+	only_independent = yes
+	governments = { feudal_government tribal_government }
+	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
+}
 king_feudal_male_north_germanic = {
 	type = character
 	gender = male
@@ -4530,7 +4837,7 @@ king_feudal_male_north_germanic = {
 	tier = kingdom
 	priority = 47
 	top_liege = no
-	governments = { feudal_government tribal_government }
+	governments = { tribal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
 king_feudal_female_north_germanic = {
@@ -4540,7 +4847,7 @@ king_feudal_female_north_germanic = {
 	tier = kingdom
 	priority = 47
 	top_liege = no
-	governments = { feudal_government tribal_government }
+	governments = { tribal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
 kingdom_feudal_north_germanic = {
@@ -4548,7 +4855,7 @@ kingdom_feudal_north_germanic = {
 	tier = kingdom
 	priority = 47
 	top_liege = no
-	governments = { feudal_government tribal_government }
+	governments = { tribal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
 king_feudal_male_north_germanic_christian = {
@@ -4556,10 +4863,9 @@ king_feudal_male_north_germanic_christian = {
 	gender = male
 	special = holder
 	tier = kingdom
-	priority = 48
+	priority = 47
 	top_liege = no
-	religions = { christianity_religion dualism_religion }
-	governments = { feudal_government tribal_government }
+	governments = { feudal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
 king_feudal_female_north_germanic_christian = {
@@ -4567,19 +4873,17 @@ king_feudal_female_north_germanic_christian = {
 	gender = female
 	special = holder
 	tier = kingdom
-	priority = 48
+	priority = 47
 	top_liege = no
-	religions = { christianity_religion dualism_religion }
-	governments = { feudal_government tribal_government }
+	governments = { feudal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
 kingdom_feudal_north_germanic_christian = {
 	type = title
 	tier = kingdom
-	priority = 48
+	priority = 47
 	top_liege = no
-	religions = { christianity_religion dualism_religion }
-	governments = { feudal_government tribal_government }
+	governments = { feudal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
 emperor_feudal_male_north_germanic = {
@@ -4588,7 +4892,7 @@ emperor_feudal_male_north_germanic = {
 	special = holder
 	tier = empire
 	priority = 102
-	governments = { feudal_government tribal_government }
+	governments = { tribal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
 emperor_feudal_female_north_germanic = {
@@ -4597,7 +4901,14 @@ emperor_feudal_female_north_germanic = {
 	special = holder
 	tier = empire
 	priority = 102
-	governments = { feudal_government tribal_government }
+	governments = { tribal_government }
+	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
+}
+empire_tribal_north_germanic = {
+	type = title
+	tier = empire
+	priority = 102
+	governments = { tribal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
 emperor_feudal_male_north_germanic_christian = {
@@ -4605,9 +4916,8 @@ emperor_feudal_male_north_germanic_christian = {
 	gender = male
 	special = holder
 	tier = empire
-	priority = 103
-	religions = { christianity_religion dualism_religion }
-	governments = { feudal_government tribal_government }
+	priority = 102
+	governments = { feudal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
 emperor_feudal_female_north_germanic_christian = {
@@ -4615,9 +4925,15 @@ emperor_feudal_female_north_germanic_christian = {
 	gender = female
 	special = holder
 	tier = empire
-	priority = 103
-	religions = { christianity_religion dualism_religion }
-	governments = { feudal_government tribal_government }
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
+}
+empire_feudal_north_germanic = {
+	type = title
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
 	name_lists = { name_list_norse name_list_swedish name_list_norwegian name_list_danish }
 }
 # Tribal
@@ -10272,4 +10588,217 @@ emperor_feudal_female_israelite = {
 	priority = 102
 	governments = { feudal_government tribal_government clan_government }
 	name_lists = { name_list_ashkenazi name_list_sephardi name_list_radhanite }
+}
+
+### Group: Custom Governments
+
+barony_order_common = {
+	type = title
+	tier = barony
+	priority = 7
+	top_liege = no
+	governments = { ATM_order_government }
+}
+baron_order_male_common = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	top_liege = no
+	governments = { ATM_order_government }
+}
+baron_order_female_common = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	top_liege = no
+	governments = { ATM_order_government }
+}
+count_order_male_common = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	top_liege = no
+	governments = { ATM_order_government }
+}
+count_order_female_common = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	top_liege = no
+	governments = { ATM_order_government }
+}
+county_order_common = {
+	type = title
+	tier = county
+	priority = 18
+	top_liege = no
+	governments = { ATM_order_government }
+}
+duke_order_independent_magister = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 28
+	only_independent = yes
+	governments = { ATM_order_government }
+}
+duke_order_independent_magister_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 28
+	only_independent = yes
+	governments = { ATM_order_government }
+}
+duchy_order_independent_orden = {
+	type = title
+	tier = duchy
+	priority = 28
+	only_independent = yes
+	governments = { ATM_order_government }
+}
+duke_order_male_common = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 27
+	top_liege = no
+	governments = { ATM_order_government }
+}
+duke_order_female_common = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	top_liege = no
+	governments = { ATM_order_government }
+}
+duchy_order_common = {
+	type = title
+	tier = duchy
+	priority = 27
+	top_liege = no
+	governments = { ATM_order_government }
+}
+king_order_male_common = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	top_liege = no
+	governments = { ATM_order_government }
+}
+king_order_female_common = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	top_liege = no
+	governments = { ATM_order_government }
+}
+kingdom_order_common = {
+	type = title
+	tier = kingdom
+	priority = 47
+	top_liege = no
+	governments = { ATM_order_government }
+}
+king_order_male_common_independent = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 48
+	only_independent = yes
+	governments = { ATM_order_government }
+}
+king_order_female_common_independent = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 48
+	only_independent = yes
+	governments = { ATM_order_government }
+}
+kingdom_order_common_independent = {
+	type = title
+	tier = kingdom
+	priority = 48
+	only_independent = yes
+	governments = { ATM_order_government }
+}
+emperor_order_male_common = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { ATM_order_government }
+}
+emperor_order_female_common = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { ATM_order_government }
+}
+empire_order_common = {
+	type = title
+	tier = empire
+	priority = 102
+	top_liege = yes
+	governments = { ATM_order_government }
+}
+
+prince_male_order = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = kingdom
+	priority = 3
+	governments = { ATM_order_government }
+	top_liege = no
+}
+prince_female_order = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = kingdom
+	priority = 3
+	governments = { ATM_order_government }
+	top_liege = no
+}
+prince_male_order_empire = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = empire
+	priority = 3
+	governments = { ATM_order_government }
+	top_liege = no
+}
+prince_female_order_empire = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = empire
+	priority = 3
+	governments = { ATM_order_government }
+	top_liege = no
 }

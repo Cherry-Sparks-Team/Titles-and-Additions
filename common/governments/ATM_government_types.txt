@@ -1,0 +1,29 @@
+﻿ATM_order_government = {
+	create_cadet_branches = yes
+	rulers_should_have_dynasty = yes
+	dynasty_named_realms = no
+	royal_court = yes
+
+	fallback = 1
+
+	primary_holding = castle_holding
+	valid_holdings = { city_holding church_holding }
+	required_county_holdings = { castle_holding city_holding church_holding }
+
+	vassal_contract = {
+		order_administration_type
+		order_autonomy_level
+		religious_rights
+		fortification_rights
+		coinage_rights
+		succession_rights
+		war_declaration_rights
+		council_rights
+		title_revocation_rights
+	}
+	
+	# Use flags instead of has_government for moddability if possible (i.e., wherever not visible to the player).
+	flag = government_is_ATM_order
+	flag = government_is_feudal
+	color = hsv{ 0.48 0.53 0.15 }
+}

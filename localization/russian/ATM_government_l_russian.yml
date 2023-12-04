@@ -1,0 +1,80 @@
+﻿l_russian:
+ ATM_order_government: "Рыцарский орден"
+ ATM_order_government_adjective: "Орденск"
+ ATM_order_government_realm: "Орденская держава"
+ ATM_order_government_vassals_label: "Орденские [obligations|El] определяются [Concept( 'feudal_contract', 'вассальным договором' )|El] каждого [Concept( 'vassal', 'вассала' )|El]"
+ ATM_order_government_desc: "\n\n#F Данный тип правления очень похож на феодализм - вассалы предоставляют сюзерену часть своих [Concept( 'soldiers', 'войск' )|El] и отсылают в казну [Concept( 'taxes', 'налоги' )|El]. Только в данном случае вместо феодальных царств, власть тут представляет рыцарский орден, выросший до размеров государства и взявший на себя его функции.#!"
+ ATM_order_government_obligations: "[GetGovernment( 'ATM_order_government' ).GetAdjectiveNoTooltip]ие [obligations|El]"
+ order_obligation_low: "Слабые $ATM_order_government_obligations$"
+ order_obligation_low_short: "Слабые"
+ order_obligation_normal: "Обычные $ATM_order_government_obligations$"
+ order_obligation_normal_short: "Обычные"
+ order_obligation_high: "Серьезные $ATM_order_government_obligations$"
+ order_obligation_high_short: "Серьезные"
+ ATM_order_government_taxes: "[GetGovernment( 'ATM_order_government' ).GetAdjectiveNoTooltip]ие [taxes|l]"
+ order_tax_exempt: "[Concept( 'tax', 'Налоговые' )] льготы"
+ order_tax_exempt_short: "Льготы"
+ order_tax_low: "Низкие [Concept( 'tax', 'налоги' )]"
+ order_tax_low_short: "Низкие"
+ order_tax_normal: "Обычные $game_concept_taxes$"
+ order_tax_normal_short: "Обычные"
+ order_tax_high: "Высокие [Concept( 'tax', 'налоги' )]"
+ order_tax_high_short: "Высокие"
+ order_tax_extortionate: "Грабительские [Concept( 'tax', 'налоги' )]"
+ order_tax_extortionate_short: "Грабеж"
+ ATM_order_government_levies: "[GetGovernment( 'ATM_order_government' ).GetAdjectiveNoTooltip]ое [levies|l]"
+ order_levies_exempt: "Не приходит"
+ order_levies_exempt_short: "Нет"
+ order_levies_low: "Слабое [Concept( 'levy', 'ополчение' )]"
+ order_levies_low_short: "Слабое"
+ order_levies_normal: "Обычное [Concept( 'levy', 'ополчение' )]"
+ order_levies_normal_short: "Обычное"
+ order_levies_high: "Большое [Concept( 'levy', 'ополчение' )]"
+ order_levies_high_short: "Большое"
+ order_levies_extortionate: "Огромное [Concept( 'levy', 'ополчение' )]"
+ order_levies_extortionate_short: "Огромное"
+ ATM_order_special_contract: "#color_black [Concept( 'feudal_contract', 'Особый орденский договор' )|BU]#!"
+ ATM_order_special_contract_none: "Нет особого договора"
+ ATM_order_special_contract_order: "Договор малого ордена"
+ ATM_order_special_contract_order_desc: "#flavor Под действием договора «$ATM_order_special_contract_order$» [Concept( 'vassal', 'вассал' )|E] получает бонусы к [Concept( 'levies', 'ополчению' )|E] и защищенности. $ATM_order_government_taxes$ при этом будут #high на [EmptyScope.ScriptValue('march_contract_taxes_tooltip')|0]%#! меньше, чем предписано [Concept( 'obligation', 'обязательствами' )|E].#!"
+ ATM_order_special_contract_landballei: "Ландбайлейский договор"
+ ATM_order_special_contract_landballei_desc: "#flavor Заключив договор «$ATM_order_special_contract_landballei$», [Concept( 'vassal', 'вассал' )|E] получает множество привилегий, а его политический авторитет быстро растет. Вассалы, заключившие договор «$ATM_order_special_contract_landballei_short$», повышают [Concept( 'prestige', 'престиж' )|E] [Concept( 'liege', 'сюзерена' )|E], но поступающие от них [Concept( 'tax', 'налоги' )|E] и [Concept( 'levies', 'ополчение' )|E] снижаются на #high [EmptyScope.ScriptValue('palatinate_contract_taxes_tooltip')|0]%#! по сравнению с [Concept( 'obligation', 'обязательствами' )|E].#!"
+ ATM_order_special_contract_none_short: "Нет"
+ ATM_order_special_contract_order_short: "Орден"
+ ATM_order_special_contract_landballei_short: "Ландбайлейство"
+ 
+ ## Order Bureaucratic Laws
+ order_administration_type: "Орденская администрация"
+
+ order_administration_type_civil: "Гражданская администрация"
+ order_administration_type_civil_short: "Гражданская"
+
+ order_administration_type_military: "Военная администрация"
+ order_administration_type_military_short: "Военная"
+
+ order_autonomy_level: "Уровень автономии"
+
+ order_autonomy_level_0: "Нет автономии"
+ order_autonomy_level_0_short: "Нет"
+ # order_autonomy_level_4_desc
+
+ order_autonomy_level_1: "Урезанная автономия"
+ order_autonomy_level_1_short: "Урезанная"
+ # order_autonomy_level_3_desc
+
+ order_autonomy_level_2: "Ограниченная автономия"
+ order_autonomy_level_2_short: "Ограниченная"
+ # order_autonomy_level_2_desc
+
+ order_autonomy_level_3: "Умеренная автономия"
+ order_autonomy_level_3_short: "Умеренная"
+ # order_autonomy_level_1_desc
+
+ order_autonomy_level_4: "Полная автономия"
+ order_autonomy_level_4_short: "Полная"
+ # order_autonomy_level_0_desc
+ 
+ ATM_change_to_order: "[RP] Основать государство рыцарей"
+ ATM_change_to_order_desc: "Пришла пора возвысить славу и честь, отринув алчность и амбиции феодальных лордов! Поднимайте мечи, братья и сестры!"
+ ATM_change_to_order_tooltip: "Форма правления меняется на Рыцарский орден. Это решение доступно только игроку, ИИ не может принять его, ибо оно сделано исключительно для РП."
+ ATM_change_to_order_confirm: "Созвать знамёна!"

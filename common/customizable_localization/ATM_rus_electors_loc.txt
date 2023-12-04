@@ -1,0 +1,54 @@
+﻿GetRusElector1 = {
+	type = landed_title
+
+	text = {
+		localization_key = get_rus_elector_1
+		trigger = {
+			title:e_russia = { has_variable = rus_elector_1 }
+		}
+	}
+}
+
+GetRusElector2 = {
+	type = landed_title
+
+	text = {
+		localization_key = get_rus_elector_2
+		trigger = {
+			title:e_russia = { has_variable = rus_elector_2 }
+		}
+	}
+}
+
+GetRusElector3 = {
+	type = landed_title
+
+	text = {
+		localization_key = get_rus_elector_3
+		trigger = {
+			title:e_russia = { has_variable = rus_elector_3 }
+		}
+	}
+}
+
+GetRusElector4 = {
+	type = landed_title
+
+	text = {
+		localization_key = get_rus_elector_4
+		trigger = {
+			title:e_russia = { has_variable = rus_elector_4 }
+		}
+	}
+}
+
+GetRusElector5 = {
+	type = landed_title
+
+	text = {
+		localization_key = get_rus_elector_5
+		trigger = {
+			title:e_russia = { has_variable = rus_elector_5 }
+		}
+	}
+}

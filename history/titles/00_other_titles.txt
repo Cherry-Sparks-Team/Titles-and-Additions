@@ -1977,6 +1977,35 @@ d_malabarism = {
 	}
 }
 
+d_nizari = {
+	1.1.1 = {
+		succession_laws = {
+			temporal_head_of_faith_succession_law
+		}
+	}
+}
+
+d_zayidi = { 
+	830.1.1 = {
+		succession_laws = {
+			temporal_head_of_faith_succession_law
+		}
+		holder = 159397 #died in 851, thereafter the Zayidi imamate claim was split between the Rassids of Yemen and the rulers of Tabaristan in Persia, so let's keep the title vacant at game start and see who can claim it first. 
+	}
+	851.1.1 = {
+		holder = 0
+	}
+	1031.1.1 = {
+		holder = 45048 #this needs more research into the Rassid dynasty, but this will work as placeholders for FP3 purposes 
+	}
+	1050.1.1 = {
+		holder = 0
+	}
+	1060.1.1 = {
+		holder = 45049
+	}
+}
+
 d_muwalladi = {
 	929.01.16 = {
 		# Founding of the Cordoba Caliphate.
@@ -3477,6 +3506,158 @@ e_britannia = {
 	}
 }
 
+e_roman_empire = {
+	3.1.27 = {
+		holder = 145290
+	} # this way Jan 27 BC is displayed in his date, only backwards!
+	24.8.19 = {
+		holder = 145075
+	} # moved date 10 years later so Augustus is not portrayed as child
+	37.3.16 = {
+		holder = 145289
+	}
+	41.1.24 = {
+		holder = 145288
+	}
+	54.10.13 = {
+		holder = 145287
+	}
+	68.6.9 = {
+		holder = 145286
+	}
+	69.1.15 = {
+		holder = 145285
+	}
+	69.4.16 = {
+		holder = 145284
+	}
+	69.12.20 = {
+		holder = 145281
+	}
+	79.6.23 = {
+		holder = 145282
+	}
+	81.9.13 = {
+		holder = 145283
+	}
+	96.9.18 = {
+		holder = 145280
+	}
+	98.1.27 = {
+		holder = 145279
+	}
+	117.8.9 = {
+		holder = 145278
+	}
+	138.7.10 = {
+		holder = 145277
+	}
+	161.3.7 = {
+		holder = 145276
+	}
+	169.2.1 = {
+		holder = 145274
+	}
+	180.3.17 = {
+		holder = 145275
+	}
+	193.1.1 = {
+		holder = 145273
+	}
+	193.3.29 = {
+		holder = 145272
+	}
+	193.6.1 = {
+		holder = 145269
+	}
+	211.2.4 = {
+		holder = 145271
+	}
+	211.12.19 = {
+		holder = 145270
+	}
+	217.4.8 = {
+		holder = 145268
+	}
+	218.6.8 = {
+		holder = 145267
+	}
+	222.3.11 = {
+		holder = 145266
+	}
+	235.3.19 = {
+		holder = 145265
+	}
+	238.3.22 = {
+		holder = 145259
+	}
+	238.4.1 = {
+		holder = 145260
+	}
+	238.4.12 = {
+		holder = 145264
+	}
+	238.6.1 = {
+		holder = 145263
+	}
+	238.7.29 = {
+		holder = 145262
+	}
+	244.2.11 = {
+		holder = 70526
+	}
+	249.9.1 = {
+		holder = 145258
+	}
+	251.6.1 = {
+		holder = 145257
+	}
+	253.7.1 = {
+		holder = 145256
+	}
+	253.8.1 = {
+		holder = 145254
+	}
+	260.6.1 = {
+		holder = 145255
+	}
+	268.8.1 = {
+		holder = 145252
+	}
+	270.1.15 = {
+		holder = 145253
+	}
+	270.5.1 = {
+		holder = 145250
+	}
+	275.7.1 = {
+		holder = 145249
+	}
+	275.9.25 = {
+		holder = 145247
+	}
+	276.6.1 = {
+		holder = 145248
+	}
+	276.9.1 = {
+		holder = 145245
+	}
+	282.10.1 = {
+		holder = 145242
+	}
+	283.8.1 = {
+		holder = 145243
+	}
+	284.11.1 = {
+		holder = 145244
+	}
+	285.7.1 = {
+		holder = 145241
+	}
+	311.12.3 = {
+		holder = 0
+	}
+}
 
 e_byzantium = {
 	20.1.1 = {
@@ -3504,7 +3685,6 @@ e_byzantium = {
 	1100.1.1 = {
 		change_development_level = 18
 	}
-	
 	3.1.27 = {
 		holder = 145290
 		name = AN_ROMEIN_EMPIRE
@@ -5220,5 +5400,40 @@ d_imami = { # Twelver Imams
 	}
 	909.1.1 = {
 		holder = 0
+	}
+}
+
+d_samaritan = { # Samaritan High Priesthood, worth noting a lot of these dates are guesses, the pre-17th century High Priests are not very well-documented
+	620.1.1 = {
+		holder = samaritan_priesthood_eleazar_viii
+	}
+	660.1.1 = {
+		holder = samaritan_priesthood_netaniel_vi
+	}
+	725.1.1 = {
+		holder = samaritan_priesthood_eleazar_ix
+	}
+	782.1.1 = {
+		holder = samaritan_priesthood_akabon_vii
+	}
+	843.1.1 = {
+		liege = "e_arabia"
+		holder = samaritan_priesthood_eleazar_x # Eleazar X
+	}
+	901.1.1 = {
+		holder = samaritan_priesthood_akabon_viii
+	}
+	943.1.1 = {
+		holder = samaritan_priesthood_eleazar_xi
+	}
+	973.1.1 = {
+		holder = samaritan_priesthood_akabon_ix
+	}
+	1012.1.1 = {
+		holder = samaritan_priesthood_eleazar_xii
+	}
+	1066.1.1 = {
+		liege = "k_egypt"
+		holder = samaritan_priesthood_simeon_i # Simeon I
 	}
 }

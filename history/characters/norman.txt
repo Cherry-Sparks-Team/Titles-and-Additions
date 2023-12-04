@@ -498,6 +498,7 @@
 
 1132 = {
 	name = "Roger"
+	dna = 1132_roger_of_messina
 	dynasty = 678
 	martial = 8
 	diplomacy = 7
